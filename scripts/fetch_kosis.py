@@ -111,6 +111,16 @@ def collect(metric, api_key, rows=None):
             if month in out.get(code, {}):
                 raise RuntimeError(f"(시도, 월) 중복: {code} {month}")
             out.setdefault(code, {})[month] = value
+        # 광주·전남 지수는 합산할 수 없다. 전남광주 통합 지수가 시작되기 전(기준월=100)에는 두 지수를
+        # 기준월 대비로 환산해 단순평균한 값으로 이어 붙인다(근사치).
+        gj, jn, jg = out.pop("GJ", None), out.pop("JN", None), out.get(MERGED_CODE, {})
+        if gj and jn and jg:
+            base = min(jg)
+            if base in gj and base in jn:
+                for m in sorted(set(gj) & set(jn)):
+                    if m not in jg:
+                        jg[m] = round(jg[base] * ((gj[m] / gj[base] + jn[m] / jn[base]) / 2), 4)
+                out[MERGED_CODE] = dict(sorted(jg.items()))
         return out
     by_key, seen = {}, {}
     for row in rows:

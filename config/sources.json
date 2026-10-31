@@ -74,7 +74,9 @@
     "240": "2436",
     "160": "37",
     "170": "38",
-    "180": "39"
+    "180": "39",
+    "0306": "JN",
+    "0307": "GJ"
    },
    "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=T1&objL1=ALL&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=240&orgId=408&tblId=DT_KAB_11672_S1"
   }
