@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>주택공급 지도</title>
-<meta name="description" content="국토교통부 월간 주택통계를 시도별 지도 위에 보여주는 인허가·착공·준공·미분양 대시보드">
+<meta name="description" content="국토교통부 월간 주택통계를 시도별 지도 위에 보여주는 인허가·착공·준공·미분양 대시보드. 최근 5년 연도별 추이 포함">
 <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
@@ -38,6 +38,8 @@
   }
   .wrap { max-width: 1120px; margin: 0 auto; padding: 28px 16px 40px; }
   h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 18px; margin: 0; letter-spacing: -0.01em; }
+  h3 { font-size: 14px; margin: 20px 0 8px; color: var(--muted); font-weight: 500; }
   .sub { color: var(--muted); font-size: 14px; margin: 0 0 20px; }
   .controls { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; margin-bottom: 16px; }
   .group { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -52,7 +54,7 @@
   .timebar { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; background: var(--panel);
     border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; }
   .timebar input { flex: 1; accent-color: var(--accent); }
-  .month { font-weight: 700; min-width: 96px; text-align: right; font-variant-numeric: tabular-nums; }
+  .month { font-weight: 700; min-width: 120px; text-align: right; font-variant-numeric: tabular-nums; }
   .grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 16px; align-items: start; }
   @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } }
   .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px; }
@@ -88,9 +90,31 @@
     padding: 8px 10px; border-radius: 8px; font-size: 13px; line-height: 1.45; max-width: 220px; }
   #tip b { display: block; font-size: 14px; }
   .note { font-size: 12px; color: var(--muted); margin-top: 14px; }
+
+  /* 연도별 추이 */
+  .trend { margin-top: 16px; }
+  .trend-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; align-items: flex-start; margin-bottom: 8px; }
+  .trend-sub { font-size: 13px; color: var(--muted); margin-top: 2px; }
+  #bars { width: 100%; height: auto; display: block; }
+  #bars .tx { font-size: 12px; fill: var(--muted); text-anchor: middle; }
+  #bars .tv { font-size: 12px; font-weight: 700; fill: var(--ink); text-anchor: middle; font-variant-numeric: tabular-nums; }
+  #bars .tg { font-size: 12px; font-weight: 600; text-anchor: middle; }
+  #bars .tg.up { fill: var(--accent); } #bars .tg.down { fill: var(--neg); } #bars .tg.na { fill: var(--muted); font-weight: 400; }
+  #bars rect.bar { cursor: pointer; }
+  #bars rect.bar:hover { opacity: 1 !important; }
+  #multiples { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  @media (max-width: 820px) { #multiples { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .mini { border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; cursor: pointer; background: var(--panel); text-align: left; font: inherit; color: inherit; }
+  .mini:hover { border-color: var(--accent); }
+  .mini.sel { border-color: var(--ink); box-shadow: 0 0 0 1px var(--ink); }
+  .mini .n { font-size: 13px; font-weight: 500; display: flex; justify-content: space-between; gap: 6px; }
+  .mini .n span.g { font-size: 12px; font-weight: 600; }
+  .mini .v { font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .mini svg { width: 100%; height: 44px; display: block; margin-top: 4px; }
+
+  /* 로고 SVG는 밝은 배경용(남색 글자)이라 다크 모드에서도 읽히도록 크림색 칩 위에 올린다 */
   footer { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap;
     align-items: flex-end; justify-content: space-between; gap: 10px; font-size: 12px; color: var(--muted); }
-  /* 로고 SVG는 밝은 배경용(남색 글자)이라 다크 모드에서도 읽히도록 크림색 칩 위에 올린다 */
   .lockup { display: inline-block; background: #f6f1e6; border-radius: 12px; padding: 6px 12px; line-height: 0; }
   .lockup img { display: block; height: 48px; width: auto; }
   .brand-note { font-size: 11px; color: var(--muted); margin-top: 4px; }
@@ -100,10 +124,14 @@
 <body>
 <div class="wrap">
   <h1>주택공급 지도</h1>
-  <p class="sub">국토교통부 월간 주택통계 · 시도별 인허가 · 착공 · 분양 · 준공 · 미분양</p>
+  <p class="sub">국토교통부 월간 주택통계 · 시도별 인허가 · 착공 · 분양 · 준공 · 미분양 · 최근 5년 추이</p>
 
   <div class="controls">
     <div class="group" id="metrics" role="group" aria-label="지표 선택"></div>
+    <div class="group" id="units" role="group" aria-label="시간 단위">
+      <button class="btn" data-unit="month" aria-pressed="true">월별</button>
+      <button class="btn" data-unit="year" aria-pressed="false">연도별</button>
+    </div>
     <div class="group" id="modes" role="group" aria-label="보기 방식">
       <button class="btn" data-mode="level" aria-pressed="true">월 수치</button>
       <button class="btn" data-mode="cum" aria-pressed="false">연초 누계</button>
@@ -113,7 +141,7 @@
 
   <div class="timebar">
     <button class="btn" id="play" aria-label="재생">▶</button>
-    <input type="range" id="slider" min="0" max="0" value="0" aria-label="월 선택">
+    <input type="range" id="slider" min="0" max="0" value="0" aria-label="기간 선택">
     <span class="month" id="monthLabel">–</span>
   </div>
 
@@ -135,6 +163,23 @@
     </div>
   </div>
 
+  <section class="card trend" id="trend">
+    <div class="trend-head">
+      <div>
+        <h2 id="trendTitle">연도별 추이</h2>
+        <div class="trend-sub" id="trendSub"></div>
+      </div>
+      <div class="group" id="basis" role="group" aria-label="집계 기준">
+        <button class="btn" data-basis="full" aria-pressed="true">연간</button>
+        <button class="btn" data-basis="ytd" aria-pressed="false">동기간 비교</button>
+      </div>
+    </div>
+    <svg id="bars" viewBox="0 0 700 250" role="img" aria-label="연도별 막대 그래프"></svg>
+    <h3>시도별 한눈에 (막대를 누르면 해당 연도로 지도가 바뀝니다)</h3>
+    <div id="multiples"></div>
+    <div class="note" id="trendNote"></div>
+  </section>
+
   <footer>
     <div class="credit">
       <a class="lockup" href="https://github.com/lloydknam" target="_blank" rel="noopener"><img src="assets/brand/lockup-light.svg" alt="Lloyd's Balcony Lab · with claude · GitHub(@lloydknam)" height="48"></a>
@@ -154,27 +199,51 @@
   const CODES = Object.keys(NAMES);
   const GROUP = { '24': '2436', '36': '2436' };
   const gcode = (f) => GROUP[f.properties.code] || f.properties.code;
-  const state = { metric: null, mode: 'level', idx: 0, selected: null, playing: false };
-  let META, DATA, GEO, MONTHS = [], timer = null;
+  const SHOWN_YEARS = 6; // 최근 5개 연도 + 올해(일부만 집계된 경우 포함)
+
+  const state = { metric: null, mode: 'level', unit: 'month', basis: 'full', idx: 0, selected: null, playing: false };
+  let META, DATA, GEO, MONTHS = [], YEARS = [], timer = null, TOT = null;
 
   const $ = (id) => document.getElementById(id);
   const fmt = (n) => n == null ? '–' : Math.round(n).toLocaleString('ko-KR');
-  const fmtPct = (n) => n == null ? '–' : (n > 0 ? '+' : '') + n.toFixed(1) + '%';
+  const fmtShort = (n) => n == null ? '' : (Math.abs(n) >= 10000 ? (n / 10000).toFixed(1).replace(/\.0$/, '') + '만' : fmt(n));
+  const fmtPct = (n) => n == null ? '–' : (n > 0 ? '+' : '') + (Math.abs(n) >= 1000 ? Math.round(n).toLocaleString('ko-KR') : n.toFixed(1)) + '%';
   const monthText = (m) => m ? m.slice(0, 4) + '년 ' + parseInt(m.slice(5), 10) + '월' : '–';
   const metricDef = () => META.metrics.find((m) => m.id === state.metric);
+  const isStock = () => metricDef().kind === 'stock';
   const series = (code) => (DATA[state.metric] && DATA[state.metric][code]) || {};
+  const pad2 = (n) => String(n).padStart(2, '0');
+  const periods = () => state.unit === 'year' ? YEARS : MONTHS;
+  const lastMonth = () => MONTHS[MONTHS.length - 1];
+  const latestYear = () => parseInt(lastMonth().slice(0, 4), 10);
+  const latestN = () => parseInt(lastMonth().slice(5), 10);
 
-  function buildMonths() {
+  function buildPeriods() {
     const set = new Set();
     const d = DATA[state.metric] || {};
     CODES.forEach((c) => Object.keys(d[c] || {}).forEach((m) => set.add(m)));
     MONTHS = Array.from(set).sort();
+    YEARS = Array.from(new Set(MONTHS.map((m) => m.slice(0, 4)))).sort().slice(-SHOWN_YEARS);
+    TOT = null;
   }
 
-  function prevYear(m) { return (parseInt(m.slice(0, 4), 10) - 1) + m.slice(4); }
+  function getSeries(code) {
+    if (code !== 'ALL') return series(code);
+    if (TOT) return TOT;
+    const out = {};
+    MONTHS.forEach((m) => {
+      let sum = 0, n = 0;
+      CODES.forEach((c) => { const v = series(c)[m]; if (v != null) { sum += v; n++; } });
+      if (n) out[m] = sum;
+    });
+    return (TOT = out);
+  }
 
-  function rawValue(code, m, mode) {
-    const s = series(code);
+  const prevYear = (m) => (parseInt(m.slice(0, 4), 10) - 1) + m.slice(4);
+
+  // ---------- 값 계산 ----------
+  function monthValue(code, m, mode) {
+    const s = getSeries(code);
     if (mode === 'level') return s[m] != null ? s[m] : null;
     if (mode === 'cum') {
       const y = m.slice(0, 4); let sum = 0, any = false;
@@ -185,28 +254,39 @@
     if (cur == null || prev == null || prev === 0) return null;
     return (cur - prev) / prev * 100;
   }
-  function totalSeries() {
-    const out = {};
-    MONTHS.forEach((m) => {
-      let sum = 0, n = 0;
-      CODES.forEach((c) => { const v = series(c)[m]; if (v != null) { sum += v; n++; } });
-      if (n) out[m] = sum;
-    });
-    return out;
+  // 올해처럼 일부 월만 있는 해는 "같은 달까지"로 맞춰 비교한다. basis=ytd면 모든 해를 1~N월로 맞춘다.
+  function nFor(year, basis) { return (basis === 'ytd' || year === latestYear()) ? latestN() : 12; }
+  function annual(code, year, n) {
+    const s = getSeries(code);
+    if (isStock()) { const v = s[year + '-' + pad2(n)]; return v != null ? v : null; } // 미분양: 해당 달 말 잔량
+    let sum = 0;
+    for (let i = 1; i <= n; i++) { const v = s[year + '-' + pad2(i)]; if (v == null) return null; sum += v; }
+    return sum;
   }
-  function valueFor(code, m, mode) {
-    if (code === 'ALL') {
-      const s = totalSeries();
-      if (mode === 'level') return s[m] != null ? s[m] : null;
-      if (mode === 'cum') { const y = m.slice(0, 4); let t = 0, a = false;
-        for (const k in s) if (k.slice(0, 4) === y && k <= m) { t += s[k]; a = true; } return a ? t : null; }
-      const cur = s[m], prev = s[prevYear(m)];
+  function yearValue(code, year, mode) {
+    const y = parseInt(year, 10), n = nFor(y, state.basis);
+    if (mode === 'yoy') {
+      const cur = annual(code, y, n), prev = annual(code, y - 1, n);
       return (cur == null || prev == null || prev === 0) ? null : (cur - prev) / prev * 100;
     }
-    return rawValue(code, m, mode);
+    return annual(code, y, n);
   }
+  function valueFor(code, p, mode) {
+    return state.unit === 'year' ? yearValue(code, p, mode === 'cum' ? 'level' : mode) : monthValue(code, p, mode);
+  }
+  function yearLabel(y, withBasis) {
+    const n = nFor(parseInt(y, 10), state.basis);
+    if (n === 12) return isStock() ? y + '년 말' : y + '년';
+    return isStock() ? y + '년 ' + n + '월 말' : y + '년 1~' + n + '월';
+  }
+  const periodLabel = (p) => state.unit === 'year' ? yearLabel(p) : monthText(p);
+  const modeText = () => ({
+    level: state.unit === 'year' ? (isStock() ? '연말 잔량' : '연간 합계') : (isStock() ? '월말 잔량' : '월 수치'),
+    cum: '연초 누계',
+    yoy: state.unit === 'year' ? '전년 대비' : '전년 동월 대비'
+  })[state.mode];
 
-  // ---------- map ----------
+  // ---------- 지도 ----------
   const svg = d3.select('#map');
   let paths, labels, projection, pathGen;
   function drawMap() {
@@ -255,20 +335,22 @@
   }
 
   function render() {
-    const m = MONTHS[state.idx];
-    const def = metricDef();
-    $('monthLabel').textContent = monthText(m);
+    const p = periods()[state.idx];
+    $('monthLabel').textContent = p ? periodLabel(p) : '–';
     const hasData = MONTHS.length > 0;
     $('empty').classList.toggle('on', !hasData);
-    if (!hasData) { paths.attr('fill', 'var(--empty)'); labels.select('.v').text(''); $('legend').innerHTML = ''; renderPanel(null); return; }
-
-    const vals = CODES.map((c) => valueFor(c, m, state.mode)).filter((v) => v != null);
+    if (!hasData) {
+      paths.attr('fill', 'var(--empty)'); labels.select('.v').text(''); $('legend').innerHTML = '';
+      renderPanel(null); renderTrend(); return;
+    }
+    const vals = CODES.map((c) => valueFor(c, p, state.mode)).filter((v) => v != null);
     const sc = colorScale(vals, state.mode);
-    paths.attr('fill', (f) => sc.color(valueFor(gcode(f), m, state.mode)) || 'var(--empty)');
-    labels.select('.v').text((f) => { const v = valueFor(gcode(f), m, state.mode);
-      return v == null ? '' : (state.mode === 'yoy' ? fmtPct(v) : fmt(v)); });
+    paths.attr('fill', (f) => sc.color(valueFor(gcode(f), p, state.mode)) || 'var(--empty)');
+    labels.select('.v').text((f) => { const v = valueFor(gcode(f), p, state.mode);
+      return v == null ? '' : (state.mode === 'yoy' ? fmtPct(v) : fmtShort(v)); });
     renderLegend(sc);
-    renderPanel(m);
+    renderPanel(p);
+    renderTrend();
   }
 
   function renderLegend(sc) {
@@ -276,7 +358,7 @@
     const unit = state.mode === 'yoy' ? '%' : metricDef().unit;
     if (sc.kind === 'seq') {
       const edges = [sc.min].concat(sc.thresholds, [sc.max]);
-      sc.pal.forEach((c, i) => {
+      sc.pal.forEach((c) => {
         const sw = document.createElement('span'); sw.className = 'sw'; sw.style.background = c; el.appendChild(sw);
       });
       const t = document.createElement('span');
@@ -290,20 +372,19 @@
     }
   }
 
-  function renderPanel(m) {
+  function renderPanel(p) {
     const def = metricDef();
     const sel = state.selected;
-    $('sumLab').textContent = (sel ? NAMES[sel] : '전국 합계') + ' · ' + def.label + ' · ' +
-      ({ level: '월 수치', cum: '연초 누계', yoy: '전년 동월 대비' })[state.mode];
-    const rows = CODES.map((c) => ({ c, v: m ? valueFor(c, m, state.mode) : null }));
+    $('sumLab').textContent = (sel ? NAMES[sel] : '전국 합계') + ' · ' + def.label + ' · ' + modeText();
+    const rows = CODES.map((c) => ({ c, v: p ? valueFor(c, p, state.mode) : null }));
     rows.sort((a, b) => (b.v == null) - (a.v == null) || b.v - a.v);
     const key = sel || 'ALL';
-    const cur = m ? valueFor(key, m, state.mode) : null;
+    const cur = p ? valueFor(key, p, state.mode) : null;
     $('sumBig').innerHTML = state.mode === 'yoy' ? fmtPct(cur) : fmt(cur) + '<small>' + def.unit + '</small>';
-    const y = m ? valueFor(key, m, 'yoy') : null;
+    const y = p ? valueFor(key, p, 'yoy') : null;
     const yel = $('sumYoy');
     if (state.mode === 'yoy' || y == null) yel.textContent = '';
-    else { yel.textContent = '전년 동월 대비 ' + fmtPct(y); yel.className = 'yoy ' + (y >= 0 ? 'up' : 'down'); }
+    else { yel.textContent = (state.unit === 'year' ? '전년 대비 ' : '전년 동월 대비 ') + fmtPct(y); yel.className = 'yoy ' + (y >= 0 ? 'up' : 'down'); }
 
     const maxAbs = d3.max(rows, (r) => r.v == null ? 0 : Math.abs(r.v)) || 1;
     const ul = $('rank'); ul.innerHTML = '';
@@ -319,26 +400,116 @@
       ul.appendChild(li);
     });
     renderSpark(key);
-    $('note').textContent = (def.kind === 'stock'
-      ? '미분양은 월말 잔량(스톡) 지표라 연초 누계를 제공하지 않습니다.'
-      : '연초 누계는 해당 연도 1월부터 선택 월까지 수집된 월 값의 합입니다.')
-      + (def.note ? ' ' + def.note : '') + ' 광주·전남은 국토부가 합쳐서 공표하는 방식에 맞춰 전남광주로 묶었습니다.';
+    const parts = [];
+    if (state.unit === 'month') {
+      parts.push(isStock() ? '미분양은 월말 잔량(스톡) 지표라 연초 누계를 제공하지 않습니다.'
+        : '연초 누계는 해당 연도 1월부터 선택 월까지 수집된 월 값의 합입니다.');
+    } else {
+      parts.push(isStock() ? '연도별 보기의 미분양은 해당 연도 말(올해는 최근 월 말) 잔량입니다.'
+        : '연도별 보기는 1~12월 합계이며, 올해처럼 일부만 집계된 해는 같은 달까지로 전년과 비교합니다.');
+    }
+    if (def.note) parts.push(def.note);
+    parts.push('광주·전남은 국토부가 합쳐서 공표하는 방식에 맞춰 전남광주로 묶었습니다.');
+    $('note').textContent = parts.join(' ');
   }
 
   function renderSpark(key) {
     const s = d3.select('#spark'); s.selectAll('*').remove();
     if (!MONTHS.length) return;
-    const lo = Math.max(0, state.idx - 23);
-    const ms = MONTHS.slice(lo, state.idx + 1);
-    const pts = ms.map((mm, i) => ({ i, v: valueFor(key, mm, 'level') }));
+    let pts;
+    if (state.unit === 'year') {
+      pts = YEARS.slice(0, state.idx + 1).map((yy, i) => ({ i, v: yearValue(key, yy, 'level') }));
+    } else {
+      const lo = Math.max(0, state.idx - 23);
+      pts = MONTHS.slice(lo, state.idx + 1).map((mm, i) => ({ i, v: monthValue(key, mm, 'level') }));
+    }
     const ok = pts.filter((p) => p.v != null);
     if (ok.length < 2) return;
-    const x = d3.scaleLinear([0, Math.max(1, ms.length - 1)], [4, 296]);
+    const x = d3.scaleLinear([0, Math.max(1, pts.length - 1)], [4, 296]);
     const y = d3.scaleLinear(d3.extent(ok, (p) => p.v), [62, 8]);
     s.append('path').attr('d', d3.line().x((p) => x(p.i)).y((p) => y(p.v))(ok))
       .attr('fill', 'none').attr('stroke', 'var(--accent)').attr('stroke-width', 2).attr('vector-effect', 'non-scaling-stroke');
     const last = ok[ok.length - 1];
     s.append('circle').attr('cx', x(last.i)).attr('cy', y(last.v)).attr('r', 3.5).attr('fill', 'var(--accent)');
+  }
+
+  // ---------- 연도별 추이 ----------
+  function currentYear() {
+    const p = periods()[state.idx];
+    return p ? parseInt(String(p).slice(0, 4), 10) : null;
+  }
+  function renderTrend() {
+    const def = metricDef(), key = state.selected || 'ALL';
+    const bars = d3.select('#bars'); bars.selectAll('*').remove();
+    const mult = $('multiples'); mult.innerHTML = '';
+    $('trendTitle').textContent = (state.selected ? NAMES[state.selected] : '전국') + ' · ' + def.label + ' · 연도별 추이';
+    if (!MONTHS.length || !YEARS.length) { $('trendSub').textContent = ''; $('trendNote').textContent = ''; return; }
+
+    const N = latestN(), LY = latestYear(), stock = isStock();
+    const bf = document.querySelector('#basis [data-basis="full"]'), by = document.querySelector('#basis [data-basis="ytd"]');
+    bf.textContent = stock ? '연말 잔량' : '연간';
+    by.textContent = N === 12 ? (stock ? '12월 말 기준' : '1~12월') : (stock ? N + '월 말 기준' : '동기간 1~' + N + '월');
+    document.querySelectorAll('#basis .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.basis === state.basis));
+    $('trendSub').textContent = state.basis === 'ytd'
+      ? '모든 해를 ' + (stock ? N + '월 말' : '1~' + N + '월') + '로 맞춰 비교'
+      : (stock ? '매년 12월 말 잔량 (올해는 ' + N + '월 말)' : '매년 1~12월 합계' + (N < 12 ? ' (' + LY + '년은 1~' + N + '월)' : ''));
+
+    const cy = currentYear();
+    const data = YEARS.map((yy) => ({
+      y: yy, v: yearValue(key, yy, 'level'), g: yearValue(key, yy, 'yoy'),
+      partial: nFor(parseInt(yy, 10), state.basis) < 12
+    }));
+    const W = 700, top = 30, base = 190;
+    const band = d3.scaleBand(YEARS, [16, W - 16]).padding(0.28);
+    const mx = d3.max(data, (d) => d.v) || 1;
+    const yS = d3.scaleLinear([0, mx * 1.05], [base, top]);
+
+    bars.append('line').attr('x1', 8).attr('x2', W - 8).attr('y1', base).attr('y2', base).attr('stroke', 'var(--line)');
+    const gs = bars.selectAll('g.yr').data(data).join('g').attr('class', 'yr');
+    gs.append('rect').attr('class', 'bar')
+      .attr('x', (d) => band(d.y)).attr('width', band.bandwidth())
+      .attr('y', (d) => d.v == null ? base : yS(d.v)).attr('height', (d) => d.v == null ? 0 : base - yS(d.v))
+      .attr('rx', 3).attr('fill', 'var(--accent)')
+      .attr('opacity', (d) => parseInt(d.y, 10) === cy ? 1 : 0.5)
+      .attr('stroke', (d) => d.partial ? 'var(--accent)' : 'none').attr('stroke-dasharray', (d) => d.partial ? '4 3' : null)
+      .attr('fill-opacity', (d) => d.partial ? 0.55 : 1)
+      .on('click', (e, d) => setUnit('year', d.y))
+      .append('title').text((d) => yearLabel(d.y) + ': ' + fmt(d.v) + def.unit + (d.g != null ? ' (전년 대비 ' + fmtPct(d.g) + ')' : ''));
+    gs.append('text').attr('class', 'tv').attr('x', (d) => band(d.y) + band.bandwidth() / 2)
+      .attr('y', (d) => (d.v == null ? base : yS(d.v)) - 6).text((d) => d.v == null ? '' : fmt(d.v));
+    gs.append('text').attr('class', 'tx').attr('x', (d) => band(d.y) + band.bandwidth() / 2).attr('y', base + 18)
+      .text((d) => d.y + (d.partial ? (stock ? '(' + N + '월)' : '(1~' + N + '월)') : ''));
+    gs.append('text').attr('class', (d) => 'tg ' + (d.g == null ? 'na' : (d.g >= 0 ? 'up' : 'down')))
+      .attr('x', (d) => band(d.y) + band.bandwidth() / 2).attr('y', base + 38)
+      .text((d) => d.g == null ? '–' : (d.g >= 0 ? '▲ ' : '▼ ') + fmtPct(Math.abs(d.g)).replace('+', ''));
+
+    // 시도별 한눈에: 최신 연도 값 기준 내림차순
+    const latestY = YEARS[YEARS.length - 1];
+    const cells = CODES.map((c) => ({ c, last: yearValue(c, latestY, 'level'), g: yearValue(c, latestY, 'yoy') }))
+      .sort((a, b) => (b.last == null) - (a.last == null) || b.last - a.last);
+    cells.forEach((cell) => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'mini' + (cell.c === state.selected ? ' sel' : '');
+      b.setAttribute('aria-label', NAMES[cell.c] + ' ' + def.label + ' 연도별 추이');
+      b.innerHTML = '<div class="n"><span>' + NAMES[cell.c] + '</span><span class="g ' + (cell.g == null ? '' : (cell.g >= 0 ? 'up' : 'down')) + '">' +
+        (cell.g == null ? '' : (cell.g >= 0 ? '▲' : '▼') + fmtPct(Math.abs(cell.g)).replace('+', '')) + '</span></div><div class="v">' + fmt(cell.last) + '</div><svg viewBox="0 0 120 44" preserveAspectRatio="none"></svg>';
+      b.addEventListener('click', () => selectRegion(cell.c));
+      mult.appendChild(b);
+      const vals = YEARS.map((yy) => ({ y: yy, v: yearValue(cell.c, yy, 'level') }));
+      const m2 = d3.max(vals, (d) => d.v) || 1;
+      const bx = d3.scaleBand(YEARS, [2, 118]).padding(0.2);
+      d3.select(b.querySelector('svg')).selectAll('rect').data(vals).join('rect')
+        .attr('x', (d) => bx(d.y)).attr('width', bx.bandwidth())
+        .attr('y', (d) => d.v == null ? 43 : 43 - (d.v / m2) * 40).attr('height', (d) => d.v == null ? 0 : Math.max(1, (d.v / m2) * 40))
+        .attr('rx', 1.5).attr('fill', 'var(--accent)')
+        .attr('opacity', (d) => d.y === latestY ? 1 : 0.45);
+    });
+
+    const notes = [];
+    if (stock) notes.push('미분양은 월말 잔량이라 연말(또는 같은 달 말) 값을 비교합니다.');
+    else if (state.basis === 'full' && N < 12) notes.push(LY + '년은 1~' + N + '월만 집계돼 점선 막대로 표시했고, 전년 대비는 같은 기간끼리 계산했습니다. ‘동기간 비교’를 켜면 모든 해를 1~' + N + '월로 맞춥니다.');
+    else if (state.basis === 'ytd') notes.push('모든 해를 1~' + N + '월 합계로 맞춘 비교입니다.');
+    notes.push('막대를 누르면 지도가 그 연도의 연도별 보기로 바뀝니다. 시도 카드를 누르면 위 그래프가 그 지역으로 바뀝니다.');
+    $('trendNote').textContent = notes.join(' ');
   }
 
   function highlight(code, on) {
@@ -353,43 +524,66 @@
 
   const tip = $('tip');
   function showTip(e, code) {
-    const m = MONTHS[state.idx]; if (!m) return;
-    const v = valueFor(code, m, state.mode), y = valueFor(code, m, 'yoy');
+    const p = periods()[state.idx]; if (!p) return;
+    const v = valueFor(code, p, state.mode), y = valueFor(code, p, 'yoy');
     tip.innerHTML = '<b>' + NAMES[code] + '</b>' + (state.mode === 'yoy' ? fmtPct(v) : fmt(v) + metricDef().unit) +
-      (state.mode !== 'yoy' && y != null ? '<br>전년 동월 대비 ' + fmtPct(y) : '');
+      (state.mode !== 'yoy' && y != null ? '<br>' + (state.unit === 'year' ? '전년 대비 ' : '전년 동월 대비 ') + fmtPct(y) : '');
     tip.style.display = 'block';
     tip.style.left = Math.min(window.innerWidth - 230, e.clientX + 14) + 'px';
     tip.style.top = (e.clientY + 14) + 'px';
   }
   function hideTip() { tip.style.display = 'none'; }
 
-  // ---------- controls ----------
-  function setMetric(id, keepMonth) {
-    const prevMonth = MONTHS[state.idx];
-    state.metric = id; buildMonths();
-    let i = keepMonth ? MONTHS.indexOf(prevMonth) : -1;
-    state.idx = i >= 0 ? i : Math.max(0, MONTHS.length - 1);
-    const sl = $('slider'); sl.max = Math.max(0, MONTHS.length - 1); sl.value = state.idx;
-    const stock = metricDef().kind === 'stock';
-    const cumBtn = document.querySelector('[data-mode="cum"]'); cumBtn.disabled = stock;
-    if (stock && state.mode === 'cum') setMode('level');
-    document.querySelectorAll('#metrics .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.id === id));
-    render();
+  // ---------- 컨트롤 ----------
+  function syncControls() {
+    const sl = $('slider'); sl.max = Math.max(0, periods().length - 1); sl.value = state.idx;
+    document.querySelectorAll('#units .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.unit === state.unit));
+    const yearly = state.unit === 'year';
+    const lvl = document.querySelector('[data-mode="level"]'), cum = document.querySelector('[data-mode="cum"]'), yoy = document.querySelector('[data-mode="yoy"]');
+    lvl.textContent = yearly ? (isStock() ? '연말 잔량' : '연간 합계') : (isStock() ? '월말 잔량' : '월 수치');
+    yoy.textContent = yearly ? '전년 대비' : '전년 동월 대비';
+    cum.disabled = isStock() || yearly;
+    if (cum.disabled && state.mode === 'cum') state.mode = 'level';
+    document.querySelectorAll('#modes .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.mode === state.mode));
+    document.querySelectorAll('#metrics .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.id === state.metric));
   }
-  function setMode(mode) {
-    state.mode = mode;
-    document.querySelectorAll('#modes .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.mode === mode));
-    render();
+  function setMetric(id, keepPos) {
+    const prevP = keepPos ? periods()[state.idx] : null;
+    state.metric = id; buildPeriods();
+    const list = periods();
+    let i = prevP ? list.indexOf(prevP) : -1;
+    state.idx = i >= 0 ? i : Math.max(0, list.length - 1);
+    syncControls(); render();
   }
+  function setMode(mode) { state.mode = mode; syncControls(); render(); }
+  function setUnit(unit, yearArg) {
+    stop();
+    const curYear = currentYear();
+    if (unit === 'year') {
+      const target = String(yearArg || curYear || YEARS[YEARS.length - 1]);
+      state.unit = 'year';
+      const i = YEARS.indexOf(target);
+      state.idx = i >= 0 ? i : Math.max(0, YEARS.length - 1);
+    } else {
+      state.unit = 'month';
+      const target = String(yearArg || curYear);
+      let last = -1;
+      MONTHS.forEach((m, i) => { if (m.slice(0, 4) === target) last = i; });
+      state.idx = last >= 0 ? last : Math.max(0, MONTHS.length - 1);
+    }
+    syncControls(); render();
+    if (yearArg) document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  function setBasis(b) { state.basis = b; render(); }
   function togglePlay() {
     if (state.playing) { stop(); return; }
-    if (!MONTHS.length) return;
-    if (state.idx >= MONTHS.length - 1) state.idx = 0;
+    const n = periods().length; if (!n) return;
+    if (state.idx >= n - 1) state.idx = 0;
     state.playing = true; $('play').textContent = '❚❚';
     timer = setInterval(() => {
-      if (state.idx >= MONTHS.length - 1) { stop(); return; }
+      if (state.idx >= periods().length - 1) { stop(); return; }
       state.idx++; $('slider').value = state.idx; render();
-    }, 650);
+    }, state.unit === 'year' ? 1100 : 650);
   }
   function stop() { clearInterval(timer); state.playing = false; $('play').textContent = '▶'; }
 
@@ -405,6 +599,8 @@
       b.setAttribute('aria-pressed', 'false'); b.addEventListener('click', () => { stop(); setMetric(m.id, true); }); box.appendChild(b);
     });
     document.querySelectorAll('#modes .btn').forEach((b) => b.addEventListener('click', () => setMode(b.dataset.mode)));
+    document.querySelectorAll('#units .btn').forEach((b) => b.addEventListener('click', () => setUnit(b.dataset.unit)));
+    document.querySelectorAll('#basis .btn').forEach((b) => b.addEventListener('click', () => setBasis(b.dataset.basis)));
     $('slider').addEventListener('input', (e) => { stop(); state.idx = +e.target.value; render(); });
     $('play').addEventListener('click', togglePlay);
     drawMap();
