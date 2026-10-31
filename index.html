@@ -226,7 +226,7 @@
       </div>
     </div>
     <svg id="bars" viewBox="0 0 700 260" role="img" aria-label="연도별 막대 그래프"></svg>
-    <h3>시도별 한눈에 (막대를 누르면 해당 연도로 지도가 바뀝니다)</h3>
+    <h3>시도별 한눈에 · 서울부터 고정 순서 (막대를 누르면 해당 연도로 지도가 바뀝니다)</h3>
     <div id="multiples"></div>
     <div class="note" id="trendNote"></div>
   </section>
@@ -247,7 +247,8 @@
   // 광주·전남은 2026년 중반부터 '전남광주'로 합쳐서 공표된다 → 데이터 코드 2436 하나로 다루고 지도에서도 한 덩어리로 칠한다.
   const NAMES = {'11':'서울','21':'부산','22':'대구','23':'인천','25':'대전','26':'울산','29':'세종',
     '31':'경기','32':'강원','33':'충북','34':'충남','35':'전북','37':'경북','38':'경남','39':'제주','2436':'전남광주'};
-  const CODES = Object.keys(NAMES);
+  // 시도 표시 순서는 값과 상관없이 고정: 서울부터 행정구역 코드 순(광주·전남은 전남광주로 합쳐 전북 다음)
+  const CODES = ['11', '21', '22', '23', '25', '26', '29', '31', '32', '33', '34', '35', '2436', '37', '38', '39'];
   const GROUP = { '24': '2436', '36': '2436' };
   const gcode = (f) => GROUP[f.properties.code] || f.properties.code;
   const EMOJI = { permit: '📝', start: '🏗️', sale: '📣', complete: '🏠', unsold: '🪧', unsold_post: '🧱' };
@@ -451,7 +452,6 @@
     const sel = state.selected;
     $('sumLab').textContent = (sel ? NAMES[sel] : '전국 합계') + ' · ' + def.label + ' · ' + modeText();
     const rows = CODES.map((c) => ({ c, v: p ? valueFor(c, p, state.mode) : null }));
-    rows.sort((a, b) => (b.v == null) - (a.v == null) || b.v - a.v);
     const key = sel || 'ALL';
     const cur = p ? valueFor(key, p, state.mode) : null;
     $('sumBig').innerHTML = state.mode === 'yoy' ? fmtPct(cur) : fmt(cur) + '<small>' + def.unit + '</small>';
@@ -569,8 +569,7 @@
 
     // 시도별 한눈에: 최신 연도 값 기준 내림차순
     const latestY = YEARS[YEARS.length - 1];
-    const cells = CODES.map((c) => ({ c, last: yearValue(c, latestY, 'level'), g: yearValue(c, latestY, 'yoy') }))
-      .sort((a, b) => (b.last == null) - (a.last == null) || b.last - a.last);
+    const cells = CODES.map((c) => ({ c, last: yearValue(c, latestY, 'level'), g: yearValue(c, latestY, 'yoy') }));
     cells.forEach((cell) => {
       const b = document.createElement('button'); b.type = 'button'; b.className = 'mini' + (cell.c === state.selected ? ' sel' : '');
       b.setAttribute('aria-label', NAMES[cell.c] + ' ' + def.label + ' 연도별 추이');
