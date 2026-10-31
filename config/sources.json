@@ -12,6 +12,6 @@
     {"id": "unsold", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
      "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103871087T1&objL1=ALL&objL2=13102871087B.0001&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=36&orgId=116&tblId=DT_MLTM_2082"},
     {"id": "unsold_post", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
-     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103871088T1&objL1=ALL&objL2=13102871088B.0001&objL3=13102871088C.0001&objL4=13102871088D.0001&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=36&orgId=116&tblId=DT_MLTM_5328"}
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103871088T1&objL1=ALL&objL2=13102871088B.0002&objL3=13102871088C.0001&objL4=13102871088D.0001&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=36&orgId=116&tblId=DT_MLTM_5328"}
   ]
 }
