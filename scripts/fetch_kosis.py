@@ -178,10 +178,11 @@ def collect(metric, api_key, rows=None):
         for series in out.values():
             for m, v in series.items():
                 tot[m] = tot.get(m, 0) + v
-        bad = {m for m, v in tot.items() if v == 0}
-        for m in sorted(tot):
+        zero = {m for m, v in tot.items() if v == 0}
+        bad = set(zero)
+        for m in tot:
             y, mm = m.split("-")
-            if mm != "01" and f"{y}-{int(mm) - 1:02d}" in bad:
+            if mm != "01" and f"{y}-{int(mm) - 1:02d}" in zero:
                 bad.add(m)
         out = {c: {m: v for m, v in series.items() if m not in bad} for c, series in out.items()}
     return out
