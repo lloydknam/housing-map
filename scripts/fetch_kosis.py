@@ -100,6 +100,18 @@ def collect(metric, api_key, rows=None):
         raise RuntimeError(f"KOSIS 오류 응답: {rows.get('err')} {rows.get('errMsg', '')}".strip())
     rf, pf, vf = metric["region_field"], metric["period_field"], metric["value_field"]
     filters = metric.get("filters", {})
+    if metric.get("code_map"):  # 지수 계열: 분류코드로 시도를 지정한다(합산·이름 매칭 없음). 00 은 전국.
+        cf, cmap, out = metric["code_field"], metric["code_map"], {}
+        for row in rows:
+            if any(str(row.get(k)) != str(v) for k, v in filters.items()):
+                continue
+            code, month, value = cmap.get(str(row.get(cf, "")).strip()), to_month(row.get(pf, "")), to_number(row.get(vf))
+            if code is None or month is None or value is None:
+                continue
+            if month in out.get(code, {}):
+                raise RuntimeError(f"(시도, 월) 중복: {code} {month}")
+            out.setdefault(code, {})[month] = value
+        return out
     by_key, seen = {}, {}
     for row in rows:
         if any(str(row.get(k)) != str(v) for k, v in filters.items()):
@@ -168,7 +180,8 @@ def main():
         for code, months in fresh.items():
             cur.setdefault(code, {}).update(months)
         all_m = sorted({m for s in fresh.values() for m in s})
-        sums = {m: sum(s.get(m, 0) for s in fresh.values()) for m in all_m[-4:]}
+        sums = ({m: fresh.get("00", {}).get(m) for m in all_m[-4:]} if metric.get("code_map")
+                else {m: sum(s.get(m, 0) for s in fresh.values()) for m in all_m[-4:]})
         log["metrics"][mid] = {"status": "ok", "regions": len(fresh), "months": [all_m[0], all_m[-1]] if all_m else [],
                                "latest_sums": sums}
         print(f"[{mid}] {sum(len(v) for v in fresh.values())}개 값 병합")
