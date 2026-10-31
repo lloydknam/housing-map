@@ -18,7 +18,7 @@
     --accent: #2f6bff; --accent-text: #1f55f0; --neg: #ff6b3d; --neg-text: #d9480f; --empty: #e8eef8;
     --bar-top: #c3d8ff; --bar: #8fb4ff; --bar-hi: #1f55f0; --bar-hi2: #5b8cff;
     --up-bg: #e5edff; --down-bg: #ffe9de; --grid: #edf2fa; --seg: #e8effb;
-    --seq0: #e6efff; --seq1: #b5d0ff; --seq2: #6ea0ff; --seq3: #2f6bff; --seq4: #1a3fc4;
+    --seq0: #e3edff; --seq1: #a9c8ff; --seq2: #5b94ff; --seq3: #2260f5; --seq4: #0a2fa8;
     --shadow: 0 1px 2px rgba(31,85,240,.05), 0 14px 40px -14px rgba(47,107,255,.28);
     --sky: #dcecff; --mint: #dff8ee; --sun: #fff1c9;
   }
@@ -28,7 +28,7 @@
       --accent: #5b8cff; --accent-text: #8fb4ff; --neg: #ff8a57; --neg-text: #ffa57d; --empty: #1c2b45;
       --bar-top: #4a7de0; --bar: #2f5fc4; --bar-hi: #8fb4ff; --bar-hi2: #c3d8ff;
       --up-bg: #1a3563; --down-bg: #55301a; --grid: #1d2c46; --seg: #1a2942;
-      --seq0: #1b3a6b; --seq1: #25509e; --seq2: #3374e6; --seq3: #6c9dff; --seq4: #c3d8ff;
+      --seq0: #1a2f55; --seq1: #1f4a9a; --seq2: #2a6df0; --seq3: #4f93ff; --seq4: #9fcbff;
       --shadow: 0 1px 2px rgba(0,0,0,.3), 0 14px 40px -14px rgba(0,0,0,.6);
       --sky: #11284a; --mint: #0f2e33; --sun: #3a3016;
     }
@@ -102,7 +102,9 @@
   .lbl.v { font-weight: 800; font-size: 16px; }
   .legend { position: absolute; right: 18px; bottom: 16px; max-width: calc(100% - 36px); justify-content: flex-end; background: color-mix(in srgb, var(--panel) 82%, transparent); padding: 6px 10px; border-radius: 12px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); font-weight: 500; }
   .legend .sw { width: 34px; height: 12px; border-radius: 4px; }
-  .legend .grad { width: 180px; height: 12px; border-radius: 6px; }
+  .legend .grad { display: block; width: 200px; height: 12px; border-radius: 6px; }
+  .legend .gbar { display: block; }
+  .legend .gticks { display: flex; justify-content: space-between; font-size: 11.5px; margin-top: 2px; font-variant-numeric: tabular-nums; }
   .empty { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; text-align: center;
     padding: 24px; font-size: 15px; color: var(--muted); background: color-mix(in srgb, var(--panel) 85%, transparent); border-radius: 28px; }
   .empty.on { display: flex; }
@@ -397,8 +399,10 @@
     const sorted = values.slice().sort(d3.ascending);
     const cs = getComputedStyle(document.documentElement);
     const pal = [0, 1, 2, 3, 4].map((i) => cs.getPropertyValue('--seq' + i).trim());
-    const q = d3.scaleQuantile().domain(sorted).range(pal);
-    return { color: (v) => v == null ? null : q(v), kind: 'seq', thresholds: q.quantiles(), pal, min: sorted[0], max: sorted[sorted.length - 1] };
+    // 순위가 아니라 값의 크기에 비례해 칠한다: 0 → 가장 옅게, 최댓값 → 가장 진하게(제곱근 눈금이라 작은 값도 구분된다).
+    const max = sorted[sorted.length - 1] || 1;
+    const ramp = d3.scaleLinear().domain([0, 0.25, 0.5, 0.75, 1]).range(pal).interpolate(d3.interpolateRgb).clamp(true);
+    return { color: (v) => v == null ? null : ramp(Math.sqrt(Math.max(0, v) / max)), kind: 'seq', pal, max };
   }
 
   function render() {
@@ -426,13 +430,14 @@
     const el = $('legend'); el.innerHTML = '';
     const unit = state.mode === 'yoy' ? '%' : metricDef().unit;
     if (sc.kind === 'seq') {
-      const edges = [sc.min].concat(sc.thresholds, [sc.max]);
-      sc.pal.forEach((c) => {
-        const sw = document.createElement('span'); sw.className = 'sw'; sw.style.background = c; el.appendChild(sw);
-      });
-      const t = document.createElement('span');
-      t.textContent = ' ' + fmt(edges[0]) + ' ~ ' + fmt(edges[edges.length - 1]) + unit + ' (5분위)';
-      el.appendChild(t);
+      const g = document.createElement('span'); g.className = 'grad';
+      g.style.background = 'linear-gradient(90deg,' + sc.pal.join(',') + ')';
+      const lo = document.createElement('span'); lo.textContent = '0';
+      const mid = document.createElement('span'); mid.textContent = fmtShort(sc.max / 4);
+      const hi = document.createElement('span'); hi.textContent = fmtShort(sc.max) + unit;
+      const bar = document.createElement('span'); bar.className = 'gbar';
+      bar.append(g, (() => { const r = document.createElement('span'); r.className = 'gticks'; r.append(lo, mid, hi); return r; })());
+      el.appendChild(bar);
     } else {
       const g = document.createElement('span'); g.className = 'grad';
       g.style.background = 'linear-gradient(90deg,#ff5a1f,#ffd8c2 40%,#e6ecf6 50%,#cfe0ff 60%,#1a45e0)';
