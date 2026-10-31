@@ -228,7 +228,8 @@
     const d = DATA[state.metric] || {};
     CODES.forEach((c) => Object.keys(d[c] || {}).forEach((m) => set.add(m)));
     MONTHS = Array.from(set).sort();
-    YEARS = Array.from(new Set(MONTHS.map((m) => m.slice(0, 4)))).sort().slice(-SHOWN_YEARS);
+    // 1월부터 데이터가 있는 해만 연도별로 쓴다(수집 시작 해의 일부 월만 있는 해는 제외)
+    YEARS = Array.from(new Set(MONTHS.map((m) => m.slice(0, 4)))).filter((y) => set.has(y + '-01')).sort().slice(-SHOWN_YEARS);
     TOT = null;
   }
 
