@@ -2,16 +2,16 @@
   "_help": "KOSIS 통계자료 요청 URL 템플릿. 키 자리는 {API_KEY}. 통계표·항목·분류 코드는 KOSIS 메타 API로 확인한 값이다. cumulative=true 는 월별 누계 표를 월 값으로 환산한다.",
   "metrics": [
     {"id": "permit", "cumulative": true, "region_field": "C3_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
-     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103871089T1&objL1=13102871089A.0001&objL2=13102871089B.0001&objL3=ALL&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=84&orgId=116&tblId=DT_MLTM_1946"},
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103871089T1&objL1=13102871089A.0001&objL2=13102871089B.0001&objL3=ALL&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=120&orgId=116&tblId=DT_MLTM_1946"},
     {"id": "start", "region_field": "C3_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
-     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103766971T1&objL1=13102766971A.0001&objL2=13102766971B.0001&objL3=ALL&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=84&orgId=116&tblId=DT_MLTM_5386"},
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103766971T1&objL1=13102766971A.0001&objL2=13102766971B.0001&objL3=ALL&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=120&orgId=116&tblId=DT_MLTM_5386"},
     {"id": "sale", "region_field": "C2_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
-     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103133605T1&objL1=ALL&objL2=ALL&objL3=13102133605C.0001&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=84&orgId=116&tblId=DT_MLTM_5557"},
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103133605T1&objL1=ALL&objL2=ALL&objL3=13102133605C.0001&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=120&orgId=116&tblId=DT_MLTM_5557"},
     {"id": "complete", "region_field": "C3_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
-     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103766972T1&objL1=13102766972A.0001&objL2=13102766972B.0001&objL3=ALL&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=84&orgId=116&tblId=DT_MLTM_5372"},
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103766972T1&objL1=13102766972A.0001&objL2=13102766972B.0001&objL3=ALL&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=120&orgId=116&tblId=DT_MLTM_5372"},
     {"id": "unsold", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
-     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103871087T1&objL1=ALL&objL2=13102871087B.0001&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=84&orgId=116&tblId=DT_MLTM_2082"},
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103871087T1&objL1=ALL&objL2=13102871087B.0001&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=120&orgId=116&tblId=DT_MLTM_2082"},
     {"id": "unsold_post", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
-     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103871088T1&objL1=ALL&objL2=13102871088B.0002&objL3=13102871088C.0001&objL4=13102871088D.0001&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=84&orgId=116&tblId=DT_MLTM_5328"}
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103871088T1&objL1=ALL&objL2=13102871088B.0002&objL3=13102871088C.0001&objL4=13102871088D.0001&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=120&orgId=116&tblId=DT_MLTM_5328"}
   ]
 }

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>주택공급 지도</title>
-<meta name="description" content="국토교통부 월간 주택통계를 시도별 지도 위에 보여주는 인허가·착공·준공·미분양 대시보드. 최근 5년 연도별 추이 포함">
+<meta name="description" content="국토교통부 월간 주택통계를 시도별 지도 위에 보여주는 인허가·착공·준공·미분양 대시보드. 최근 10년 연도별 추이 포함">
 <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
@@ -20,12 +20,14 @@
     --accent: #1b6ca8;
     --neg: #d4651a;
     --empty: #e6e3dc;
+    --bar: #9fc6e6; --bar-hi: #1f7ac4; --bar-hi2: #55a9ee; --up-bg:#e3f0fb; --down-bg:#fdebdd; --grid:#ece9e2;
     --seq0: #e8f1f8; --seq1: #bdd7ea; --seq2: #82b4d6; --seq3: #3f86b8; --seq4: #17507f;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --bg: #141618; --panel: #1d2023; --ink: #eceae6; --muted: #9a9ea5; --line: #33373c;
       --accent: #5aa7dc; --neg: #f0894a; --empty: #2a2e32;
+      --bar: #3f7cab; --bar-hi: #5fb0f0; --bar-hi2: #9fd3fb; --up-bg:#1e3a52; --down-bg:#4a2d1a; --grid:#2b3035;
       --seq0: #1f3446; --seq1: #26506f; --seq2: #2f75a2; --seq3: #5aa7dc; --seq4: #a9d3f0;
     }
   }
@@ -98,11 +100,14 @@
   #bars { width: 100%; height: auto; display: block; }
   #bars .tx { font-size: 12px; fill: var(--muted); text-anchor: middle; }
   #bars .tv { font-size: 12px; font-weight: 700; fill: var(--ink); text-anchor: middle; font-variant-numeric: tabular-nums; }
-  #bars .tg { font-size: 12px; font-weight: 600; text-anchor: middle; }
+  #bars .tg { font-size: 12px; font-weight: 700; text-anchor: middle; }
   #bars .tg.up { fill: var(--accent); } #bars .tg.down { fill: var(--neg); } #bars .tg.na { fill: var(--muted); font-weight: 400; }
+  #bars .gl { stroke: var(--grid); stroke-width: 1; }
+  #bars .gt { font-size: 11px; fill: var(--muted); text-anchor: end; }
+  #bars .chip.up { fill: var(--up-bg); } #bars .chip.down { fill: var(--down-bg); }
+  #bars rect.bar { transition: filter .15s; } #bars rect.bar:hover { filter: brightness(1.08); }
   #bars rect.bar { cursor: pointer; }
-  #bars rect.bar:hover { opacity: 1 !important; }
-  #multiples { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+    #multiples { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
   @media (max-width: 820px) { #multiples { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .mini { border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; cursor: pointer; background: var(--panel); text-align: left; font: inherit; color: inherit; }
   .mini:hover { border-color: var(--accent); }
@@ -124,7 +129,7 @@
 <body>
 <div class="wrap">
   <h1>주택공급 지도</h1>
-  <p class="sub">국토교통부 월간 주택통계 · 시도별 인허가 · 착공 · 분양 · 준공 · 미분양 · 최근 5년 추이</p>
+  <p class="sub">국토교통부 월간 주택통계 · 시도별 인허가 · 착공 · 분양 · 준공 · 미분양 · 최근 10년 추이</p>
 
   <div class="controls">
     <div class="group" id="metrics" role="group" aria-label="지표 선택"></div>
@@ -174,7 +179,7 @@
         <button class="btn" data-basis="ytd" aria-pressed="false">동기간 비교</button>
       </div>
     </div>
-    <svg id="bars" viewBox="0 0 700 250" role="img" aria-label="연도별 막대 그래프"></svg>
+    <svg id="bars" viewBox="0 0 700 260" role="img" aria-label="연도별 막대 그래프"></svg>
     <h3>시도별 한눈에 (막대를 누르면 해당 연도로 지도가 바뀝니다)</h3>
     <div id="multiples"></div>
     <div class="note" id="trendNote"></div>
@@ -199,7 +204,7 @@
   const CODES = Object.keys(NAMES);
   const GROUP = { '24': '2436', '36': '2436' };
   const gcode = (f) => GROUP[f.properties.code] || f.properties.code;
-  const SHOWN_YEARS = 6; // 최근 5개 연도 + 올해(일부만 집계된 경우 포함)
+  const SHOWN_YEARS = 11; // 최근 10개 연도 + 올해(일부만 집계된 경우 포함)
 
   const state = { metric: null, mode: 'level', unit: 'month', basis: 'full', idx: 0, selected: null, playing: false };
   let META, DATA, GEO, MONTHS = [], YEARS = [], timer = null, TOT = null;
@@ -459,28 +464,37 @@
       y: yy, v: yearValue(key, yy, 'level'), g: yearValue(key, yy, 'yoy'),
       partial: nFor(parseInt(yy, 10), state.basis) < 12
     }));
-    const W = 700, top = 30, base = 190;
-    const band = d3.scaleBand(YEARS, [16, W - 16]).padding(0.28);
+    const W = 700, top = 34, base = 188, left = 44;
+    const band = d3.scaleBand(YEARS, [left, W - 12]).padding(0.3);
     const mx = d3.max(data, (d) => d.v) || 1;
-    const yS = d3.scaleLinear([0, mx * 1.05], [base, top]);
-
-    bars.append('line').attr('x1', 8).attr('x2', W - 8).attr('y1', base).attr('y2', base).attr('stroke', 'var(--line)');
+    const yS = d3.scaleLinear([0, mx], [base, top]).nice();
+    const ticks = yS.ticks(4);
+    const defs = bars.append('defs');
+    const mk = (id, c1, c2) => { const g = defs.append('linearGradient').attr('id', id).attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
+      g.append('stop').attr('offset', '0%').attr('stop-color', c1); g.append('stop').attr('offset', '100%').attr('stop-color', c2); };
+    mk('gHi', 'var(--bar-hi2)', 'var(--bar-hi)'); mk('gLo', 'var(--bar)', 'var(--bar)');
+    ticks.forEach((t) => {
+      bars.append('line').attr('class', 'gl').attr('x1', left).attr('x2', W - 8).attr('y1', yS(t)).attr('y2', yS(t));
+      bars.append('text').attr('class', 'gt').attr('x', left - 8).attr('y', yS(t) + 4).text(t === 0 ? '0' : fmtShort(t));
+    });
     const gs = bars.selectAll('g.yr').data(data).join('g').attr('class', 'yr');
     gs.append('rect').attr('class', 'bar')
       .attr('x', (d) => band(d.y)).attr('width', band.bandwidth())
       .attr('y', (d) => d.v == null ? base : yS(d.v)).attr('height', (d) => d.v == null ? 0 : base - yS(d.v))
-      .attr('rx', 3).attr('fill', 'var(--accent)')
-      .attr('opacity', (d) => parseInt(d.y, 10) === cy ? 1 : 0.5)
-      .attr('stroke', (d) => d.partial ? 'var(--accent)' : 'none').attr('stroke-dasharray', (d) => d.partial ? '4 3' : null)
-      .attr('fill-opacity', (d) => d.partial ? 0.55 : 1)
+      .attr('rx', 6)
+      .attr('fill', (d) => parseInt(d.y, 10) === cy ? 'url(#gHi)' : 'url(#gLo)')
+      .attr('opacity', (d) => d.partial ? 0.78 : 1)
       .on('click', (e, d) => setUnit('year', d.y))
       .append('title').text((d) => yearLabel(d.y) + ': ' + fmt(d.v) + def.unit + (d.g != null ? ' (전년 대비 ' + fmtPct(d.g) + ')' : ''));
     gs.append('text').attr('class', 'tv').attr('x', (d) => band(d.y) + band.bandwidth() / 2)
-      .attr('y', (d) => (d.v == null ? base : yS(d.v)) - 6).text((d) => d.v == null ? '' : fmt(d.v));
+      .attr('y', (d) => (d.v == null ? base : yS(d.v)) - 8).text((d) => d.v == null ? '' : fmt(d.v));
     gs.append('text').attr('class', 'tx').attr('x', (d) => band(d.y) + band.bandwidth() / 2).attr('y', base + 18)
+      .style('font-weight', (d) => parseInt(d.y, 10) === cy ? 700 : 400).style('fill', (d) => parseInt(d.y, 10) === cy ? 'var(--ink)' : null)
       .text((d) => d.y + (d.partial ? (stock ? '(' + N + '월)' : '(1~' + N + '월)') : ''));
+    gs.filter((d) => d.g != null).append('rect').attr('class', (d) => 'chip ' + (d.g >= 0 ? 'up' : 'down')).attr('rx', 9)
+      .attr('x', (d) => band(d.y) + band.bandwidth() / 2 - 34).attr('y', base + 28).attr('width', 68).attr('height', 20);
     gs.append('text').attr('class', (d) => 'tg ' + (d.g == null ? 'na' : (d.g >= 0 ? 'up' : 'down')))
-      .attr('x', (d) => band(d.y) + band.bandwidth() / 2).attr('y', base + 38)
+      .attr('x', (d) => band(d.y) + band.bandwidth() / 2).attr('y', base + 42)
       .text((d) => d.g == null ? '–' : (d.g >= 0 ? '▲ ' : '▼ ') + fmtPct(Math.abs(d.g)).replace('+', ''));
 
     // 시도별 한눈에: 최신 연도 값 기준 내림차순
@@ -500,13 +514,12 @@
       d3.select(b.querySelector('svg')).selectAll('rect').data(vals).join('rect')
         .attr('x', (d) => bx(d.y)).attr('width', bx.bandwidth())
         .attr('y', (d) => d.v == null ? 43 : 43 - (d.v / m2) * 40).attr('height', (d) => d.v == null ? 0 : Math.max(1, (d.v / m2) * 40))
-        .attr('rx', 1.5).attr('fill', 'var(--accent)')
-        .attr('opacity', (d) => d.y === latestY ? 1 : 0.45);
+        .attr('rx', 2).attr('fill', (d) => d.y === latestY ? 'var(--bar-hi)' : 'var(--bar)');
     });
 
     const notes = [];
     if (stock) notes.push('미분양은 월말 잔량이라 연말(또는 같은 달 말) 값을 비교합니다.');
-    else if (state.basis === 'full' && N < 12) notes.push(LY + '년은 1~' + N + '월만 집계돼 점선 막대로 표시했고, 전년 대비는 같은 기간끼리 계산했습니다. ‘동기간 비교’를 켜면 모든 해를 1~' + N + '월로 맞춥니다.');
+    else if (state.basis === 'full' && N < 12) notes.push(LY + '년은 1~' + N + '월만 집계돼 연한 막대로 표시했고, 전년 대비는 같은 기간끼리 계산했습니다. ‘동기간 비교’를 켜면 모든 해를 1~' + N + '월로 맞춥니다.');
     else if (state.basis === 'ytd') notes.push('모든 해를 1~' + N + '월 합계로 맞춘 비교입니다.');
     notes.push('막대를 누르면 지도가 그 연도의 연도별 보기로 바뀝니다. 시도 카드를 누르면 위 그래프가 그 지역으로 바뀝니다.');
     $('trendNote').textContent = notes.join(' ');
