@@ -1,0 +1,7973 @@
+{
+ "meta": {
+  "DT_MLTM_666": {
+   "ITM": {
+    "params": {
+     "method": "getMeta",
+     "type": "ITM",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_666"
+    },
+    "result": [
+     {
+      "OBJ_NM_ENG": "Item code list",
+      "ITM_NM_ENG": "Total",
+      "ITM_ID": "13103871094T1",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "항목",
+      "ITM_NM": "합계",
+      "ORG_ID": "116",
+      "OBJ_ID": "ITEM"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Plan",
+      "ITM_ID": "13102871094A.0001",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "계획",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Result",
+      "ITM_ID": "13102871094A.0002",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "실적",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Seoul",
+      "ITM_ID": "13102871094A.0003",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "서울",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Incheon",
+      "ITM_ID": "13102871094A.0004",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "인천",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Gyeonggi",
+      "ITM_ID": "13102871094A.0005",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "경기",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Busan",
+      "ITM_ID": "13102871094A.0006",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "부산",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Daegu",
+      "ITM_ID": "13102871094A.0007",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "대구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Gwangju",
+      "ITM_ID": "13102871094A.0008",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "광주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Daejeon",
+      "ITM_ID": "13102871094A.0009",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "대전",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Ulsan",
+      "ITM_ID": "13102871094A.0010",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "울산",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Sejong",
+      "ITM_ID": "13102871094A.0011",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "세종",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Gangwon",
+      "ITM_ID": "13102871094A.0012",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "강원",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Chungbuk",
+      "ITM_ID": "13102871094A.0013",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "충북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Chungnam",
+      "ITM_ID": "13102871094A.0014",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "충남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Jeonbuk",
+      "ITM_ID": "13102871094A.0015",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "전북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Jeonnam",
+      "ITM_ID": "13102871094A.0016",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "전남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Gyeongbuk",
+      "ITM_ID": "13102871094A.0017",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "경북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Gyeongnam",
+      "ITM_ID": "13102871094A.0018",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "경남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Jeju",
+      "ITM_ID": "13102871094A.0019",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "제주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Capital area",
+      "ITM_ID": "13102871094A.0020",
+      "TBL_ID": "DT_MLTM_666",
+      "OBJ_NM": "시도",
+      "ITM_NM": "수도권",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871094A"
+     }
+    ]
+   },
+   "OBJ": {
+    "params": {
+     "method": "getMeta",
+     "type": "OBJ",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_666"
+    },
+    "result": {
+     "err": "30",
+     "errMsg": "데이터가 존재하지 않습니다."
+    }
+   },
+   "PRD": {
+    "params": {
+     "method": "getMeta",
+     "type": "PRD",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_666"
+    },
+    "result": [
+     {
+      "PRD_SE": "년",
+      "STRT_PRD_DE": "1990",
+      "END_PRD_DE": "2025"
+     }
+    ]
+   }
+  },
+  "DT_MLTM_5386": {
+   "ITM": {
+    "params": {
+     "method": "getMeta",
+     "type": "ITM",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_5386"
+    },
+    "result": [
+     {
+      "OBJ_NM_ENG": "Item code list",
+      "ITM_NM_ENG": "Commencement of Housing Construction",
+      "ITM_ID": "13103766971T1",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "항목",
+      "ITM_NM": "착공실적",
+      "ORG_ID": "116",
+      "OBJ_ID": "ITEM"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Total",
+      "ITM_ID": "13102766971A.0001",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "구  분",
+      "ITM_NM": "총계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101766971A"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Public sector",
+      "ITM_ID": "13102766971A.0002",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "구  분",
+      "ITM_NM": "공공부문",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101766971A"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Sub-total",
+      "ITM_ID": "13102766971A.0003",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "구  분",
+      "ITM_NM": "합",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101766971A"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Local governments",
+      "ITM_ID": "13102766971A.0004",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "구  분",
+      "ITM_NM": "지자체",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101766971A"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Land ＆ Housing Corporation(LH)",
+      "ITM_ID": "13102766971A.0005",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "구  분",
+      "ITM_NM": "LH",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101766971A"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Housing companies",
+      "ITM_ID": "13102766971A.0006",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "구  분",
+      "ITM_NM": "주택업체",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101766971A"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Private sector",
+      "ITM_ID": "13102766971A.0007",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "구  분",
+      "ITM_NM": "민간부문",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101766971A"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Private sector",
+      "ITM_ID": "13102766971A.0008",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "구  분",
+      "ITM_NM": "민간",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101766971A"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Total",
+      "ITM_ID": "13102766971B.0001",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "부문명",
+      "ITM_NM": "총계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101766971B"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Sub-total",
+      "ITM_ID": "13102766971B.0002",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "부문명",
+      "ITM_NM": "소계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101766971B"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "National public housing",
+      "ITM_ID": "13102766971B.0003",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "부문명",
+      "ITM_NM": "국민임대",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101766971B"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Public rental housing",
+      "ITM_ID": "13102766971B.0004",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "부문명",
+      "ITM_NM": "공공임대",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101766971B"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Public parcelling-out",
+      "ITM_ID": "13102766971B.0005",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "부문명",
+      "ITM_NM": "공공분양",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101766971B"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Private Rental Housing",
+      "ITM_ID": "13102766971B.0006",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "부문명",
+      "ITM_NM": "민간임대",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101766971B"
+     },
+     {
+      "OBJ_NM_ENG": "Category",
+      "ITM_NM_ENG": "Private parcelling-out",
+      "ITM_ID": "13102766971B.0007",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "부문명",
+      "ITM_NM": "민간분양",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101766971B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_NM_ENG": "Whole country",
+      "ITM_ID": "13102766971C.0001",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "전국",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_NM_ENG": "Seoul",
+      "ITM_ID": "13102766971C.0002",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "서울",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_NM_ENG": "Incheon",
+      "ITM_ID": "13102766971C.0003",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "인천",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_NM_ENG": "Gyeonggi-do",
+      "ITM_ID": "13102766971C.0004",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "경기",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0006",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "전남광주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_NM_ENG": "Busan",
+      "ITM_ID": "13102766971C.0005",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "부산",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0007",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "대구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0008",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "광주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0009",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "대전",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0010",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "울산",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0011",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "세종",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0012",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "강원",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0013",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "충북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0014",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "충남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0015",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "전북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_NM_ENG": "Gyeongsangbuk-do",
+      "ITM_ID": "13102766971C.0016",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "경북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0017",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "전남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0018",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "경남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     },
+     {
+      "OBJ_NM_ENG": "City/Province",
+      "ITM_ID": "13102766971C.0019",
+      "TBL_ID": "DT_MLTM_5386",
+      "OBJ_NM": "시도별",
+      "ITM_NM": "제주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101766971C"
+     }
+    ]
+   },
+   "OBJ": {
+    "params": {
+     "method": "getMeta",
+     "type": "OBJ",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_5386"
+    },
+    "result": {
+     "err": "30",
+     "errMsg": "데이터가 존재하지 않습니다."
+    }
+   },
+   "PRD": {
+    "params": {
+     "method": "getMeta",
+     "type": "PRD",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_5386"
+    },
+    "result": [
+     {
+      "PRD_SE": "월",
+      "STRT_PRD_DE": "2011.01",
+      "END_PRD_DE": "2026.08"
+     }
+    ]
+   }
+  },
+  "DT_MLTM_5557": {
+   "ITM": {
+    "params": {
+     "method": "getMeta",
+     "type": "ITM",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_5557"
+    },
+    "result": [
+     {
+      "OBJ_NM_ENG": "Item code list",
+      "ITM_ID": "13103133605T1",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "항목",
+      "ITM_NM": "합계",
+      "ORG_ID": "116",
+      "OBJ_ID": "ITEM"
+     },
+     {
+      "OBJ_NM_ENG": "Item code list",
+      "ITM_ID": "13103133605T2",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "항목",
+      "ITM_NM": "분양",
+      "ORG_ID": "116",
+      "OBJ_ID": "ITEM"
+     },
+     {
+      "OBJ_NM_ENG": "Item code list",
+      "ITM_ID": "13103133605T3",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "항목",
+      "ITM_NM": "임대",
+      "ORG_ID": "116",
+      "OBJ_ID": "ITEM"
+     },
+     {
+      "OBJ_NM_ENG": "Item code list",
+      "ITM_ID": "13103133605T4",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "항목",
+      "ITM_NM": "조합",
+      "ORG_ID": "116",
+      "OBJ_ID": "ITEM"
+     },
+     {
+      "ITM_ID": "13102133605A.0001",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분1",
+      "ITM_NM": "합계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101133605A"
+     },
+     {
+      "ITM_ID": "13102133605A.0002",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분1",
+      "ITM_NM": "수도권",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101133605A"
+     },
+     {
+      "ITM_ID": "13102133605A.0003",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분1",
+      "ITM_NM": "지방",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101133605A"
+     },
+     {
+      "ITM_ID": "13102133605B.0001",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "합계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0002",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "소계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0003",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "서울",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0004",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "인천",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0005",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "경기",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0006",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "전남광주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0007",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "부산",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0008",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "대구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0009",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "광주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0010",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "대전",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0011",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "울산",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0012",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "세종",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0013",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "강원",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0014",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "충북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0015",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "충남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0016",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "전북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0017",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "경북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0018",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "전남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0019",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "경남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605B.0020",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "구분2",
+      "ITM_NM": "제주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101133605B"
+     },
+     {
+      "ITM_ID": "13102133605C.0001",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "레벨01",
+      "ITM_NM": "순계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101133605C"
+     },
+     {
+      "ITM_ID": "13102133605C.0002",
+      "TBL_ID": "DT_MLTM_5557",
+      "OBJ_NM": "레벨01",
+      "ITM_NM": "누계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101133605C"
+     }
+    ]
+   },
+   "OBJ": {
+    "params": {
+     "method": "getMeta",
+     "type": "OBJ",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_5557"
+    },
+    "result": {
+     "err": "30",
+     "errMsg": "데이터가 존재하지 않습니다."
+    }
+   },
+   "PRD": {
+    "params": {
+     "method": "getMeta",
+     "type": "PRD",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_5557"
+    },
+    "result": [
+     {
+      "PRD_SE": "월",
+      "STRT_PRD_DE": "2013.01",
+      "END_PRD_DE": "2026.08"
+     }
+    ]
+   }
+  },
+  "DT_MLTM_2082": {
+   "ITM": {
+    "params": {
+     "method": "getMeta",
+     "type": "ITM",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_2082"
+    },
+    "result": [
+     {
+      "OBJ_NM_ENG": "Item code list",
+      "ITM_NM_ENG": "Unsold Housing",
+      "ITM_ID": "13103871087T1",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "항목",
+      "ITM_NM": "미분양현황",
+      "ORG_ID": "116",
+      "OBJ_ID": "ITEM"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0001",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "전국",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0002",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "서울",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0018",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "전남광주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0003",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "부산",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0004",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "대구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0005",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "인천",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0006",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "광주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0007",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "대전",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0008",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "울산",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0009",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "경기",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0010",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "강원",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0011",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "충북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0012",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "충남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0019",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "세종",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0013",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "전북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0014",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "전남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0015",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "경북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0016",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "경남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087A.0017",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "구분",
+      "ITM_NM": "제주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871087A"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0001",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0002",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "종로구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0003",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강남구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0004",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "중구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0005",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "용산구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0006",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강동구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0007",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "성동구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0008",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강북구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0009",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "광진구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0010",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강서구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0011",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "관악구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0012",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "동대문구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0013",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "중랑구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0014",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "성북구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0015",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "구로구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0016",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "금천구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0017",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "노원구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0018",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "도봉구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0019",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "은평구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0020",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "동작구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0021",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서대문구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0022",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "마포구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0023",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "양천구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0024",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서초구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0025",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영등포구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0026",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "송파구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0027",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "목포시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0028",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0029",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "여수시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0030",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "순천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0031",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "금정구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0032",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "동구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0033",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "나주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0034",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영도구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0035",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "기장군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0036",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "남구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0037",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "부산진구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0038",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "광양시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0039",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "동래구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0040",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "북구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0041",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "해운대구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0042",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "사하구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0043",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "광산구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0044",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "사상구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0045",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "담양군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0046",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "곡성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0047",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "수영구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0048",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "연제구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0049",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "구례군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0050",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "고흥군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0051",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "보성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0052",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "화순군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0053",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "장흥군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0054",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강진군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0055",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "해남군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0056",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영암군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0057",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "무안군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0058",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "함평군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0059",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영광군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0060",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "수성구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0061",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "장성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0062",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "달서구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0063",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "완도군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0064",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "달성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0065",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "군위군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0066",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "진도군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0067",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "신안군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0068",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "남동구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0069",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "연수구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0070",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "미추홀구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0071",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "부평구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0072",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "계양구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0073",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강화군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0074",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "옹진군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0075",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "유성구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0076",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "대덕구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0077",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "울주군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0078",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "수원시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0079",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "세종시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0080",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영종구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0081",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "가평군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0082",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "성남시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0083",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서해구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0084",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "의정부시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0085",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "고양시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0086",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "안양시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0087",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "검단구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0088",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "과천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0089",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "광명시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0090",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "부천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0091",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "광주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0092",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "구리시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0093",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "제물포구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0094",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "평택시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0095",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "군포시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0096",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "동두천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0097",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "안산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0098",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "김포시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0099",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "남양주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0100",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "오산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0101",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "시흥시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0102",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "안성시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0103",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "의왕시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0104",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "양주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0105",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "하남시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0106",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "양평군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0107",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "용인시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0108",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "여주군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0109",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "파주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0110",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "연천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0111",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "이천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0112",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "여주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0113",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "화성시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0114",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "포천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0115",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "춘천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0116",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "원주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0117",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강릉시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0118",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "동해시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0119",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "태백시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0120",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "속초시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0121",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "삼척시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0122",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "홍천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0123",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "횡성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0124",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영월군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0125",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "평창군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0126",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "정선군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0127",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "철원군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0128",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "화천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0129",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "양구군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0130",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "인제군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0131",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "고성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0132",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "양양군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0133",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "청주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0134",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "괴산군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0135",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "충주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0136",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "제천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0137",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "단양군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0138",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "청원군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0139",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "보은군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0140",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영동군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0141",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "옥천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0142",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "증평군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0143",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "음성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0144",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "진천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0145",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "천안시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0146",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "공주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0147",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "보령시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0148",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "계룡시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0149",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "아산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0150",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0151",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "금산군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0152",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "논산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0153",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "당진시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0154",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "부여군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0155",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "연기군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0156",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0157",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "청양군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0158",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "홍성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0159",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "예산군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0160",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "태안군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0161",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "당진군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0162",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "전주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0163",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "조치원읍",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0164",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "군산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0165",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "익산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0166",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "정읍시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0167",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "남원시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0168",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "김제시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0169",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "완주군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0170",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "진안군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0171",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "무주군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0172",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "장수군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0173",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "임실군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0174",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "순창군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0175",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "고창군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0176",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "부안군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0177",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "포항시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0178",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "경주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0179",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "김천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0180",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "안동시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0181",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "구미시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0182",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0183",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0184",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "상주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0185",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "문경시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0186",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "경산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0187",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "의성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0188",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "청송군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0189",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영양군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0190",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영덕군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0191",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "청도군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0192",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "고령군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0193",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "성주군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0194",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "칠곡군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0195",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "예천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0196",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "봉화군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0197",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "울진군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0198",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "울릉군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0199",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "창원시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0200",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "마산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0201",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "진주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0202",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "통영시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0203",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "사천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0204",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "진해시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0205",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "김해시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0206",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "밀양시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0207",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "거제시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0208",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "양산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0209",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "의령군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0210",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "함안군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0211",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "창녕군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0212",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "남해군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0213",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "하동군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0214",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "산청군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0215",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "함양군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0216",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "거창군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0217",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "합천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0218",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "제주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     },
+     {
+      "OBJ_NM_ENG": "SiGunGu",
+      "ITM_ID": "13102871087B.0219",
+      "TBL_ID": "DT_MLTM_2082",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서귀포시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871087B"
+     }
+    ]
+   },
+   "OBJ": {
+    "params": {
+     "method": "getMeta",
+     "type": "OBJ",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_2082"
+    },
+    "result": {
+     "err": "30",
+     "errMsg": "데이터가 존재하지 않습니다."
+    }
+   },
+   "PRD": {
+    "params": {
+     "method": "getMeta",
+     "type": "PRD",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_2082"
+    },
+    "result": [
+     {
+      "PRD_SE": "월",
+      "STRT_PRD_DE": "2000.12",
+      "END_PRD_DE": "2026.08"
+     }
+    ]
+   }
+  },
+  "DT_MLTM_5328": {
+   "ITM": {
+    "params": {
+     "method": "getMeta",
+     "type": "ITM",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_5328"
+    },
+    "result": [
+     {
+      "OBJ_NM_ENG": "Item code list",
+      "ITM_NM_ENG": "Unit",
+      "ITM_ID": "13103871088T1",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "항목",
+      "ITM_NM": "호",
+      "ORG_ID": "116",
+      "OBJ_ID": "ITEM"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Whole country",
+      "ITM_ID": "13102871088A.0001",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "전국",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Seoul",
+      "ITM_ID": "13102871088A.0002",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "서울",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0004",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "전남광주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Busan",
+      "ITM_ID": "13102871088A.0003",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "부산",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0005",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "대구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0006",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "인천",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0007",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "광주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0008",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "대전",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0009",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "울산",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0010",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "경기",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0012",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "강원",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0013",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "충북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0014",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "충남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0011",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "세종",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0015",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "전북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0016",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "전남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0017",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "경북",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0018",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "경남",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088A.0019",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "구분",
+      "ITM_NM": "제주",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "1",
+      "OBJ_ID": "13101871088A"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Total",
+      "ITM_ID": "13102871088B.0001",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "합계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Sub Total",
+      "ITM_ID": "13102871088B.0002",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Jongno-gu",
+      "ITM_ID": "13102871088B.0003",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "종로구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Jung-gu",
+      "ITM_ID": "13102871088B.0004",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "중구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0005",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "용산구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0006",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "성동구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Gwangjin-gu",
+      "ITM_ID": "13102871088B.0007",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "광진구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Dongdaemun-gu",
+      "ITM_ID": "13102871088B.0008",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "동대문구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Seongbuk-gu",
+      "ITM_ID": "13102871088B.0009",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "성북구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0010",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "노원구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0011",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "중랑구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Eunpyeong-gu",
+      "ITM_ID": "13102871088B.0012",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "은평구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0013",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서대문구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0014",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강북구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0015",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "도봉구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0016",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "마포구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Yangcheon-gu",
+      "ITM_ID": "13102871088B.0017",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "양천구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Gangseo-gu",
+      "ITM_ID": "13102871088B.0018",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강서구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Guro-gu",
+      "ITM_ID": "13102871088B.0019",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "구로구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Yeongdeungpo-gu",
+      "ITM_ID": "13102871088B.0020",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영등포구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Dongjak-gu",
+      "ITM_ID": "13102871088B.0021",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "동작구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Gwanak-gu",
+      "ITM_ID": "13102871088B.0022",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "관악구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Seocho-gu",
+      "ITM_ID": "13102871088B.0023",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서초구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0024",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "금천구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0025",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강남구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Gangdong-gu",
+      "ITM_ID": "13102871088B.0026",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강동구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Seo-gu",
+      "ITM_ID": "13102871088B.0027",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Dong-gu",
+      "ITM_ID": "13102871088B.0028",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "동구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0029",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "송파구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0030",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영도구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Busanjin-gu",
+      "ITM_ID": "13102871088B.0031",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "부산진구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Dongnae-gu",
+      "ITM_ID": "13102871088B.0032",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "동래구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Nam-gu",
+      "ITM_ID": "13102871088B.0033",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "남구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Buk-gu",
+      "ITM_ID": "13102871088B.0034",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "북구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Haeundae-gu",
+      "ITM_ID": "13102871088B.0035",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "해운대구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Saha-gu",
+      "ITM_ID": "13102871088B.0036",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "사하구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_NM_ENG": "Geumjeong-gu",
+      "ITM_ID": "13102871088B.0037",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "금정구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0038",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "목포시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0039",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "여수시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0040",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "연제구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0041",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "순천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0042",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "수영구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0043",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "사상구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0044",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "나주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0045",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "기장군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0046",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "광양시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0047",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "광산구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0048",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "수성구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0049",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "담양군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0050",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "달서구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0051",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "곡성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0052",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "달성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0053",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "구례군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0054",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "고흥군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0055",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "보성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0056",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "연수구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0057",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "화순군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0058",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "남동구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0059",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "장흥군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0060",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "부평구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0061",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강진군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0062",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "계양구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0063",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "해남군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0064",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영암군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0065",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강화군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0066",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "무안군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0067",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "남구(미추홀구)",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0068",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "미추홀구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0069",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "함평군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0070",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영광군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0071",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "장성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0072",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "완도군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0073",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "진도군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0074",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "군위군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0075",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "신안군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0076",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "옹진군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0077",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "유성구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0078",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "대덕구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0079",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "울주군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0080",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "수원시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0081",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "성남시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0082",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "의정부시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0083",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "안양시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0084",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "부천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0085",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "광명시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0086",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "평택시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0087",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "동두천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0088",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "세종시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0089",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "안산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0090",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "고양시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0091",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "과천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0092",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "구리시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0093",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "남양주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0094",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "오산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0095",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "시흥시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0096",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "군포시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0097",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "의왕시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0098",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "하남시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0099",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "용인시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0100",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "파주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0101",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "이천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0102",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "안성시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0103",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영종구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0104",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "김포시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0105",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "양주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0106",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "여주군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0107",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서해구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0108",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "화성시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0109",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "검단구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0110",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "광주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0111",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "연천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0112",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "포천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0113",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "제물포구",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0114",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "가평군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0115",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "양평군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0116",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "여주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0117",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "춘천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0118",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "원주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0119",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "강릉시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0120",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "동해시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0121",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "태백시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0122",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "속초시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0123",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "삼척시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0124",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "홍천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0125",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "횡성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0126",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영월군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0127",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "평창군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0128",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "정선군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0129",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "철원군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0130",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "화천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0131",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "양구군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0132",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "인제군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0133",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "고성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0134",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "양양군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0135",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "청주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0136",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "충주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0137",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "제천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0138",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "청원군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0139",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "보은군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0140",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "옥천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0141",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영동군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0142",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "증평군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0143",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "진천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0144",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "괴산군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0145",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "음성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0146",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "단양군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0147",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "천안시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0148",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "공주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0149",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "보령시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0150",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "아산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0151",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0152",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "논산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0153",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "계룡시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0154",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "금산군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0155",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "연기군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0156",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "부여군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0157",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0158",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "청양군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0159",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "홍성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0160",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "예산군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0161",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "당진시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0162",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "태안군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0163",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "당진군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0164",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "전주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0165",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "군산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0166",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "익산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0167",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "정읍시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0168",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "남원시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0169",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "김제시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0170",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "완주군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0171",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "진안군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0172",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "무주군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0173",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "장수군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0174",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "조치원읍",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0175",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "임실군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0176",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "순창군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0177",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "고창군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0178",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "부안군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0179",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "포항시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0180",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "경주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0181",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "김천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0182",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "안동시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0183",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "구미시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0184",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0185",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0186",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "상주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0187",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "문경시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0188",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "경산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0189",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "의성군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0190",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "청송군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0191",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영양군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0192",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "영덕군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0193",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "청도군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0194",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "고령군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0195",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "성주군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0196",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "칠곡군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0197",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "예천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0198",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "봉화군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0199",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "울진군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0200",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "울릉군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0201",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "창원시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0202",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "진주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0203",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "통영시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0204",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "사천시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0205",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "김해시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0206",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "밀양시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0207",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "거제시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0208",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "양산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0209",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "의령군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0210",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "함안군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0211",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "창녕군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0212",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "남해군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0213",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "하동군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0214",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "산청군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0215",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "함양군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0216",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "거창군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0217",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "합천군",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0218",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "제주시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0219",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "서귀포시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0220",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "마산시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "City/Provinces",
+      "ITM_ID": "13102871088B.0221",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "시군구",
+      "ITM_NM": "진해시",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "2",
+      "OBJ_ID": "13101871088B"
+     },
+     {
+      "OBJ_NM_ENG": "Classification",
+      "ITM_NM_ENG": "Total",
+      "ITM_ID": "13102871088C.0001",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "부문",
+      "ITM_NM": "계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101871088C"
+     },
+     {
+      "OBJ_NM_ENG": "Classification",
+      "ITM_NM_ENG": "Public Sector",
+      "ITM_ID": "13102871088C.0002",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "부문",
+      "ITM_NM": "공공부문",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101871088C"
+     },
+     {
+      "OBJ_NM_ENG": "Classification",
+      "ITM_NM_ENG": "Private Sector",
+      "ITM_ID": "13102871088C.0003",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "부문",
+      "ITM_NM": "민간부문",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "3",
+      "OBJ_ID": "13101871088C"
+     },
+     {
+      "OBJ_NM_ENG": "By housing size",
+      "ITM_NM_ENG": "Total",
+      "ITM_ID": "13102871088D.0001",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "규모",
+      "ITM_NM": "계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "4",
+      "OBJ_ID": "13101871088D"
+     },
+     {
+      "OBJ_NM_ENG": "By housing size",
+      "ITM_NM_ENG": "Public sector",
+      "ITM_ID": "13102871088D.0002",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "규모",
+      "ITM_NM": "공공부문",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "4",
+      "OBJ_ID": "13101871088D"
+     },
+     {
+      "OBJ_NM_ENG": "By housing size",
+      "ITM_NM_ENG": "Sub Total",
+      "ITM_ID": "13102871088D.0003",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "규모",
+      "ITM_NM": "소계",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "4",
+      "OBJ_ID": "13101871088D"
+     },
+     {
+      "OBJ_NM_ENG": "By housing size",
+      "ITM_NM_ENG": "Under 40㎡",
+      "ITM_ID": "13102871088D.0004",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "규모",
+      "ITM_NM": "40㎡이하",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "4",
+      "OBJ_ID": "13101871088D"
+     },
+     {
+      "OBJ_NM_ENG": "By housing size",
+      "ITM_NM_ENG": "Under 60㎡",
+      "ITM_ID": "13102871088D.0005",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "규모",
+      "ITM_NM": "60㎡이하",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "4",
+      "OBJ_ID": "13101871088D"
+     },
+     {
+      "OBJ_NM_ENG": "By housing size",
+      "ITM_ID": "13102871088D.0006",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "규모",
+      "ITM_NM": "40~60㎡",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "4",
+      "OBJ_ID": "13101871088D"
+     },
+     {
+      "OBJ_NM_ENG": "By housing size",
+      "ITM_ID": "13102871088D.0007",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "규모",
+      "ITM_NM": "60~85㎡",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "4",
+      "OBJ_ID": "13101871088D"
+     },
+     {
+      "OBJ_NM_ENG": "By housing size",
+      "ITM_NM_ENG": "Over 85㎡",
+      "ITM_ID": "13102871088D.0008",
+      "TBL_ID": "DT_MLTM_5328",
+      "OBJ_NM": "규모",
+      "ITM_NM": "85㎡초과",
+      "ORG_ID": "116",
+      "OBJ_ID_SN": "4",
+      "OBJ_ID": "13101871088D"
+     }
+    ]
+   },
+   "OBJ": {
+    "params": {
+     "method": "getMeta",
+     "type": "OBJ",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_5328"
+    },
+    "result": {
+     "err": "30",
+     "errMsg": "데이터가 존재하지 않습니다."
+    }
+   },
+   "PRD": {
+    "params": {
+     "method": "getMeta",
+     "type": "PRD",
+     "format": "json",
+     "jsonVD": "Y",
+     "orgId": "116",
+     "tblId": "DT_MLTM_5328"
+    },
+    "result": [
+     {
+      "PRD_SE": "월",
+      "STRT_PRD_DE": "2007.01",
+      "END_PRD_DE": "2026.08"
+     }
+    ]
+   }
+  }
+ },
+ "probe": {
+  "start_5386": {
+   "params": {
+    "method": "getList",
+    "orgId": "116",
+    "tblId": "DT_MLTM_5386",
+    "itmId": "13103766971T1",
+    "prdSe": "M",
+    "newEstPrdCnt": 2,
+    "format": "json",
+    "jsonVD": "Y",
+    "objL1": "13102766971A.0001",
+    "objL2": "13102766971B.0001",
+    "objL3": "ALL"
+   },
+   "count": 34,
+   "rows": [
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "전국",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "20378",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "전국",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "18013",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "서울",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "6386",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "서울",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "1172",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "인천",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "245",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "인천",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "3605",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "경기",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "6059",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "경기",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "4068",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "부산",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "1350",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "부산",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "325",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "전남광주",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "814",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "전남광주",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "3600",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "대구",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "17",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "대구",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "8",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "대전",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "10",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "대전",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "19",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "울산",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "2277",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "울산",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "110",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "세종",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "685",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "세종",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "6",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "강원",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "715",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "강원",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "135",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "충북",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "114",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "충북",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "837",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "충남",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "139",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "충남",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "3281",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "전북",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "101",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "전북",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "442",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "경북",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "174",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "경북",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "165",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "경남",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "1115",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "경남",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "104",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "제주",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "177",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "제주",
+     "ITM_NM": "착공실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "136",
+     "UNIT_NM": "호"
+    }
+   ],
+   "all_keys": [
+    "C1",
+    "C1_NM",
+    "C1_NM_ENG",
+    "C1_OBJ_NM",
+    "C1_OBJ_NM_ENG",
+    "C2",
+    "C2_NM",
+    "C2_NM_ENG",
+    "C2_OBJ_NM",
+    "C2_OBJ_NM_ENG",
+    "C3",
+    "C3_NM",
+    "C3_NM_ENG",
+    "C3_OBJ_NM",
+    "C3_OBJ_NM_ENG",
+    "DT",
+    "ITM_ID",
+    "ITM_NM",
+    "ITM_NM_ENG",
+    "LST_CHN_DE",
+    "ORG_ID",
+    "PRD_DE",
+    "PRD_SE",
+    "TBL_ID",
+    "TBL_NM",
+    "UNIT_NM",
+    "UNIT_NM_ENG"
+   ]
+  },
+  "complete_5372": {
+   "params": {
+    "method": "getList",
+    "orgId": "116",
+    "tblId": "DT_MLTM_5372",
+    "itmId": "13103766972T1",
+    "prdSe": "M",
+    "newEstPrdCnt": 2,
+    "format": "json",
+    "jsonVD": "Y",
+    "objL1": "13102766972A.0001",
+    "objL2": "13102766972B.0001",
+    "objL3": "ALL"
+   },
+   "count": 34,
+   "rows": [
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "전국",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "31778",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "전국",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "15151",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "서울",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "5756",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "서울",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "4714",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "인천",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "2810",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "인천",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "190",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "경기",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "9713",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "경기",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "3967",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "부산",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "2477",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "부산",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "107",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "전남광주",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "876",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "전남광주",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "1460",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "대구",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "19",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "대구",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "24",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "대전",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "1757",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "대전",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "7",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "울산",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "863",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "울산",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "681",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "세종",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "9",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "세종",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "8",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "강원",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "2236",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "강원",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "2067",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "충북",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "1430",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "충북",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "166",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "충남",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "2475",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "충남",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "605",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "전북",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "390",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "전북",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "147",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "경북",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "759",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "경북",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "302",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "경남",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "133",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "경남",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "394",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "제주",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "75",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "총계",
+     "C2_NM": "총계",
+     "C3_NM": "제주",
+     "ITM_NM": "사용검사실적",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "312",
+     "UNIT_NM": "호"
+    }
+   ],
+   "all_keys": [
+    "C1",
+    "C1_NM",
+    "C1_NM_ENG",
+    "C1_OBJ_NM",
+    "C1_OBJ_NM_ENG",
+    "C2",
+    "C2_NM",
+    "C2_NM_ENG",
+    "C2_OBJ_NM",
+    "C2_OBJ_NM_ENG",
+    "C3",
+    "C3_NM",
+    "C3_NM_ENG",
+    "C3_OBJ_NM",
+    "C3_OBJ_NM_ENG",
+    "DT",
+    "ITM_ID",
+    "ITM_NM",
+    "ITM_NM_ENG",
+    "LST_CHN_DE",
+    "ORG_ID",
+    "PRD_DE",
+    "PRD_SE",
+    "TBL_ID",
+    "TBL_NM",
+    "UNIT_NM",
+    "UNIT_NM_ENG"
+   ]
+  },
+  "sale_5557": {
+   "params": {
+    "method": "getList",
+    "orgId": "116",
+    "tblId": "DT_MLTM_5557",
+    "itmId": "13103133605T1",
+    "prdSe": "M",
+    "newEstPrdCnt": 2,
+    "format": "json",
+    "jsonVD": "Y",
+    "objL1": "ALL",
+    "objL2": "ALL",
+    "objL3": "13102133605C.0001"
+   },
+   "count": 38,
+   "rows": [
+    {
+     "C1_NM": "합계",
+     "C2_NM": "합계",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "18833",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "합계",
+     "C2_NM": "합계",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "17295",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "수도권",
+     "C2_NM": "소계",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "10405",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "수도권",
+     "C2_NM": "소계",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "14587",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "수도권",
+     "C2_NM": "서울",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "716",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "수도권",
+     "C2_NM": "서울",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "1473",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "수도권",
+     "C2_NM": "인천",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "수도권",
+     "C2_NM": "인천",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "4372",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "수도권",
+     "C2_NM": "경기",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "9689",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "수도권",
+     "C2_NM": "경기",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "8742",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "소계",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "8428",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "소계",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "2708",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "전남광주",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "40",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "전남광주",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "638",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "부산",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "1575",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "부산",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "대구",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "대구",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "360",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "대전",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "대전",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "울산",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "74",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "울산",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "세종",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "676",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "세종",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "강원",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "660",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "강원",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "378",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "충북",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "충북",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "충남",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "1657",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "충남",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "전북",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "전북",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "300",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "경북",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "경북",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "경남",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "3746",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "경남",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "1032",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "제주",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "0",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "지방",
+     "C2_NM": "제주",
+     "C3_NM": "순계",
+     "ITM_NM": "합계",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "0",
+     "UNIT_NM": "호"
+    }
+   ],
+   "all_keys": [
+    "C1",
+    "C1_NM",
+    "C1_OBJ_NM",
+    "C2",
+    "C2_NM",
+    "C2_OBJ_NM",
+    "C3",
+    "C3_NM",
+    "C3_OBJ_NM",
+    "DT",
+    "ITM_ID",
+    "ITM_NM",
+    "LST_CHN_DE",
+    "ORG_ID",
+    "PRD_DE",
+    "PRD_SE",
+    "TBL_ID",
+    "TBL_NM",
+    "UNIT_NM",
+    "UNIT_NM_ENG"
+   ]
+  },
+  "unsold_2082": {
+   "params": {
+    "method": "getList",
+    "orgId": "116",
+    "tblId": "DT_MLTM_2082",
+    "itmId": "13103871087T1",
+    "prdSe": "M",
+    "newEstPrdCnt": 2,
+    "format": "json",
+    "jsonVD": "Y",
+    "objL1": "ALL",
+    "objL2": "13102871087B.0001"
+   },
+   "count": 32,
+   "rows": [
+    {
+     "C1_NM": "서울",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "994",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "서울",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "898",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "부산",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "8379",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "부산",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "7594",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "대구",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "4278",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "대구",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "4162",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "인천",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "4071",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "인천",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "3729",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "대전",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "1866",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "대전",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "2521",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "울산",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "1192",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "울산",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "1190",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "경기",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "14394",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "경기",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "14509",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "강원",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "3248",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "강원",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "3018",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "충북",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "1360",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "충북",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "1250",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "충남",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "9982",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "충남",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "9579",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "전북",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "1657",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "전북",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "1528",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "경북",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "5107",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "경북",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "5879",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "경남",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "4627",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "경남",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "6324",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "제주",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "3303",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "제주",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "3268",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "전남광주",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "3716",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "전남광주",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "3642",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "세종",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202607",
+     "DT": "43",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "세종",
+     "C2_NM": "계",
+     "ITM_NM": "미분양현황",
+     "PRD_SE": "M",
+     "PRD_DE": "202608",
+     "DT": "43",
+     "UNIT_NM": "호"
+    }
+   ],
+   "all_keys": [
+    "C1",
+    "C1_NM",
+    "C1_OBJ_NM",
+    "C1_OBJ_NM_ENG",
+    "C2",
+    "C2_NM",
+    "C2_OBJ_NM",
+    "C2_OBJ_NM_ENG",
+    "DT",
+    "ITM_ID",
+    "ITM_NM",
+    "ITM_NM_ENG",
+    "LST_CHN_DE",
+    "ORG_ID",
+    "PRD_DE",
+    "PRD_SE",
+    "TBL_ID",
+    "TBL_NM",
+    "UNIT_NM",
+    "UNIT_NM_ENG"
+   ]
+  },
+  "unsold_post_5328_B1": {
+   "params": {
+    "method": "getList",
+    "orgId": "116",
+    "tblId": "DT_MLTM_5328",
+    "itmId": "13103871088T1",
+    "prdSe": "M",
+    "newEstPrdCnt": 2,
+    "format": "json",
+    "jsonVD": "Y",
+    "objL1": "ALL",
+    "objL2": "13102871088B.0001"
+   },
+   "result": {
+    "err": "20",
+    "errMsg": "필수요청변수값이 누락되었습니다. (objL)"
+   }
+  },
+  "unsold_post_5328_B2": {
+   "params": {
+    "method": "getList",
+    "orgId": "116",
+    "tblId": "DT_MLTM_5328",
+    "itmId": "13103871088T1",
+    "prdSe": "M",
+    "newEstPrdCnt": 2,
+    "format": "json",
+    "jsonVD": "Y",
+    "objL1": "ALL",
+    "objL2": "13102871088B.0002"
+   },
+   "result": {
+    "err": "20",
+    "errMsg": "필수요청변수값이 누락되었습니다. (objL)"
+   }
+  },
+  "permit_666_o1": {
+   "params": {
+    "method": "getList",
+    "orgId": "116",
+    "tblId": "DT_MLTM_666",
+    "itmId": "ALL",
+    "prdSe": "M",
+    "newEstPrdCnt": 2,
+    "format": "json",
+    "jsonVD": "Y",
+    "objL1": "ALL"
+   },
+   "count": 38,
+   "rows": [
+    {
+     "C1_NM": "실적",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "435234",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "실적",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "388362",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "서울",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "51452",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "서울",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "41938",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "인천",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "21428",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "인천",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "26937",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "경기",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "161203",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "경기",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "159966",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "부산",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "29395",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "부산",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "30738",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "대구",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "3223",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "대구",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "5034",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "광주",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "5754",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "광주",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "7761",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "대전",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "28340",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "대전",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "17526",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "울산",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "4852",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "울산",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "9771",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "세종",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "9039",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "세종",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "277",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "강원",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "13572",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "강원",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "6882",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "충북",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "19838",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "충북",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "5535",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "충남",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "29574",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "충남",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "33003",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "전북",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "7375",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "전북",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "9914",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "전남",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "5727",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "전남",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "11462",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "경북",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "19247",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "경북",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "11253",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "경남",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "21939",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "경남",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "7994",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "제주",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "3276",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "제주",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "2371",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "수도권",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2024",
+     "DT": "234083",
+     "UNIT_NM": "호"
+    },
+    {
+     "C1_NM": "수도권",
+     "ITM_NM": "합계",
+     "PRD_SE": "A",
+     "PRD_DE": "2025",
+     "DT": "228841",
+     "UNIT_NM": "호"
+    }
+   ],
+   "all_keys": [
+    "C1",
+    "C1_NM",
+    "C1_NM_ENG",
+    "C1_OBJ_NM",
+    "C1_OBJ_NM_ENG",
+    "DT",
+    "ITM_ID",
+    "ITM_NM",
+    "ITM_NM_ENG",
+    "LST_CHN_DE",
+    "ORG_ID",
+    "PRD_DE",
+    "PRD_SE",
+    "TBL_ID",
+    "TBL_NM",
+    "UNIT_NM",
+    "UNIT_NM_ENG"
+   ]
+  },
+  "permit_666_o2": {
+   "params": {
+    "method": "getList",
+    "orgId": "116",
+    "tblId": "DT_MLTM_666",
+    "itmId": "ALL",
+    "prdSe": "M",
+    "newEstPrdCnt": 2,
+    "format": "json",
+    "jsonVD": "Y",
+    "objL1": "ALL",
+    "objL2": "ALL"
+   },
+   "result": {
+    "err": "21",
+    "errMsg": "잘못된 요청 변수를 호출 하였습니다."
+   }
+  },
+  "permit_666_o3": {
+   "params": {
+    "method": "getList",
+    "orgId": "116",
+    "tblId": "DT_MLTM_666",
+    "itmId": "ALL",
+    "prdSe": "M",
+    "newEstPrdCnt": 2,
+    "format": "json",
+    "jsonVD": "Y",
+    "objL1": "ALL",
+    "objL2": "ALL",
+    "objL3": "ALL"
+   },
+   "result": {
+    "err": "21",
+    "errMsg": "잘못된 요청 변수를 호출 하였습니다."
+   }
+  }
+ }
+}
