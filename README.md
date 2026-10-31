@@ -6,12 +6,12 @@
 - 데이터: KOSIS OpenAPI → `data/housing.json` (GitHub Actions가 매일 확인해 바뀐 경우에만 커밋)
 - 지도 경계: `data/provinces.geo.json` (KOSTAT 2013 시도 경계, southkorea/southkorea-maps)
 
-## 설정
+## 운영
 
-1. `config/sources.json`의 지표별 `url_template`에 KOSIS 통계자료 요청 URL을 넣습니다. API 키 자리는 `{API_KEY}`로 둡니다.
-2. 저장소 Settings → Secrets and variables → Actions에 `KOSIS_API_KEY`를 등록합니다.
-3. Settings → Pages에서 Source를 `Deploy from a branch`, Branch를 `main` / `(root)`로 지정합니다.
-4. Actions 탭에서 `Update housing data`를 한 번 수동 실행하면 지도가 채워집니다.
+- `KOSIS_API_KEY`를 저장소 Secret에 등록해 두면 `Update housing data` 워크플로가 매일 KOSIS를 확인해 바뀐 데이터만 커밋합니다.
+- `Deploy Pages` 워크플로가 `index.html`·`data/`가 바뀌거나 데이터 갱신이 끝날 때마다 사이트를 다시 배포합니다.
+- Pages가 자동으로 켜지지 않으면 Settings → Pages에서 Source를 `GitHub Actions`로 지정하세요.
+- 수집 결과 요약은 `data/_fetch_log.json`에서 볼 수 있습니다.
 
 ## 사용한 KOSIS 통계표 (국토교통부, orgId 116)
 
