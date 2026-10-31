@@ -145,9 +145,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script>
 (function () {
-  const NAMES = {'11':'서울','21':'부산','22':'대구','23':'인천','24':'광주','25':'대전','26':'울산','29':'세종',
-    '31':'경기','32':'강원','33':'충북','34':'충남','35':'전북','36':'전남','37':'경북','38':'경남','39':'제주'};
+  // 광주·전남은 2026년 중반부터 '전남광주'로 합쳐서 공표된다 → 데이터 코드 2436 하나로 다루고 지도에서도 한 덩어리로 칠한다.
+  const NAMES = {'11':'서울','21':'부산','22':'대구','23':'인천','25':'대전','26':'울산','29':'세종',
+    '31':'경기','32':'강원','33':'충북','34':'충남','35':'전북','37':'경북','38':'경남','39':'제주','2436':'전남광주'};
   const CODES = Object.keys(NAMES);
+  const GROUP = { '24': '2436', '36': '2436' };
+  const gcode = (f) => GROUP[f.properties.code] || f.properties.code;
   const state = { metric: null, mode: 'level', idx: 0, selected: null, playing: false };
   let META, DATA, GEO, MONTHS = [], timer = null;
 
@@ -210,15 +213,16 @@
     paths = g.selectAll('path').data(GEO.features).join('path')
       .attr('class', 'region').attr('d', pathGen)
       .attr('tabindex', 0)
-      .on('mousemove', (e, f) => showTip(e, f.properties.code))
-      .on('mouseenter', (e, f) => highlight(f.properties.code, true))
-      .on('mouseleave', (e, f) => { hideTip(); highlight(f.properties.code, false); })
-      .on('click', (e, f) => selectRegion(f.properties.code))
-      .on('keydown', (e, f) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectRegion(f.properties.code); } });
+      .on('mousemove', (e, f) => showTip(e, gcode(f)))
+      .on('mouseenter', (e, f) => highlight(gcode(f), true))
+      .on('mouseleave', (e, f) => { hideTip(); highlight(gcode(f), false); })
+      .on('click', (e, f) => selectRegion(gcode(f)))
+      .on('keydown', (e, f) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectRegion(gcode(f)); } });
     const lg = svg.append('g');
     // 경기는 서울·인천을 감싸는 모양이라 중심점이 서울과 겹친다 → 라벨 위치를 직접 지정한다.
     const LABEL_AT = { '31': { lonlat: [127.5, 37.3] }, '11': { dx: -70, dy: -38 } };
-    labels = lg.selectAll('g').data(GEO.features.filter((f) => pathGen.area(f) > 260)).join('g')
+    // 광주(24)는 전남(36)과 한 덩어리라 라벨은 전남 쪽에 하나만 둔다.
+    labels = lg.selectAll('g').data(GEO.features.filter((f) => pathGen.area(f) > 260 && f.properties.code !== '24')).join('g')
       .attr('transform', (f) => {
         const o = LABEL_AT[f.properties.code] || {};
         const c = o.lonlat ? projection(o.lonlat) : pathGen.centroid(f);
@@ -228,7 +232,7 @@
       .append('line').attr('x1', 0).attr('y1', 4)
       .attr('x2', (f) => -LABEL_AT[f.properties.code].dx).attr('y2', (f) => -LABEL_AT[f.properties.code].dy)
       .attr('stroke', 'var(--muted)').attr('stroke-width', 1);
-    labels.append('text').attr('class', 'lbl n').attr('y', -2).text((f) => NAMES[f.properties.code]);
+    labels.append('text').attr('class', 'lbl n').attr('y', -2).text((f) => NAMES[gcode(f)]);
     labels.append('text').attr('class', 'lbl v').attr('y', 11);
   }
 
@@ -257,8 +261,8 @@
 
     const vals = CODES.map((c) => valueFor(c, m, state.mode)).filter((v) => v != null);
     const sc = colorScale(vals, state.mode);
-    paths.attr('fill', (f) => sc.color(valueFor(f.properties.code, m, state.mode)) || 'var(--empty)');
-    labels.select('.v').text((f) => { const v = valueFor(f.properties.code, m, state.mode);
+    paths.attr('fill', (f) => sc.color(valueFor(gcode(f), m, state.mode)) || 'var(--empty)');
+    labels.select('.v').text((f) => { const v = valueFor(gcode(f), m, state.mode);
       return v == null ? '' : (state.mode === 'yoy' ? fmtPct(v) : fmt(v)); });
     renderLegend(sc);
     renderPanel(m);
@@ -312,9 +316,10 @@
       ul.appendChild(li);
     });
     renderSpark(key);
-    $('note').textContent = def.kind === 'stock'
+    $('note').textContent = (def.kind === 'stock'
       ? '미분양은 월말 잔량(스톡) 지표라 연초 누계를 제공하지 않습니다.'
-      : '연초 누계는 해당 연도 1월부터 선택 월까지 수집된 월 값의 합입니다.';
+      : '연초 누계는 해당 연도 1월부터 선택 월까지 수집된 월 값의 합입니다.')
+      + (def.note ? ' ' + def.note : '') + ' 광주·전남은 국토부가 합쳐서 공표하는 방식에 맞춰 전남광주로 묶었습니다.';
   }
 
   function renderSpark(key) {
@@ -334,12 +339,12 @@
   }
 
   function highlight(code, on) {
-    paths.classed('hl', (f) => on && f.properties.code === code);
+    paths.classed('hl', (f) => on && gcode(f) === code);
     document.querySelectorAll('#rank li').forEach((li) => li.classList.toggle('hl', (on && li.dataset.code === code) || li.dataset.code === state.selected));
   }
   function selectRegion(code) {
     state.selected = state.selected === code ? null : code;
-    paths.classed('sel', (f) => f.properties.code === state.selected);
+    paths.classed('sel', (f) => gcode(f) === state.selected);
     render();
   }
 

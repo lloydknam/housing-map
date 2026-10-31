@@ -1,11 +1,17 @@
 {
-  "_help": "지표별로 KOSIS 'URL 생성'으로 만든 통계자료 요청 URL을 url_template에 넣으세요. API 키 자리는 {API_KEY}로 바꾸고, 분류·항목은 시도별·월별 값이 나오도록 선택합니다. 한 (시도, 월)에 행이 여러 개면 filters로 거르세요(예: {\"C2_NM\": \"계\"}). url_template이 비어 있는 지표는 건너뜁니다.",
+  "_help": "KOSIS 통계자료 요청 URL 템플릿. 키 자리는 {API_KEY}. 통계표·항목·분류 코드는 KOSIS 메타 API로 확인한 값이다. cumulative=true 는 월별 누계 표를 월 값으로 환산한다.",
   "metrics": [
-    {"id": "permit",      "url_template": "", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {}},
-    {"id": "start",       "url_template": "", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {}},
-    {"id": "sale",        "url_template": "", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {}},
-    {"id": "complete",    "url_template": "", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {}},
-    {"id": "unsold",      "url_template": "", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {}},
-    {"id": "unsold_post", "url_template": "", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {}}
+    {"id": "permit", "cumulative": true, "region_field": "C3_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103871089T1&objL1=13102871089A.0001&objL2=13102871089B.0001&objL3=ALL&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=36&orgId=116&tblId=DT_MLTM_1946"},
+    {"id": "start", "region_field": "C3_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103766971T1&objL1=13102766971A.0001&objL2=13102766971B.0001&objL3=ALL&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=36&orgId=116&tblId=DT_MLTM_5386"},
+    {"id": "sale", "region_field": "C2_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103133605T1&objL1=ALL&objL2=ALL&objL3=13102133605C.0001&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=36&orgId=116&tblId=DT_MLTM_5557"},
+    {"id": "complete", "region_field": "C3_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103766972T1&objL1=13102766972A.0001&objL2=13102766972B.0001&objL3=ALL&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=36&orgId=116&tblId=DT_MLTM_5372"},
+    {"id": "unsold", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103871087T1&objL1=ALL&objL2=13102871087B.0001&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=36&orgId=116&tblId=DT_MLTM_2082"},
+    {"id": "unsold_post", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {},
+     "url_template": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={API_KEY}&itmId=13103871088T1&objL1=ALL&objL2=13102871088B.0001&objL3=13102871088C.0001&objL4=13102871088D.0001&format=json&jsonVD=Y&prdSe=M&newEstPrdCnt=36&orgId=116&tblId=DT_MLTM_5328"}
   ]
 }

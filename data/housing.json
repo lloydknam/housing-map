@@ -3,7 +3,7 @@
   "updated": null,
   "latest": null,
   "metrics": [
-    {"id": "permit",   "label": "인허가",       "unit": "호", "kind": "flow"},
+    {"id": "permit",   "label": "인허가",       "unit": "호", "kind": "flow", "note": "인허가는 국토부 월별 누계표에서 전월 누계를 빼 월 값으로 환산했습니다."},
     {"id": "start",    "label": "착공",         "unit": "호", "kind": "flow"},
     {"id": "sale",     "label": "분양(승인)",   "unit": "호", "kind": "flow"},
     {"id": "complete", "label": "준공",         "unit": "호", "kind": "flow"},

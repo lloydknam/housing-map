@@ -3,6 +3,11 @@ name: Update housing data
 on:
   schedule:
     - cron: "30 0 * * *"   # 매일 09:30 KST — 국토부 발표는 월말이라 하루 한 번이면 충분
+  push:
+    paths:
+      - config/sources.json
+      - scripts/fetch_kosis.py
+      - .github/workflows/update.yml
   workflow_dispatch:
 
 permissions:
@@ -20,12 +25,14 @@ jobs:
         run: python3 scripts/fetch_kosis.py
 
       - name: Commit if changed
+        if: always()
         run: |
-          if [ -n "$(git status --porcelain data/housing.json)" ]; then
+          git add data/housing.json data/_fetch_log.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/housing.json
             git commit -m "data: update housing stats"
+            git pull --rebase -q
             git push
           else
             echo "변경 없음"

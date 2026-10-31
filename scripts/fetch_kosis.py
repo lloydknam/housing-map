@@ -4,6 +4,11 @@
 - config/sources.json 의 url_template 이 채워진 지표만 처리한다.
 - API 키는 환경변수 KOSIS_API_KEY 로 받는다 (GitHub Secret).
 - 이미 저장된 과거 월은 유지하고, 새로 받은 월은 덮어쓴다.
+- "cumulative": true 인 지표(월별 누계 표)는 전월 누계를 빼서 월 값으로 환산한다.
+- 광주·전남은 2026년 중반부터 '전남광주' 한 행으로 공표된다. 지도·시계열이 끊기지 않도록
+  세 이름을 모두 코드 2436(전남광주)으로 합친다. 같은 월에 '전남광주'가 있으면 그것만 쓰고,
+  없으면 광주+전남을 더한다.
+- 실행 결과 요약은 data/_fetch_log.json 에 남긴다 (키는 기록하지 않는다).
 """
 import json
 import os
@@ -17,14 +22,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "config" / "sources.json"
 OUT = ROOT / "data" / "housing.json"
+LOG = ROOT / "data" / "_fetch_log.json"
 
-# 시도 표준코드(행정구역 앞 2자리) — 지도 GeoJSON의 code와 동일
+# 시도 표준코드(행정구역 앞 2자리) — 지도 GeoJSON의 code와 동일. 광주·전남은 아래 MERGED 로 처리.
 ALIASES = {
     "11": ["서울", "서울특별시"],
     "21": ["부산", "부산광역시"],
     "22": ["대구", "대구광역시"],
     "23": ["인천", "인천광역시"],
-    "24": ["광주", "광주광역시"],
     "25": ["대전", "대전광역시"],
     "26": ["울산", "울산광역시"],
     "29": ["세종", "세종시", "세종특별자치시"],
@@ -33,12 +38,17 @@ ALIASES = {
     "33": ["충북", "충청북도"],
     "34": ["충남", "충청남도"],
     "35": ["전북", "전라북도", "전북특별자치도"],
-    "36": ["전남", "전라남도"],
     "37": ["경북", "경상북도"],
     "38": ["경남", "경상남도"],
     "39": ["제주", "제주도", "제주특별자치도"],
 }
 NAME_TO_CODE = {n: c for c, names in ALIASES.items() for n in names}
+MERGED_CODE = "2436"
+PART = {  # 이름 → 구성요소
+    "광주": "GJ", "광주광역시": "GJ",
+    "전남": "JN", "전라남도": "JN",
+    "전남광주": "JG", "전남광주특별시": "JG", "전남광주통합특별시": "JG",
+}
 
 
 def to_month(prd):
@@ -59,9 +69,8 @@ def to_number(raw):
 
 def fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": "housing-map/1.0"})
-    with urllib.request.urlopen(req, timeout=60) as resp:
+    with urllib.request.urlopen(req, timeout=90) as resp:
         body = resp.read().decode("utf-8")
-    # KOSIS 는 키를 `{...}` 형태의 비표준 JSON 으로 주기도 해서 느슨하게 보정한다.
     try:
         return json.loads(body)
     except json.JSONDecodeError:
@@ -69,36 +78,72 @@ def fetch(url):
         return json.loads(fixed)
 
 
-def collect(metric, api_key):
-    url = metric["url_template"].replace("{API_KEY}", api_key)
-    rows = fetch(url)
+def to_monthly(series):
+    """월별 누계 → 월 값. 1월은 누계 그대로, 그 외는 전월 누계와의 차. 전월이 없으면 건너뛴다."""
+    out = {}
+    for m in sorted(series):
+        y, mm = m.split("-")
+        if mm == "01":
+            out[m] = series[m]
+            continue
+        prev = f"{y}-{int(mm) - 1:02d}"
+        if prev in series:
+            out[m] = series[m] - series[prev]
+    return out
+
+
+def collect(metric, api_key, rows=None):
+    if rows is None:
+        url = metric["url_template"].replace("{API_KEY}", api_key)
+        rows = fetch(url)
     if isinstance(rows, dict):
         raise RuntimeError(f"KOSIS 오류 응답: {rows.get('err')} {rows.get('errMsg', '')}".strip())
     rf, pf, vf = metric["region_field"], metric["period_field"], metric["value_field"]
     filters = metric.get("filters", {})
-    out, seen = {}, {}
+    by_key, seen = {}, {}
     for row in rows:
         if any(str(row.get(k)) != str(v) for k, v in filters.items()):
             continue
-        code = NAME_TO_CODE.get(str(row.get(rf, "")).strip())
+        name = str(row.get(rf, "")).strip()
+        code = NAME_TO_CODE.get(name) or PART.get(name)
         month = to_month(row.get(pf, ""))
         value = to_number(row.get(vf))
         if code is None or month is None or value is None:
             continue
         key = (code, month)
         seen[key] = seen.get(key, 0) + 1
-        out.setdefault(code, {})[month] = value
+        by_key[key] = value
     dups = [k for k, n in seen.items() if n > 1]
     if dups:
         raise RuntimeError(
             f"(시도, 월) 중복 {len(dups)}건 — config의 filters로 분류를 하나로 좁혀주세요. 예: {dups[0]}"
         )
+
+    out = {}
+    for (code, month), v in by_key.items():
+        if code in PART.values():
+            continue
+        out.setdefault(code, {})[month] = v
+    months = {m for (c, m) in by_key if c in PART.values()}
+    for m in months:
+        jg, gj, jn = by_key.get(("JG", m)), by_key.get(("GJ", m)), by_key.get(("JN", m))
+        if jg is not None:
+            v = jg
+        elif gj is not None or jn is not None:
+            v = (gj or 0) + (jn or 0)
+        else:
+            continue
+        out.setdefault(MERGED_CODE, {})[m] = v
+
+    if metric.get("cumulative"):
+        out = {c: to_monthly(s) for c, s in out.items()}
     return out
 
 
 def main():
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
     store = json.loads(OUT.read_text(encoding="utf-8"))
+    log = {"run": datetime.now(timezone(timedelta(hours=9))).isoformat(timespec="seconds"), "metrics": {}}
     todo = [m for m in cfg["metrics"] if m.get("url_template", "").strip()]
     if not todo:
         print("url_template 이 설정된 지표가 없어 건너뜁니다. config/sources.json 을 채워주세요.")
@@ -114,15 +159,20 @@ def main():
         try:
             fresh = collect(metric, api_key)
         except (urllib.error.URLError, RuntimeError, json.JSONDecodeError) as e:
-            print(f"[{mid}] 실패: {e}", file=sys.stderr)
+            msg = str(e).replace(api_key, "***")[:300]
+            print(f"[{mid}] 실패: {msg}", file=sys.stderr)
+            log["metrics"][mid] = {"status": "error", "error": msg}
             failed += 1
             continue
         cur = store.setdefault("data", {}).setdefault(mid, {})
         for code, months in fresh.items():
             cur.setdefault(code, {}).update(months)
+        all_m = sorted({m for s in fresh.values() for m in s})
+        sums = {m: sum(s.get(m, 0) for s in fresh.values()) for m in all_m[-4:]}
+        log["metrics"][mid] = {"status": "ok", "regions": len(fresh), "months": [all_m[0], all_m[-1]] if all_m else [],
+                               "latest_sums": sums}
         print(f"[{mid}] {sum(len(v) for v in fresh.values())}개 값 병합")
 
-    # 정렬해서 diff 를 안정적으로 유지
     for mid, regions in store.get("data", {}).items():
         store["data"][mid] = {c: dict(sorted(regions[c].items())) for c in sorted(regions)}
     all_months = sorted({m for regions in store.get("data", {}).values() for ms in regions.values() for m in ms})
@@ -130,6 +180,7 @@ def main():
     store["updated"] = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
 
     OUT.write_text(json.dumps(store, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    LOG.write_text(json.dumps(log, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     return 1 if failed else 0
 
 
