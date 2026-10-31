@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>주택공급 지도</title>
-<meta name="description" content="국토교통부 월간 주택통계를 시도별 지도 위에 보여주는 인허가·착공·준공·미분양 대시보드. 최근 10년 연도별 추이 포함">
+<meta name="description" content="국토교통부 월간 주택통계를 시도별 지도 위에 보여주는 인허가·착공·준공·미분양 대시보드. 최근 20년 연도별 추이 포함">
 <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
@@ -129,7 +129,7 @@
 <body>
 <div class="wrap">
   <h1>주택공급 지도</h1>
-  <p class="sub">국토교통부 월간 주택통계 · 시도별 인허가 · 착공 · 분양 · 준공 · 미분양 · 최근 10년 추이</p>
+  <p class="sub">국토교통부 월간 주택통계 · 시도별 인허가 · 착공 · 분양 · 준공 · 미분양 · 최근 20년 추이</p>
 
   <div class="controls">
     <div class="group" id="metrics" role="group" aria-label="지표 선택"></div>
@@ -204,7 +204,7 @@
   const CODES = Object.keys(NAMES);
   const GROUP = { '24': '2436', '36': '2436' };
   const gcode = (f) => GROUP[f.properties.code] || f.properties.code;
-  const SHOWN_YEARS = 11; // 최근 10개 연도 + 올해(일부만 집계된 경우 포함)
+  const SHOWN_YEARS = 21; // 최근 20개 연도 + 올해(일부만 집계된 경우 포함)
 
   const state = { metric: null, mode: 'level', unit: 'month', basis: 'full', idx: 0, selected: null, playing: false };
   let META, DATA, GEO, MONTHS = [], YEARS = [], timer = null, TOT = null;
@@ -465,6 +465,7 @@
       y: yy, v: yearValue(key, yy, 'level'), g: yearValue(key, yy, 'yoy'),
       partial: nFor(parseInt(yy, 10), state.basis) < 12
     }));
+    const dense = YEARS.length > 12; // 막대가 많으면 라벨을 줄여 겹침을 막는다
     const W = 700, top = 34, base = 188, left = 44;
     const band = d3.scaleBand(YEARS, [left, W - 12]).padding(0.3);
     const mx = d3.max(data, (d) => d.v) || 1;
@@ -488,15 +489,15 @@
       .on('click', (e, d) => setUnit('year', d.y))
       .append('title').text((d) => yearLabel(d.y) + ': ' + fmt(d.v) + def.unit + (d.g != null ? ' (전년 대비 ' + fmtPct(d.g) + ')' : ''));
     gs.append('text').attr('class', 'tv').attr('x', (d) => band(d.y) + band.bandwidth() / 2)
-      .attr('y', (d) => (d.v == null ? base : yS(d.v)) - 8).text((d) => d.v == null ? '' : fmt(d.v));
+      .style('font-size', dense ? '10px' : null).attr('y', (d) => (d.v == null ? base : yS(d.v)) - 8).text((d) => d.v == null ? '' : (dense ? fmtShort(d.v) : fmt(d.v)));
     gs.append('text').attr('class', 'tx').attr('x', (d) => band(d.y) + band.bandwidth() / 2).attr('y', base + 18)
       .style('font-weight', (d) => parseInt(d.y, 10) === cy ? 700 : 400).style('fill', (d) => parseInt(d.y, 10) === cy ? 'var(--ink)' : null)
-      .text((d) => d.y + (d.partial ? (stock ? '(' + N + '월)' : '(1~' + N + '월)') : ''));
+      .style('font-size', dense ? '10px' : null).text((d) => (dense ? "'" + d.y.slice(2) : d.y) + (d.partial ? (stock ? '(' + N + '월)' : '(~' + N + '월)') : ''));
     gs.filter((d) => d.g != null).append('rect').attr('class', (d) => 'chip ' + (d.g >= 0 ? 'up' : 'down')).attr('rx', 9)
-      .attr('x', (d) => band(d.y) + band.bandwidth() / 2 - 34).attr('y', base + 28).attr('width', 68).attr('height', 20);
+      .attr('x', (d) => band(d.y) + band.bandwidth() / 2 - (dense ? 15 : 34)).attr('y', base + 28).attr('width', dense ? 30 : 68).attr('height', 20);
     gs.append('text').attr('class', (d) => 'tg ' + (d.g == null ? 'na' : (d.g >= 0 ? 'up' : 'down')))
       .attr('x', (d) => band(d.y) + band.bandwidth() / 2).attr('y', base + 42)
-      .text((d) => d.g == null ? '–' : (d.g >= 0 ? '▲ ' : '▼ ') + fmtPct(Math.abs(d.g)).replace('+', ''));
+      .style('font-size', dense ? '9px' : null).text((d) => d.g == null ? '–' : (dense ? (d.g >= 0 ? '▲' : '▼') + Math.round(Math.abs(d.g)) : (d.g >= 0 ? '▲ ' : '▼ ') + fmtPct(Math.abs(d.g)).replace('+', '')));
 
     // 시도별 한눈에: 최신 연도 값 기준 내림차순
     const latestY = YEARS[YEARS.length - 1];
