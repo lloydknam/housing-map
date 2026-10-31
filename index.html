@@ -70,7 +70,7 @@
   .btn:hover { color: var(--ink); }
   .btn[aria-pressed="true"] { background: var(--accent); color: #fff; box-shadow: 0 8px 20px -6px color-mix(in srgb, var(--accent) 70%, transparent); }
   .seg .btn { background: transparent; box-shadow: none; padding: 7px 14px; }
-  #units .btn { font-weight: 800; font-size: 15px; }
+  #units .btn, #views .btn { font-weight: 800; font-size: 15px; }
   .seg .btn[aria-pressed="true"] { background: var(--panel); color: var(--accent-text); box-shadow: 0 2px 8px rgba(14,26,43,.12); }
   #metrics .btn { padding: 11px 18px; font-size: 15px; display: inline-flex; align-items: center; gap: 7px; }
   #metrics .btn .em { font-size: 17px; line-height: 1; }
@@ -111,6 +111,10 @@
   .region.sel { stroke: var(--ink); stroke-width: 3; }
   .lbl { font-size: 14.5px; font-weight: 700; pointer-events: none; text-anchor: middle; fill: var(--ink); paint-order: stroke;
     stroke: color-mix(in srgb, var(--panel) 85%, transparent); stroke-width: 4px; stroke-linejoin: round; }
+  .bub { fill-opacity: .88; stroke: #fff; stroke-width: 2.5px; pointer-events: none; transition: r .45s ease; }
+  :root { --bubbase: #e4ecfb; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bubbase: #243a63; } }
+  :root[data-theme="dark"] { --bubbase: #243a63; }
   .lbl.v { font-weight: 800; font-size: 16px; }
   @media (min-width: 861px) { .lbl { font-size: 25px; } .lbl.v { font-size: 28px; } .lbl.n { transform: translateY(-6px); } .lbl.v { transform: translateY(8px); } .lbl { stroke-width: 5px; } }
   .legend { position: absolute; right: 18px; bottom: 16px; max-width: calc(100% - 36px); justify-content: flex-end; background: color-mix(in srgb, var(--panel) 82%, transparent); padding: 6px 10px; border-radius: 12px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); font-weight: 500; }
@@ -211,6 +215,10 @@
       <button class="btn" data-unit="year" aria-pressed="true">연도별</button>
       <button class="btn" data-unit="month" aria-pressed="false">월별</button>
     </div>
+    <div class="group seg" id="views" role="group" aria-label="지도 표시">
+      <button class="btn" data-view="bubble" aria-pressed="true">⚪ 버블</button>
+      <button class="btn" data-view="fill" aria-pressed="false">🗺️ 색칠</button>
+    </div>
     <div class="group seg" id="modes" role="group" aria-label="보기 방식">
       <button class="btn" data-mode="level" aria-pressed="true">월 수치</button>
       <button class="btn" data-mode="cum" aria-pressed="false">연초 누계</button>
@@ -308,7 +316,7 @@
   const EMOJI = { permit: '📝', start: '🏗️', sale: '📣', complete: '🏠', unsold: '🪧', unsold_post: '🧱', price: '💰' };
   const SHOWN_YEARS = 21; // 최근 20개 연도 + 올해(일부만 집계된 경우 포함)
 
-  const state = { metric: null, mode: 'level', unit: 'year', basis: 'full', idx: 0, selected: null, playing: false };
+  const state = { metric: null, mode: 'level', view: 'bubble', unit: 'year', basis: 'full', idx: 0, selected: null, playing: false };
   let META, DATA, GEO, MONTHS = [], YEARS = [], timer = null, TOT = null;
 
   const $ = (id) => document.getElementById(id);
@@ -432,9 +440,9 @@
       .on('keydown', (e, f) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectRegion(gcode(f)); } });
     const lg = svg.append('g');
     // 경기는 서울·인천을 감싸는 모양이라 중심점이 서울과 겹친다 → 라벨 위치를 직접 지정한다.
-    const LABEL_AT = { '31': { lonlat: [127.5, 37.3] }, '11': { dx: -70, dy: -38 }, '34': { dx: -34, dy: 4 }, '29': { dx: 8, dy: -34 }, '25': { dx: 4, dy: 22 } };
+    const LABEL_AT = { '31': { lonlat: [127.5, 37.3] }, '11': { dx: -70, dy: -38 }, '34': { dx: -34, dy: 4 }, '29': { dx: 8, dy: -34 }, '25': { dx: 4, dy: 22 }, '23': { lonlat: [126.65, 37.45], dx: -30, dy: 78 } };
     // 광주(24)는 전남(36)과 한 덩어리라 라벨은 전남 쪽에 하나만 둔다.
-    labels = lg.selectAll('g').data(GEO.features.filter((f) => pathGen.area(f) > 260 && f.properties.code !== '24')).join('g')
+    labels = lg.selectAll('g').data(GEO.features.filter((f) => (pathGen.area(f) > 260 || f.properties.code === '23') && f.properties.code !== '24')).join('g')
       .attr('transform', (f) => {
         const o = LABEL_AT[f.properties.code] || {};
         const c = o.lonlat ? projection(o.lonlat) : pathGen.centroid(f);
@@ -444,6 +452,7 @@
       .append('line').attr('x1', 0).attr('y1', 4)
       .attr('x2', (f) => -LABEL_AT[f.properties.code].dx).attr('y2', (f) => -LABEL_AT[f.properties.code].dy)
       .attr('stroke', 'var(--muted)').attr('stroke-width', 1);
+    labels.insert('circle', ':first-child').attr('class', 'bub').attr('r', 0);
     labels.append('text').attr('class', 'lbl n').attr('y', -4).text((f) => NAMES[gcode(f)]);
     labels.append('text').attr('class', 'lbl v').attr('y', 13);
   }
@@ -483,7 +492,11 @@
     }
     const vals = CODES.map((c) => valueFor(c, p, state.mode)).filter((v) => v != null);
     const sc = colorScale(vals, state.mode);
-    paths.attr('fill', (f) => sc.color(valueFor(gcode(f), p, state.mode)) || 'var(--empty)');
+    const bubble = state.view === 'bubble';
+    paths.attr('fill', (f) => bubble ? 'var(--bubbase)' : (sc.color(valueFor(gcode(f), p, state.mode)) || 'var(--empty)'));
+    const mx = d3.max(vals, (v) => Math.abs(v)) || 1, RMAX = 86;
+    labels.select('.bub').attr('r', (f) => { const v = valueFor(gcode(f), p, state.mode); return bubble && v != null ? Math.max(9, RMAX * Math.sqrt(Math.abs(v) / mx)) : 0; })
+      .attr('fill', (f) => sc.color(valueFor(gcode(f), p, state.mode)) || 'var(--empty)');
     labels.select('.v').text((f) => { const v = valueFor(gcode(f), p, state.mode);
       return v == null ? '' : (state.mode === 'yoy' ? fmtPct(v) : fmtShort(v)); });
     renderLegend(sc);
@@ -588,6 +601,7 @@
     const bf = document.querySelector('#basis [data-basis="full"]'), by = document.querySelector('#basis [data-basis="ytd"]');
     bf.textContent = stock ? '연말 ' + SW() : '연간';
     by.textContent = N === 12 ? (stock ? '12월 말 기준' : '1~12월') : (stock ? N + '월 말 기준' : '동기간 1~' + N + '월');
+    document.querySelectorAll('#views .btn').forEach((b) => b.addEventListener('click', () => { state.view = b.dataset.view; syncControls(); render(); }));
     document.querySelectorAll('#basis .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.basis === state.basis));
     $('trendSub').textContent = state.basis === 'ytd'
       ? '모든 해를 ' + (stock ? N + '월 말' : '1~' + N + '월') + '로 맞춰 비교'
@@ -892,6 +906,7 @@
   function syncControls() {
     const sl = $('slider'); sl.max = Math.max(0, periods().length - 1); sl.value = state.idx;
     document.querySelectorAll('#units .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.unit === state.unit));
+    document.querySelectorAll('#views .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.view === state.view));
     const yearly = state.unit === 'year';
     const lvl = document.querySelector('[data-mode="level"]'), cum = document.querySelector('[data-mode="cum"]'), yoy = document.querySelector('[data-mode="yoy"]');
     lvl.textContent = yearly ? (isStock() ? '연말 ' + SW() : '연간 합계') : (isStock() ? '월말 ' + SW() : '월 수치');
