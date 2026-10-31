@@ -21,6 +21,7 @@
     --seq0: #e3edff; --seq1: #a9c8ff; --seq2: #5b94ff; --seq3: #2260f5; --seq4: #0a2fa8;
     --shadow: 0 1px 2px rgba(31,85,240,.05), 0 14px 40px -14px rgba(47,107,255,.28);
     --sky: #dcecff; --mint: #dff8ee; --sun: #fff1c9;
+    --price: #7c4dff; --price-text: #5b2fd6; --price-bg: #efe8ff;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
@@ -31,6 +32,7 @@
       --seq0: #1a2f55; --seq1: #1f4a9a; --seq2: #2a6df0; --seq3: #4f93ff; --seq4: #9fcbff;
       --shadow: 0 1px 2px rgba(0,0,0,.3), 0 14px 40px -14px rgba(0,0,0,.6);
       --sky: #11284a; --mint: #0f2e33; --sun: #3a3016;
+      --price: #a98bff; --price-text: #c4b0ff; --price-bg: #2b2250;
     }
   }
   * { box-sizing: border-box; }
@@ -153,6 +155,21 @@
   .mini .v { font-size: 20px; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
   .mini svg { width: 100%; height: 46px; display: block; margin-top: 6px; }
 
+  .rel { margin-top: 22px; }
+  .relgrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; margin-top: 6px; }
+  @media (max-width: 860px) { .relgrid { grid-template-columns: 1fr; } }
+  .rel svg { width: 100%; height: auto; display: block; }
+  .rel .ax { font-size: 11px; fill: var(--muted); }
+  .rel .axc { text-anchor: middle; } .rel .axr { text-anchor: end; }
+  .rel .gl { stroke: var(--grid); stroke-width: 1; } .rel .zl { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; opacity: .7; }
+  .rel .pn { font-size: 12.5px; font-weight: 700; fill: var(--ink2); }
+  .rel .sc-dot { cursor: pointer; transition: r .12s; }
+  .rel .sc-dot:hover { filter: brightness(1.1); }
+  .rel .sc-lbl { font-size: 11.5px; font-weight: 700; fill: var(--ink); paint-order: stroke; stroke: var(--panel); stroke-width: 3px; pointer-events: none; }
+  .legend-inline { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--ink2); font-weight: 600; margin: 4px 0 2px; }
+  .legend-inline i { display: inline-block; width: 12px; height: 12px; border-radius: 4px; margin-right: 6px; vertical-align: -1px; }
+  .insight { font-size: 14px; color: var(--ink2); line-height: 1.6; margin-top: 8px; background: var(--bg); border-radius: 16px; padding: 12px 14px; }
+  .insight b { color: var(--ink); }
   /* 로고 SVG는 밝은 배경용(남색 글자)이라 다크 모드에서도 읽히도록 크림색 칩 위에 올린다 */
   footer { margin-top: 36px; padding-top: 20px; display: flex; flex-wrap: wrap;
     align-items: flex-end; justify-content: space-between; gap: 12px; font-size: 12.5px; color: var(--muted); }
@@ -231,6 +248,31 @@
     <div class="note" id="trendNote"></div>
   </section>
 
+  <section class="card rel" id="rel">
+    <div class="trend-head">
+      <div>
+        <h2 id="relTitle">공급과 가격</h2>
+        <div class="trend-sub" id="relSub"></div>
+      </div>
+      <div class="group seg" id="relMetrics" role="group" aria-label="비교할 공급 지표"></div>
+    </div>
+    <div class="legend-inline"><span><i style="background:var(--accent)"></i><span id="relLegS">공급</span></span><span><i style="background:var(--price)"></i>아파트 매매 실거래가격지수 · 전년 동월 대비</span></div>
+    <svg id="relTs" viewBox="0 0 860 350" role="img" aria-label="공급과 가격 시계열"></svg>
+    <div class="relgrid">
+      <div>
+        <h3>공급이 늘면 가격은 몇 개월 뒤에 움직였나 (시차 상관)</h3>
+        <svg id="relLag" viewBox="0 0 420 250" role="img" aria-label="시차별 상관계수"></svg>
+        <div class="insight" id="relInsight"></div>
+      </div>
+      <div>
+        <h3 id="relScTitle">시도별로 나란히 보면</h3>
+        <svg id="relSc" viewBox="0 0 420 300" role="img" aria-label="시도별 공급 증가율과 가격 변동률 산점도"></svg>
+        <div class="insight" id="relScInsight"></div>
+      </div>
+    </div>
+    <div class="note" id="relNote"></div>
+  </section>
+
   <footer>
     <div class="credit">
       <a class="lockup" href="https://github.com/lloydknam" target="_blank" rel="noopener"><img src="assets/brand/lockup-light.svg" alt="Lloyd's Balcony Lab · with claude · GitHub(@lloydknam)" height="48"></a>
@@ -251,19 +293,23 @@
   const CODES = ['11', '21', '22', '23', '25', '26', '29', '31', '32', '33', '34', '35', '2436', '37', '38', '39'];
   const GROUP = { '24': '2436', '36': '2436' };
   const gcode = (f) => GROUP[f.properties.code] || f.properties.code;
-  const EMOJI = { permit: '📝', start: '🏗️', sale: '📣', complete: '🏠', unsold: '🪧', unsold_post: '🧱' };
+  const EMOJI = { permit: '📝', start: '🏗️', sale: '📣', complete: '🏠', unsold: '🪧', unsold_post: '🧱', price: '💰' };
   const SHOWN_YEARS = 21; // 최근 20개 연도 + 올해(일부만 집계된 경우 포함)
 
   const state = { metric: null, mode: 'level', unit: 'month', basis: 'full', idx: 0, selected: null, playing: false };
   let META, DATA, GEO, MONTHS = [], YEARS = [], timer = null, TOT = null;
 
   const $ = (id) => document.getElementById(id);
-  const fmt = (n) => n == null ? '–' : Math.round(n).toLocaleString('ko-KR');
+  const fmtN = (n) => n == null ? '–' : Math.round(n).toLocaleString('ko-KR');
+  const fmt = (n) => n == null ? '–' : (META && state.metric && metricDef().kind === 'index'
+    ? n.toLocaleString('ko-KR', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) : fmtN(n));
   const fmtShort = (n) => n == null ? '' : (Math.abs(n) >= 10000 ? (n / 10000).toFixed(1).replace(/\.0$/, '') + '만' : fmt(n));
   const fmtPct = (n) => n == null ? '–' : (n > 0 ? '+' : '') + (Math.abs(n) >= 1000 ? Math.round(n).toLocaleString('ko-KR') : n.toFixed(1)) + '%';
   const monthText = (m) => m ? m.slice(0, 4) + '년 ' + parseInt(m.slice(5), 10) + '월' : '–';
   const metricDef = () => META.metrics.find((m) => m.id === state.metric);
-  const isStock = () => metricDef().kind === 'stock';
+  const isIndex = () => metricDef().kind === 'index';
+  const isStock = () => metricDef().kind === 'stock' || metricDef().kind === 'index'; // 기간 말 시점 값(잔량·지수)
+  const SW = () => isIndex() ? '지수' : '잔량';
   const series = (code) => (DATA[state.metric] && DATA[state.metric][code]) || {};
   const pad2 = (n) => String(n).padStart(2, '0');
   const periods = () => state.unit === 'year' ? YEARS : MONTHS;
@@ -282,6 +328,7 @@
   }
 
   function getSeries(code) {
+    if (code === 'ALL' && isIndex()) return series('00');
     if (code !== 'ALL') return series(code);
     if (TOT) return TOT;
     const out = {};
@@ -335,7 +382,7 @@
   }
   const periodLabel = (p) => state.unit === 'year' ? yearLabel(p) : monthText(p);
   const modeText = () => ({
-    level: state.unit === 'year' ? (isStock() ? '연말 잔량' : '연간 합계') : (isStock() ? '월말 잔량' : '월 수치'),
+    level: state.unit === 'year' ? (isStock() ? '연말 ' + SW() : '연간 합계') : (isStock() ? '월말 ' + SW() : '월 수치'),
     cum: '연초 누계',
     yoy: state.unit === 'year' ? '전년 대비' : '전년 동월 대비'
   })[state.mode];
@@ -401,6 +448,11 @@
     const cs = getComputedStyle(document.documentElement);
     const pal = [0, 1, 2, 3, 4].map((i) => cs.getPropertyValue('--seq' + i).trim());
     // 순위가 아니라 값의 크기에 비례해 칠한다: 0 → 가장 옅게, 최댓값 → 가장 진하게(제곱근 눈금이라 작은 값도 구분된다).
+    if (isIndex()) {
+      const lo = sorted[0], hi = sorted[sorted.length - 1] || 1;
+      const rampI = d3.scaleLinear().domain([0, 0.25, 0.5, 0.75, 1]).range(pal).interpolate(d3.interpolateRgb).clamp(true);
+      return { color: (v) => v == null ? null : rampI(hi === lo ? 1 : (v - lo) / (hi - lo)), kind: 'seq', pal, max: hi, min: lo, linear: true };
+    }
     const max = sorted[sorted.length - 1] || 1;
     const ramp = d3.scaleLinear().domain([0, 0.25, 0.5, 0.75, 1]).range(pal).interpolate(d3.interpolateRgb).clamp(true);
     return { color: (v) => v == null ? null : ramp(Math.sqrt(Math.max(0, v) / max)), kind: 'seq', pal, max };
@@ -415,7 +467,7 @@
     $('empty').classList.toggle('on', !hasData);
     if (!hasData) {
       paths.attr('fill', 'var(--empty)'); labels.select('.v').text(''); $('legend').innerHTML = '';
-      renderPanel(null); renderTrend(); return;
+      renderPanel(null); renderTrend(); renderRel(); return;
     }
     const vals = CODES.map((c) => valueFor(c, p, state.mode)).filter((v) => v != null);
     const sc = colorScale(vals, state.mode);
@@ -425,6 +477,7 @@
     renderLegend(sc);
     renderPanel(p);
     renderTrend();
+    renderRel();
   }
 
   function renderLegend(sc) {
@@ -433,9 +486,9 @@
     if (sc.kind === 'seq') {
       const g = document.createElement('span'); g.className = 'grad';
       g.style.background = 'linear-gradient(90deg,' + sc.pal.join(',') + ')';
-      const lo = document.createElement('span'); lo.textContent = '0';
-      const mid = document.createElement('span'); mid.textContent = fmtShort(sc.max / 4);
-      const hi = document.createElement('span'); hi.textContent = fmtShort(sc.max) + unit;
+      const lo = document.createElement('span'); lo.textContent = sc.linear ? fmt(sc.min) : '0';
+      const mid = document.createElement('span'); mid.textContent = sc.linear ? fmt((sc.min + sc.max) / 2) : fmtShort(sc.max / 4);
+      const hi = document.createElement('span'); hi.textContent = sc.linear ? fmt(sc.max) : fmtShort(sc.max) + unit;
       const bar = document.createElement('span'); bar.className = 'gbar';
       bar.append(g, (() => { const r = document.createElement('span'); r.className = 'gticks'; r.append(lo, mid, hi); return r; })());
       el.appendChild(bar);
@@ -476,10 +529,10 @@
     renderSpark(key);
     const parts = [];
     if (state.unit === 'month') {
-      parts.push(isStock() ? '미분양은 월말 잔량(스톡) 지표라 연초 누계를 제공하지 않습니다.'
+      parts.push(isStock() ? (isIndex() ? '가격지수는 시점 값이라 연초 누계를 제공하지 않습니다. 지수 수준보다 전년 동월 대비 변동률로 보는 편이 적절합니다.' : '미분양은 월말 잔량(스톡) 지표라 연초 누계를 제공하지 않습니다.')
         : '연초 누계는 해당 연도 1월부터 선택 월까지 수집된 월 값의 합입니다.');
     } else {
-      parts.push(isStock() ? '연도별 보기의 미분양은 해당 연도 말(올해는 최근 월 말) 잔량입니다.'
+      parts.push(isStock() ? '연도별 보기의 ' + (isIndex() ? '가격지수' : '미분양') + '는 해당 연도 말(올해는 최근 월 말) ' + SW() + '입니다.'
         : '연도별 보기는 1~12월 합계이며, 올해처럼 일부만 집계된 해는 같은 달까지로 전년과 비교합니다.');
     }
     if (def.note) parts.push(def.note);
@@ -521,12 +574,12 @@
 
     const N = latestN(), LY = latestYear(), stock = isStock();
     const bf = document.querySelector('#basis [data-basis="full"]'), by = document.querySelector('#basis [data-basis="ytd"]');
-    bf.textContent = stock ? '연말 잔량' : '연간';
+    bf.textContent = stock ? '연말 ' + SW() : '연간';
     by.textContent = N === 12 ? (stock ? '12월 말 기준' : '1~12월') : (stock ? N + '월 말 기준' : '동기간 1~' + N + '월');
     document.querySelectorAll('#basis .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.basis === state.basis));
     $('trendSub').textContent = state.basis === 'ytd'
       ? '모든 해를 ' + (stock ? N + '월 말' : '1~' + N + '월') + '로 맞춰 비교'
-      : (stock ? '매년 12월 말 잔량 (올해는 ' + N + '월 말)' : '매년 1~12월 합계' + (N < 12 ? ' (' + LY + '년은 1~' + N + '월)' : ''));
+      : (stock ? '매년 12월 말 ' + SW() + ' (올해는 ' + N + '월 말)' : '매년 1~12월 합계' + (N < 12 ? ' (' + LY + '년은 1~' + N + '월)' : ''));
 
     const cy = currentYear();
     const data = YEARS.map((yy) => ({
@@ -587,11 +640,212 @@
     });
 
     const notes = [];
-    if (stock) notes.push('미분양은 월말 잔량이라 연말(또는 같은 달 말) 값을 비교합니다.');
+    if (stock) notes.push((isIndex() ? '가격지수는' : '미분양은') + ' 월말 ' + SW() + '이라 연말(또는 같은 달 말) 값을 비교합니다.');
     else if (state.basis === 'full' && N < 12) notes.push(LY + '년은 1~' + N + '월만 집계돼 연한 막대로 표시했고, 전년 대비는 같은 기간끼리 계산했습니다. ‘동기간 비교’를 켜면 모든 해를 1~' + N + '월로 맞춥니다.');
     else if (state.basis === 'ytd') notes.push('모든 해를 1~' + N + '월 합계로 맞춘 비교입니다.');
     notes.push('막대를 누르면 지도가 그 연도의 연도별 보기로 바뀝니다. 시도 카드를 누르면 위 그래프가 그 지역으로 바뀝니다.');
     $('trendNote').textContent = notes.join(' ');
+  }
+
+
+  // ---------- 공급과 가격 ----------
+  const SUPPLY = ['permit', 'start', 'sale', 'complete'];
+  let relMetric = 'permit';
+  const addM = (m, k) => { const [y, mo] = m.split('-').map(Number); const t = y * 12 + mo - 1 + k; return Math.floor(t / 12) + '-' + pad2(t % 12 + 1); };
+  function sOf(mid, code) {
+    const d = DATA[mid] || {};
+    if (code !== 'ALL') return d[code] || {};
+    if (mid === 'price') return d['00'] || {};
+    const months = new Set(), out = {};
+    CODES.forEach((c) => Object.keys(d[c] || {}).forEach((m) => months.add(m)));
+    months.forEach((m) => { let sum = 0, n = 0; CODES.forEach((c) => { const v = (d[c] || {})[m]; if (v != null) { sum += v; n++; } }); if (n >= CODES.length - 1) out[m] = sum; }); // 세종(2012~)처럼 늦게 시작한 지역은 그 이전엔 빠진 채 합산
+    return out;
+  }
+  function roll12(sr) {
+    const out = {};
+    Object.keys(sr).sort().forEach((m) => { let sum = 0; for (let i = 0; i < 12; i++) { const v = sr[addM(m, -i)]; if (v == null) return; sum += v; } out[m] = sum; });
+    return out;
+  }
+  function yoyOf(sr) {
+    const out = {};
+    Object.keys(sr).forEach((m) => { const p = sr[addM(m, -12)]; if (p != null && p > 0) out[m] = (sr[m] - p) / p * 100; });
+    return out;
+  }
+  function relSeries(code) {
+    const sup12 = roll12(sOf(relMetric, code)), price = sOf('price', code);
+    return { sup12, supYoy: yoyOf(sup12), price, priceYoy: yoyOf(price) };
+  }
+  function curMonth() {
+    const p = periods()[state.idx]; if (!p) return null;
+    return state.unit === 'year' ? p + '-' + pad2(nFor(parseInt(p, 10), state.basis)) : p;
+  }
+  function pearson(xs, ys) {
+    const n = xs.length; if (n < 3) return null;
+    const mx = d3.mean(xs), my = d3.mean(ys); let sxy = 0, sxx = 0, syy = 0;
+    for (let i = 0; i < n; i++) { const dx = xs[i] - mx, dy = ys[i] - my; sxy += dx * dy; sxx += dx * dx; syy += dy * dy; }
+    return sxx && syy ? sxy / Math.sqrt(sxx * syy) : null;
+  }
+  const mLabel = (m) => m.slice(0, 4) + '.' + m.slice(5);
+
+  function renderRel() {
+    const box = $('rel');
+    if (!DATA.price || !Object.keys(DATA.price).length) { box.style.display = 'none'; return; }
+    const code = state.selected || 'ALL', name = state.selected ? NAMES[state.selected] : '전국';
+    const def = META.metrics.find((m) => m.id === relMetric);
+    const lb = def.label.replace(/\(.*\)/, ''), last = lb.charCodeAt(lb.length - 1);
+    const wa = (last >= 0xac00 && last <= 0xd7a3 && (last - 0xac00) % 28 === 0) ? '와' : '과';
+    $('relTitle').textContent = name + ' · ' + lb + wa + ' 매매가격';
+    $('relSub').textContent = '공급(최근 12개월 누적)과 아파트 매매가격(전년 동월 대비)을 같은 시간축에 놓았습니다. 지도나 시도 카드를 누르면 지역이 바뀝니다.';
+    $('relLegS').textContent = def.label + ' · 최근 12개월 누적(' + def.unit + ')';
+    document.querySelectorAll('#relMetrics .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.id === relMetric));
+    const R = relSeries(code);
+    drawTs(R, name, def); drawLag(R, name, def); drawScatter(def);
+    $('relNote').textContent = '가격은 한국부동산원 아파트 매매 실거래가격지수(계약 기준)이며 공급 통계(국토부)와 집계 기준이 다릅니다. 상관관계는 인과관계가 아니므로, 금리·정책·수요 변화가 함께 작용한 결과일 수 있습니다. 전남광주의 2026년 6월 이전 가격은 광주·전남 지수를 평균해 이어 붙인 근사치입니다.';
+  }
+
+  function drawTs(R, name, def) {
+    const svgT = d3.select('#relTs'); svgT.selectAll('*').remove();
+    const months = Object.keys(R.sup12).filter((m) => R.priceYoy[m] != null || true).sort();
+    const pm = Object.keys(R.priceYoy).sort();
+    const all = Array.from(new Set(months.concat(pm))).sort();
+    if (all.length < 3) return;
+    const W = 860, L = 62, Rr = 16, x = d3.scaleLinear([0, all.length - 1], [L, W - Rr]);
+    const idxOf = new Map(all.map((m, i) => [m, i]));
+    // 위: 공급 12개월 누적
+    const sTop = 34, sBot = 168;
+    const sv = months.map((m) => ({ i: idxOf.get(m), v: R.sup12[m], m }));
+    const yS = d3.scaleLinear([0, (d3.max(sv, (d) => d.v) || 1) * 1.08], [sBot, sTop]).nice(4);
+    yS.ticks(4).forEach((t) => {
+      svgT.append('line').attr('class', 'gl').attr('x1', L).attr('x2', W - Rr).attr('y1', yS(t)).attr('y2', yS(t));
+      svgT.append('text').attr('class', 'ax axr').attr('x', L - 8).attr('y', yS(t) + 4).text(t === 0 ? '0' : fmtShort(t));
+    });
+    svgT.append('text').attr('class', 'pn').attr('x', L).attr('y', 18).text(def.label + ' (12개월 누적, ' + def.unit + ')');
+    const defs = svgT.append('defs'); const g = defs.append('linearGradient').attr('id', 'gSup').attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
+    g.append('stop').attr('offset', '0%').attr('stop-color', 'var(--accent)').attr('stop-opacity', .45); g.append('stop').attr('offset', '100%').attr('stop-color', 'var(--accent)').attr('stop-opacity', .04);
+    svgT.append('path').attr('d', d3.area().x((d) => x(d.i)).y0(sBot).y1((d) => yS(d.v))(sv)).attr('fill', 'url(#gSup)');
+    svgT.append('path').attr('d', d3.line().x((d) => x(d.i)).y((d) => yS(d.v))(sv)).attr('fill', 'none').attr('stroke', 'var(--accent)').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+    // 아래: 가격 전년 동월 대비
+    const pTop = 214, pBot = 316;
+    const pv = pm.map((m) => ({ i: idxOf.get(m), v: R.priceYoy[m], m }));
+    const ext = d3.extent(pv, (d) => d.v); const lim = Math.max(5, Math.abs(ext[0] || 0), Math.abs(ext[1] || 0));
+    const yP = d3.scaleLinear([-lim, lim], [pBot, pTop]).nice(3);
+    svgT.append('text').attr('class', 'pn').attr('x', L).attr('y', 198).text('아파트 매매가격 · 전년 동월 대비(%)');
+    yP.ticks(4).forEach((t) => {
+      svgT.append('line').attr('class', t === 0 ? 'zl' : 'gl').attr('x1', L).attr('x2', W - Rr).attr('y1', yP(t)).attr('y2', yP(t));
+      svgT.append('text').attr('class', 'ax axr').attr('x', L - 8).attr('y', yP(t) + 4).text((t > 0 ? '+' : '') + t + '%');
+    });
+    svgT.append('path').attr('d', d3.area().x((d) => x(d.i)).y0(yP(0)).y1((d) => yP(d.v))(pv)).attr('fill', 'var(--price)').attr('opacity', .14);
+    svgT.append('path').attr('d', d3.line().x((d) => x(d.i)).y((d) => yP(d.v))(pv)).attr('fill', 'none').attr('stroke', 'var(--price)').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+    // x축 연도
+    all.forEach((m, i) => { if (m.slice(5) === '01' && parseInt(m.slice(0, 4), 10) % 2 === 0) svgT.append('text').attr('class', 'ax axc').attr('x', x(i)).attr('y', pBot + 18).text(m.slice(0, 4)); });
+    // 현재 선택 시점
+    const cm = curMonth();
+    if (cm && idxOf.has(cm)) {
+      svgT.append('line').attr('x1', x(idxOf.get(cm))).attr('x2', x(idxOf.get(cm))).attr('y1', sTop - 10).attr('y2', pBot).attr('stroke', 'var(--ink)').attr('stroke-width', 1.5).attr('opacity', .55);
+      const cxm = x(idxOf.get(cm));
+      svgT.append('text').attr('class', 'ax').attr('text-anchor', cxm > W - 70 ? 'end' : 'middle').attr('x', cxm > W - 70 ? cxm + 4 : cxm).attr('y', sTop - 14).style('font-weight', 700).style('fill', 'var(--ink)').text(mLabel(cm));
+    }
+    // 호버
+    const cross = svgT.append('line').attr('y1', sTop - 6).attr('y2', pBot).attr('stroke', 'var(--muted)').attr('stroke-dasharray', '3 3').style('display', 'none');
+    svgT.append('rect').attr('x', L).attr('y', 0).attr('width', W - L - Rr).attr('height', 350).attr('fill', 'transparent')
+      .on('mousemove', (e) => {
+        const r = e.currentTarget.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width * (W - L - Rr) + L;
+        const i = Math.max(0, Math.min(all.length - 1, Math.round(x.invert(px)))), m = all[i];
+        cross.style('display', null).attr('x1', x(i)).attr('x2', x(i));
+        const sv2 = R.sup12[m], pv2 = R.priceYoy[m], pi = R.price[m];
+        tip.innerHTML = '<b>' + mLabel(m) + '</b>' + def.label + ' 12개월 ' + fmtN(sv2) + def.unit + '<br>매매가격 ' + (pv2 == null ? '–' : fmtPct(pv2)) + (pi != null ? ' (지수 ' + pi.toFixed(1) + ')' : '');
+        tip.style.display = 'block'; tip.style.left = Math.min(window.innerWidth - 250, e.clientX + 14) + 'px'; tip.style.top = (e.clientY + 14) + 'px';
+      })
+      .on('mouseleave', () => { cross.style('display', 'none'); hideTip(); })
+      .on('click', (e) => {
+        const r = e.currentTarget.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width * (W - L - Rr) + L;
+        const m = all[Math.max(0, Math.min(all.length - 1, Math.round(x.invert(px))))];
+        if (state.unit === 'month' && MONTHS.indexOf(m) >= 0) { state.idx = MONTHS.indexOf(m); $('slider').value = state.idx; render(); }
+      });
+  }
+
+  function drawLag(R, name, def) {
+    const sv = d3.select('#relLag'); sv.selectAll('*').remove();
+    const lags = d3.range(-12, 37), res = [];
+    lags.forEach((k) => {
+      const xs = [], ys = [];
+      Object.keys(R.supYoy).forEach((m) => { const y = R.priceYoy[addM(m, k)]; if (y != null) { xs.push(R.supYoy[m]); ys.push(y); } });
+      res.push({ k, n: xs.length, r: xs.length >= 36 ? pearson(xs, ys) : null });
+    });
+    const ok = res.filter((d) => d.r != null);
+    const W = 420, L = 40, Rr = 8, top = 22, base = 150, bot = 215;
+    if (!ok.length) { $('relInsight').textContent = '겹치는 기간이 짧아 시차 상관을 계산할 수 없습니다.'; return; }
+    const rmax = Math.min(1, Math.max(0.6, Math.ceil(d3.max(ok, (d) => Math.abs(d.r)) * 10) / 10 + 0.1));
+    const x = d3.scaleBand(lags, [L, W - Rr]).padding(0.15), y = d3.scaleLinear([-rmax, rmax], [bot - 20, top]);
+    [-rmax, -rmax / 2, 0, rmax / 2, rmax].forEach((t) => {
+      sv.append('line').attr('class', t === 0 ? 'zl' : 'gl').attr('x1', L).attr('x2', W - Rr).attr('y1', y(t)).attr('y2', y(t));
+      sv.append('text').attr('class', 'ax axr').attr('x', L - 6).attr('y', y(t) + 4).text(t === 0 ? '0' : t.toFixed(1));
+    });
+    const best = ok.reduce((a, b) => Math.abs(b.r) > Math.abs(a.r) ? b : a);
+    sv.selectAll('rect').data(ok).join('rect').attr('x', (d) => x(d.k)).attr('width', x.bandwidth())
+      .attr('y', (d) => d.r >= 0 ? y(d.r) : y(0)).attr('height', (d) => Math.max(1, Math.abs(y(d.r) - y(0)))).attr('rx', 2)
+      .attr('fill', (d) => d.k === best.k ? 'var(--price)' : (d.r >= 0 ? 'var(--bar)' : '#ffb089'))
+      .append('title').text((d) => '가격이 공급보다 ' + d.k + '개월 뒤 · 상관계수 ' + d.r.toFixed(2));
+    [-12, 0, 12, 24, 36].forEach((k) => sv.append('text').attr('class', 'ax').attr('text-anchor', k === 36 ? 'end' : (k === -12 ? 'start' : 'middle')).attr('x', x(k) + (k === 36 ? x.bandwidth() : (k === -12 ? 0 : x.bandwidth() / 2))).attr('y', bot - 2).text(k === 0 ? '같은 시점' : (k > 0 ? '+' : '') + k + '개월'));
+    sv.append('text').attr('class', 'ax').attr('x', L).attr('y', 12).text('상관계수 (공급 증가율 vs 가격 변동률)');
+    const dir = best.r < 0 ? '공급이 늘수록 가격 상승률은 낮아지는 쪽' : '공급과 가격이 같은 방향으로 움직이는 쪽';
+    const when = best.k === 0 ? '같은 시점에' : (best.k > 0 ? '가격이 공급 변화보다 ' + best.k + '개월 늦게' : '가격이 공급 변화보다 ' + (-best.k) + '개월 먼저');
+    $('relInsight').innerHTML = '<b>' + name + '</b>에서는 ' + when + ' 가장 강하게 연동했습니다(상관계수 <b>' + best.r.toFixed(2) + '</b>). ' + dir + '입니다.' +
+      (best.k < 0 ? ' 가격이 먼저 오르고 공급이 뒤따랐다는 뜻이라, 인허가가 가격에 반응했을 가능성이 있습니다.' : '');
+  }
+
+  function drawScatter(def) {
+    const sv = d3.select('#relSc'); sv.selectAll('*').remove();
+    const cm = curMonth();
+    $('relScTitle').textContent = '시도별로 나란히 보면 · ' + (cm ? mLabel(cm) : '');
+    if (!cm) return;
+    const pts = CODES.map((c) => {
+      const R = relSeries(c); return { c, x: R.supYoy[cm], y: R.priceYoy[cm] };
+    }).filter((d) => d.x != null && d.y != null);
+    if (pts.length < 5) { $('relScInsight').textContent = '이 시점은 비교할 시도 자료가 부족합니다.'; return; }
+    const W = 420, H = 300, L = 44, Rr = 14, T = 14, B = 40;
+    const XMIN = -100, XMAX = 200;
+    const cx = (v) => Math.max(XMIN, Math.min(XMAX, v));
+    const yl = Math.max(4, d3.max(pts, (d) => Math.abs(d.y)) * 1.15);
+    const x = d3.scaleLinear([XMIN, XMAX], [L, W - Rr]), y = d3.scaleLinear([-yl, yl], [H - B, T]).nice();
+    [-100, -50, 0, 50, 100, 150, 200].forEach((t) => {
+      sv.append('line').attr('class', t === 0 ? 'zl' : 'gl').attr('x1', x(t)).attr('x2', x(t)).attr('y1', T).attr('y2', H - B);
+      sv.append('text').attr('class', 'ax axc').attr('x', x(t)).attr('y', H - B + 15).text((t > 0 ? '+' : '') + t + '%');
+    });
+    y.ticks(5).forEach((t) => {
+      sv.append('line').attr('class', t === 0 ? 'zl' : 'gl').attr('x1', L).attr('x2', W - Rr).attr('y1', y(t)).attr('y2', y(t));
+      sv.append('text').attr('class', 'ax axr').attr('x', L - 6).attr('y', y(t) + 4).text((t > 0 ? '+' : '') + t + '%');
+    });
+    sv.append('text').attr('class', 'ax axc').attr('x', (L + W - Rr) / 2).attr('y', H - 6).text(def.label + ' 12개월 누적의 전년 대비');
+    sv.append('text').attr('class', 'ax').attr('transform', 'translate(12,' + (H - B) / 2 + ') rotate(-90)').attr('text-anchor', 'middle').text('매매가격 전년 동월 대비');
+    const r = pearson(pts.map((d) => d.x), pts.map((d) => d.y));
+    // 회귀선(OLS)
+    const mx = d3.mean(pts, (d) => d.x), my = d3.mean(pts, (d) => d.y);
+    const sxx = d3.sum(pts, (d) => (d.x - mx) ** 2), sxy = d3.sum(pts, (d) => (d.x - mx) * (d.y - my));
+    if (sxx > 0) { const b = sxy / sxx, a = my - b * mx;
+      sv.append('line').attr('x1', x(XMIN)).attr('x2', x(XMAX)).attr('y1', y(Math.max(-yl, Math.min(yl, a + b * XMIN)))).attr('y2', y(Math.max(-yl, Math.min(yl, a + b * XMAX))))
+        .attr('stroke', 'var(--price)').attr('stroke-width', 2).attr('stroke-dasharray', '5 4').attr('opacity', .75); }
+    const g = sv.selectAll('g.pt').data(pts).join('g').attr('class', 'pt');
+    g.append('circle').attr('class', 'sc-dot').attr('cx', (d) => x(cx(d.x))).attr('cy', (d) => y(d.y)).attr('r', (d) => d.c === state.selected ? 9 : 7)
+      .attr('fill', (d) => d.y >= 0 ? 'var(--accent)' : 'var(--neg)').attr('fill-opacity', (d) => (d.x > XMAX || d.x < XMIN) ? .35 : .88)
+      .attr('stroke', (d) => d.c === state.selected ? 'var(--ink)' : 'var(--panel)').attr('stroke-width', (d) => d.c === state.selected ? 3 : 1.5)
+      .on('click', (e, d) => selectRegion(d.c))
+      .on('mousemove', (e, d) => { tip.innerHTML = '<b>' + NAMES[d.c] + '</b>공급 ' + fmtPct(d.x) + '<br>가격 ' + fmtPct(d.y); tip.style.display = 'block'; tip.style.left = Math.min(window.innerWidth - 250, e.clientX + 14) + 'px'; tip.style.top = (e.clientY + 14) + 'px'; })
+      .on('mouseleave', hideTip);
+    // 라벨은 겹치지 않는 것만 그린다(선택 지역 → 중심에서 먼 점 순). 나머지는 마우스를 올리면 보인다.
+    const placed = [];
+    const prio = pts.slice().sort((a, b) => (b.c === state.selected) - (a.c === state.selected) || (Math.hypot(x(cx(b.x)) - x(0), y(b.y) - y(0)) - Math.hypot(x(cx(a.x)) - x(0), y(a.y) - y(0))));
+    prio.forEach((d) => {
+      const t = NAMES[d.c] + ((d.x > XMAX) ? ' ›' : ''), w = t.length * 12 + 6, px = x(cx(d.x)), py = y(d.y) - 11;
+      const box = { x0: px - w / 2, x1: px + w / 2, y0: py - 12, y1: py + 3 };
+      if (placed.some((b) => box.x0 < b.x1 && box.x1 > b.x0 && box.y0 < b.y1 && box.y1 > b.y0)) return;
+      placed.push(box);
+      sv.append('text').attr('class', 'sc-lbl').attr('x', px).attr('y', py).attr('text-anchor', 'middle').text(t);
+    });
+    const dir = r == null ? '' : (Math.abs(r) < 0.2 ? '뚜렷한 관계가 보이지 않습니다.' : (r < 0 ? '공급이 많이 늘어난 곳일수록 가격 상승률이 낮은 경향입니다.' : '공급이 많이 늘어난 곳일수록 가격도 더 오른 경향입니다.'));
+    $('relScInsight').innerHTML = (r == null ? '' : '이 시점 시도 ' + pts.length + '곳의 상관계수는 <b>' + r.toFixed(2) + '</b>. ') + dir + ' 슬라이더나 재생 버튼으로 시점을 바꿔 보세요.';
   }
 
   function highlight(code, on) {
@@ -622,7 +876,7 @@
     document.querySelectorAll('#units .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.unit === state.unit));
     const yearly = state.unit === 'year';
     const lvl = document.querySelector('[data-mode="level"]'), cum = document.querySelector('[data-mode="cum"]'), yoy = document.querySelector('[data-mode="yoy"]');
-    lvl.textContent = yearly ? (isStock() ? '연말 잔량' : '연간 합계') : (isStock() ? '월말 잔량' : '월 수치');
+    lvl.textContent = yearly ? (isStock() ? '연말 ' + SW() : '연간 합계') : (isStock() ? '월말 ' + SW() : '월 수치');
     yoy.textContent = yearly ? '전년 대비' : '전년 동월 대비';
     cum.disabled = isStock() || yearly;
     if (cum.disabled && state.mode === 'cum') state.mode = 'level';
@@ -631,7 +885,11 @@
   }
   function setMetric(id, keepPos) {
     const prevP = keepPos ? periods()[state.idx] : null;
+    const wasIndex = state.metric ? isIndex() : false;
     state.metric = id; buildPeriods();
+    if (isIndex() && !wasIndex && state.mode === 'level') state.mode = 'yoy'; // 가격은 수준(지수)보다 변동률로 먼저 보여준다
+    if (!isIndex() && wasIndex && state.mode === 'yoy') state.mode = 'level';
+    if (isIndex() && state.mode === 'cum') state.mode = 'yoy';
     const list = periods();
     let i = prevP ? list.indexOf(prevP) : -1;
     state.idx = i >= 0 ? i : Math.max(0, list.length - 1);
@@ -685,6 +943,11 @@
     document.querySelectorAll('#basis .btn').forEach((b) => b.addEventListener('click', () => setBasis(b.dataset.basis)));
     $('slider').addEventListener('input', (e) => { stop(); state.idx = +e.target.value; render(); });
     $('play').addEventListener('click', togglePlay);
+    SUPPLY.forEach((id) => {
+      const m = META.metrics.find((x) => x.id === id); if (!m) return;
+      const b = document.createElement('button'); b.className = 'btn'; b.dataset.id = id; b.textContent = m.label; b.setAttribute('aria-pressed', 'false');
+      b.addEventListener('click', () => { relMetric = id; renderRel(); }); $('relMetrics').appendChild(b);
+    });
     drawMap();
     setMetric(META.metrics[0].id, false);
   }

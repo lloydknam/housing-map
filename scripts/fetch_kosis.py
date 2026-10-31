@@ -79,16 +79,30 @@ def fetch(url):
 
 
 def to_monthly(series):
-    """월별 누계 → 월 값. 1월은 누계 그대로, 그 외는 전월 누계와의 차. 전월이 없으면 건너뛴다."""
-    out = {}
+    """월별 누계 → 월 값. 1월은 누계 그대로, 그 외는 전월 누계와의 차.
+
+    누계는 줄어들 수 없으므로, 앞선 달보다 작아진 값(예: 일부 달이 0으로 비어 온 경우)은 결측으로 본다.
+    결측 달과 그 다음 달(전월 누계가 없어 월 값을 만들 수 없음)은 건너뛴다.
+    """
+    valid, last = {}, 0
     for m in sorted(series):
         y, mm = m.split("-")
         if mm == "01":
-            out[m] = series[m]
+            last = 0
+        v = series[m]
+        if v < last:  # 누계가 줄었다 = 결측
+            continue
+        valid[m] = v
+        last = v
+    out = {}
+    for m in sorted(valid):
+        y, mm = m.split("-")
+        if mm == "01":
+            out[m] = valid[m]
             continue
         prev = f"{y}-{int(mm) - 1:02d}"
-        if prev in series:
-            out[m] = series[m] - series[prev]
+        if prev in valid:
+            out[m] = valid[m] - valid[prev]
     return out
 
 
@@ -186,6 +200,8 @@ def main():
             log["metrics"][mid] = {"status": "error", "error": msg}
             failed += 1
             continue
+        if metric.get("cumulative"):  # 환산 규칙이 바뀌면 과거 값도 다시 계산해야 하므로 통째로 교체한다
+            store.setdefault("data", {})[mid] = {}
         cur = store.setdefault("data", {}).setdefault(mid, {})
         for code, months in fresh.items():
             cur.setdefault(code, {}).update(months)
