@@ -192,7 +192,66 @@
   .lockup img { display: block; height: 48px; width: auto; }
   .brand-note { font-size: 11px; color: var(--muted); margin-top: 6px; }
   footer a { color: inherit; }
-  @media (max-width: 560px) { .brand img { width: 60px; height: 60px; } .brand { gap: 12px; } .wrap { padding: 28px 14px 36px; } .card { padding: 16px; border-radius: 22px; } .month { min-width: 96px; font-size: 17px; } }
+
+  /* ===== 모바일(≤560px) 전체 균형 조정 ===== */
+  .hs { width: 100%; } .hs-hint { display: none; }
+  @media (max-width: 560px) {
+    .wrap { padding: 22px 14px 32px; }
+    .brand { gap: 12px; align-items: center; }
+    .brand img { width: 56px; height: 56px; border-width: 3px; }
+    h1 { font-size: 23px; line-height: 1.2; letter-spacing: -0.04em; }
+    .sub { font-size: 14px; margin-top: 6px; line-height: 1.5; }
+    .hero { margin-bottom: 16px; gap: 10px; }
+    .source-pill { font-size: 12px; padding: 6px 12px; }
+    h2 { font-size: 19px; }
+    h3 { font-size: 14px; margin: 22px 0 10px; line-height: 1.45; }
+    /* 지표 버튼: 줄바꿈 대신 한 줄 가로 스크롤 */
+    .controls { gap: 8px 10px; margin-bottom: 10px; }
+    #metrics { flex-wrap: nowrap; overflow-x: auto; width: calc(100% + 28px); margin: 0 -14px; padding: 4px 14px 8px; gap: 6px;
+      scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+    #metrics::-webkit-scrollbar { display: none; }
+    #metrics .btn { padding: 8px 13px; font-size: 14px; gap: 5px; flex: none; }
+    #metrics .btn .em { font-size: 15px; }
+    .group.seg { padding: 3px; }
+    .seg .btn { padding: 6px 11px; font-size: 13.5px; }
+    #units .btn, #views .btn { font-size: 14px; }
+    .timebar { gap: 10px; padding: 10px 14px 10px 10px; border-radius: 18px; margin: 12px 0 16px; }
+    #play { width: 38px; height: 38px; }
+    .month { font-size: 15px; min-width: 84px; }
+    .card { padding: 16px 14px; border-radius: 22px; }
+    #mapbox { padding: 6px; }
+    .lbl { font-size: 20px; stroke-width: 4px; } .lbl.v { font-size: 22px; }
+    .lbl.n { transform: translateY(-3px); } .lbl.v { transform: translateY(5px); }
+    .legend { right: 10px; bottom: 10px; padding: 5px 8px; font-size: 11.5px; }
+    .legend .grad { width: 150px; }
+    .sum .lab { font-size: 13px; }
+    .sum .big { font-size: 46px; }
+    .sum .big small { font-size: 16px; }
+    .sum .yoy { font-size: 13px; padding: 5px 11px; }
+    #spark { height: 60px; }
+    .rank li { grid-template-columns: 62px 1fr 60px; gap: 8px; padding: 4px 4px; font-size: 14px; }
+    .rank .bar { height: 10px; }
+    .note { font-size: 12px; line-height: 1.6; }
+    .trend, .rel { margin-top: 16px; }
+    .trend-sub { font-size: 13px; }
+    .trend-head { gap: 8px; }
+    /* 넓은 차트는 읽을 수 있는 크기를 유지한 채 가로로 밀어 보게 한다 */
+    .hs { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -4px; padding-bottom: 4px; }
+    .hs-hint { display: block; font-size: 12px; color: var(--muted); text-align: right; margin: 2px 2px 0; }
+    #bars { min-width: 600px; }
+    #relTs { min-width: 640px; }
+    #bars .tx, #bars .tv, #bars .tg { font-size: 12px; }
+    #multiples { gap: 8px; }
+    .mini { padding: 10px 11px 8px; border-radius: 16px; }
+    .mini .n { font-size: 13.5px; }
+    .mini .v { font-size: 18px; }
+    .mini svg { height: 38px; }
+    .rel .ax { font-size: 12px; } .rel .pn { font-size: 14px; } .rel .sc-lbl { font-size: 13px; }
+    .legend-inline { font-size: 12.5px; gap: 4px 12px; }
+    .insight { font-size: 13.5px; padding: 11px 12px; }
+    footer { margin-top: 26px; font-size: 12px; }
+    .lockup img { height: 40px; }
+  }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
@@ -261,8 +320,8 @@
         <button class="btn" data-basis="ytd" aria-pressed="false">동기간 비교</button>
       </div>
     </div>
-    <svg id="bars" viewBox="0 0 700 260" role="img" aria-label="연도별 막대 그래프"></svg>
-    <h3>시도별 한눈에 · 서울부터 고정 순서 (막대를 누르면 해당 연도로 지도가 바뀝니다)</h3>
+    <div class="hs-hint">← 옆으로 밀어 지난 연도 보기</div><div class="hs"><svg id="bars" viewBox="0 0 700 260" role="img" aria-label="연도별 막대 그래프"></svg></div>
+    <h3>시도별 한눈에 · 인허가 많은 순 고정 (막대를 누르면 해당 연도로 지도가 바뀝니다)</h3>
     <div id="multiples"></div>
     <div class="note" id="trendNote"></div>
   </section>
@@ -276,7 +335,7 @@
       <div class="group seg" id="relMetrics" role="group" aria-label="비교할 공급 지표"></div>
     </div>
     <div class="legend-inline"><span><i style="background:var(--accent)"></i><span id="relLegS">공급</span></span><span><i style="background:var(--price)"></i>아파트 매매 실거래가격지수 · 전년 동월 대비</span></div>
-    <svg id="relTs" viewBox="0 0 860 350" role="img" aria-label="공급과 가격 시계열"></svg>
+    <div class="hs-hint">← 옆으로 밀어 지난 시기 보기</div><div class="hs"><svg id="relTs" viewBox="0 0 860 350" role="img" aria-label="공급과 가격 시계열"></svg></div>
     <div class="relgrid">
       <div>
         <h3>공급이 늘면 가격은 몇 개월 뒤에 움직였나 (시차 상관)</h3>
@@ -983,6 +1042,7 @@
     });
     drawMap();
     setMetric(META.metrics[0].id, false);
+    document.querySelectorAll('.hs').forEach((e) => { e.scrollLeft = e.scrollWidth; });
   }
   init().catch((e) => { document.querySelector('.sub').textContent = '데이터를 불러오지 못했습니다: ' + e.message; });
 })();
