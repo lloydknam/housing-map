@@ -70,6 +70,7 @@
   .btn:hover { color: var(--ink); }
   .btn[aria-pressed="true"] { background: var(--accent); color: #fff; box-shadow: 0 8px 20px -6px color-mix(in srgb, var(--accent) 70%, transparent); }
   .seg .btn { background: transparent; box-shadow: none; padding: 7px 14px; }
+  #units .btn { font-weight: 800; font-size: 15px; }
   .seg .btn[aria-pressed="true"] { background: var(--panel); color: var(--accent-text); box-shadow: 0 2px 8px rgba(14,26,43,.12); }
   #metrics .btn { padding: 11px 18px; font-size: 15px; display: inline-flex; align-items: center; gap: 7px; }
   #metrics .btn .em { font-size: 17px; line-height: 1; }
@@ -207,8 +208,8 @@
   <div class="controls">
     <div class="group" id="metrics" role="group" aria-label="지표 선택"></div>
     <div class="group seg" id="units" role="group" aria-label="시간 단위">
-      <button class="btn" data-unit="month" aria-pressed="true">월별</button>
-      <button class="btn" data-unit="year" aria-pressed="false">연도별</button>
+      <button class="btn" data-unit="year" aria-pressed="true">연도별</button>
+      <button class="btn" data-unit="month" aria-pressed="false">월별</button>
     </div>
     <div class="group seg" id="modes" role="group" aria-label="보기 방식">
       <button class="btn" data-mode="level" aria-pressed="true">월 수치</button>
@@ -306,7 +307,7 @@
   const EMOJI = { permit: '📝', start: '🏗️', sale: '📣', complete: '🏠', unsold: '🪧', unsold_post: '🧱', price: '💰' };
   const SHOWN_YEARS = 21; // 최근 20개 연도 + 올해(일부만 집계된 경우 포함)
 
-  const state = { metric: null, mode: 'level', unit: 'month', basis: 'full', idx: 0, selected: null, playing: false };
+  const state = { metric: null, mode: 'level', unit: 'year', basis: 'full', idx: 0, selected: null, playing: false };
   let META, DATA, GEO, MONTHS = [], YEARS = [], timer = null, TOT = null;
 
   const $ = (id) => document.getElementById(id);
