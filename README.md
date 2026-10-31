@@ -2,8 +2,8 @@
 
 국토교통부 월간 주택통계(인허가·착공·분양·준공·미분양)를 시도별 지도 위에 보여주는 GitHub Pages 사이트입니다.
 
-- 보기 방식: 월별/연도별 전환, 월 수치·연초 누계·전년 대비, 최근 10년 연도별 추이 막대(전년 대비 증감, 동기간 비교)와 시도별 미니 차트
-- 데이터: 최근 120개월(10년) KOSIS OpenAPI → `data/housing.json` (GitHub Actions가 매일 확인해 바뀐 경우에만 커밋)
+- 보기 방식: 월별/연도별 전환, 월 수치·연초 누계·전년 대비, 최근 20년 연도별 추이 막대(전년 대비 증감, 동기간 비교)와 시도별 미니 차트
+- 데이터: 최근 240개월(20년) KOSIS OpenAPI → `data/housing.json` (GitHub Actions가 매일 확인해 바뀐 경우에만 커밋)
 - 지도 경계: `data/provinces.geo.json` (KOSTAT 2013 시도 경계, southkorea/southkorea-maps)
 
 ## 운영
