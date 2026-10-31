@@ -1,0 +1,14 @@
+{
+  "source": "국토교통부 주택통계 (KOSIS)",
+  "updated": null,
+  "latest": null,
+  "metrics": [
+    {"id": "permit",   "label": "인허가",       "unit": "호", "kind": "flow"},
+    {"id": "start",    "label": "착공",         "unit": "호", "kind": "flow"},
+    {"id": "sale",     "label": "분양(승인)",   "unit": "호", "kind": "flow"},
+    {"id": "complete", "label": "준공",         "unit": "호", "kind": "flow"},
+    {"id": "unsold",   "label": "미분양",       "unit": "호", "kind": "stock"},
+    {"id": "unsold_post", "label": "준공 후 미분양", "unit": "호", "kind": "stock"}
+  ],
+  "data": {}
+}

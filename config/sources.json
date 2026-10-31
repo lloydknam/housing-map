@@ -1,0 +1,11 @@
+{
+  "_help": "지표별로 KOSIS 'URL 생성'으로 만든 통계자료 요청 URL을 url_template에 넣으세요. API 키 자리는 {API_KEY}로 바꾸고, 분류·항목은 시도별·월별 값이 나오도록 선택합니다. 한 (시도, 월)에 행이 여러 개면 filters로 거르세요(예: {\"C2_NM\": \"계\"}). url_template이 비어 있는 지표는 건너뜁니다.",
+  "metrics": [
+    {"id": "permit",      "url_template": "", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {}},
+    {"id": "start",       "url_template": "", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {}},
+    {"id": "sale",        "url_template": "", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {}},
+    {"id": "complete",    "url_template": "", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {}},
+    {"id": "unsold",      "url_template": "", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {}},
+    {"id": "unsold_post", "url_template": "", "region_field": "C1_NM", "period_field": "PRD_DE", "value_field": "DT", "filters": {}}
+  ]
+}
