@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - index.html
+      - assets/**
       - data/provinces.geo.json
       - data/housing.json
       - .github/workflows/pages.yml
@@ -43,6 +44,7 @@ jobs:
           cp index.html _site/
           mkdir _site/data
           cp data/provinces.geo.json data/housing.json _site/data/
+          cp -r assets _site/assets
 
       - uses: actions/upload-pages-artifact@v3
         with:

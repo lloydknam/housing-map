@@ -5,8 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>주택공급 지도</title>
 <meta name="description" content="국토교통부 월간 주택통계를 시도별 지도 위에 보여주는 인허가·착공·준공·미분양 대시보드">
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #f6f5f2;
@@ -87,9 +90,10 @@
   .note { font-size: 12px; color: var(--muted); margin-top: 14px; }
   footer { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap;
     align-items: flex-end; justify-content: space-between; gap: 10px; font-size: 12px; color: var(--muted); }
-  .brand { font-family: "Barlow", sans-serif; font-weight: 600; font-size: 15px; letter-spacing: .16em; color: var(--ink); position: relative; display: inline-block; padding-right: 14px; }
-  .brand sup { color: #d8322b; font-size: 14px; position: absolute; top: -4px; right: 0; letter-spacing: 0; }
-  .brand-note { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  /* 로고 SVG는 밝은 배경용(남색 글자)이라 다크 모드에서도 읽히도록 크림색 칩 위에 올린다 */
+  .lockup { display: inline-block; background: #f6f1e6; border-radius: 12px; padding: 6px 12px; line-height: 0; }
+  .lockup img { display: block; height: 48px; width: auto; }
+  .brand-note { font-size: 11px; color: var(--muted); margin-top: 4px; }
   footer a { color: inherit; }
 </style>
 </head>
@@ -132,12 +136,11 @@
   </div>
 
   <footer>
-    <div>
-      <div class="brand">LLOYD'S BALCONY LAB<sup>*</sup></div>
+    <div class="credit">
+      <a class="lockup" href="https://github.com/lloydknam" target="_blank" rel="noopener"><img src="assets/brand/lockup-light.svg" alt="Lloyd's Balcony Lab · with claude · GitHub(@lloydknam)" height="48"></a>
       <div class="brand-note">*아직 실험 중</div>
     </div>
-    <div>with claude · <a href="https://github.com/lloydknam" target="_blank" rel="noopener">GitHub(@lloydknam)</a>
-      <span id="srcLine"></span></div>
+    <div id="srcLine"></div>
   </footer>
 </div>
 <div id="tip"></div>
@@ -395,7 +398,7 @@
       fetch('data/housing.json', { cache: 'no-cache' }).then((r) => r.json()),
       fetch('data/provinces.geo.json').then((r) => r.json())]);
     DATA = META.data || {};
-    $('srcLine').textContent = ' · 출처: ' + META.source + (META.latest ? ' · 최신 ' + monthText(META.latest) : '');
+    $('srcLine').textContent = '출처: ' + META.source + (META.latest ? ' · 최신 ' + monthText(META.latest) : '');
     const box = $('metrics');
     META.metrics.forEach((m) => {
       const b = document.createElement('button'); b.className = 'btn'; b.dataset.id = m.id; b.textContent = m.label;
