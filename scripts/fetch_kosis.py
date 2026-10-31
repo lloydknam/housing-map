@@ -173,6 +173,17 @@ def collect(metric, api_key, rows=None):
 
     if metric.get("cumulative"):
         out = {c: to_monthly(s) for c, s in out.items()}
+        # 누계표가 몇 달을 직전 값으로 채워 보내는 경우(전국 합 0)가 있다. 그 달과, 증가분이 한꺼번에 몰린 다음 달은 결측 처리한다.
+        tot = {}
+        for series in out.values():
+            for m, v in series.items():
+                tot[m] = tot.get(m, 0) + v
+        bad = {m for m, v in tot.items() if v == 0}
+        for m in sorted(tot):
+            y, mm = m.split("-")
+            if mm != "01" and f"{y}-{int(mm) - 1:02d}" in bad:
+                bad.add(m)
+        out = {c: {m: v for m, v in series.items() if m not in bad} for c, series in out.items()}
     return out
 
 
