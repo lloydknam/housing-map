@@ -83,21 +83,21 @@
   .timebar input::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 6px solid var(--accent); box-shadow: 0 4px 12px rgba(14,26,43,.25); cursor: grab; }
   .month { font-weight: 800; font-size: 20px; min-width: 128px; text-align: right; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
 
-  .grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 22px; align-items: stretch; }
+  .grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 22px; align-items: stretch; }
   @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
   .card { background: var(--panel); border-radius: 28px; padding: 22px; box-shadow: var(--shadow); }
-  #mapbox { position: relative; display: flex; flex-direction: column; justify-content: center; background:
+  #mapbox { position: relative; display: flex; flex-direction: column; padding: 10px; overflow: hidden; background:
       radial-gradient(420px 320px at 30% 20%, color-mix(in srgb, var(--sky) 90%, transparent), transparent 75%),
       radial-gradient(360px 300px at 90% 90%, color-mix(in srgb, var(--mint) 80%, transparent), transparent 75%),
       var(--panel); }
-  svg#map { width: 100%; height: auto; display: block; }
+  svg#map { width: 100%; height: auto; display: block; flex: 1; min-height: 0; }
   .region { stroke: var(--panel); stroke-width: 1.6; stroke-linejoin: round; cursor: pointer; transition: fill .45s ease, stroke .15s; }
   .region:hover, .region.hl { stroke: var(--ink); stroke-width: 2.2; }
   .region.sel { stroke: var(--ink); stroke-width: 3; }
   .lbl { font-size: 11px; font-weight: 600; pointer-events: none; text-anchor: middle; fill: var(--ink); paint-order: stroke;
     stroke: color-mix(in srgb, var(--panel) 85%, transparent); stroke-width: 3.5px; stroke-linejoin: round; }
   .lbl.v { font-weight: 800; }
-  .legend { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; margin-top: 10px; font-size: 12.5px; color: var(--muted); font-weight: 500; }
+  .legend { position: absolute; right: 18px; bottom: 16px; max-width: calc(100% - 36px); justify-content: flex-end; background: color-mix(in srgb, var(--panel) 82%, transparent); padding: 6px 10px; border-radius: 12px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); font-weight: 500; }
   .legend .sw { width: 34px; height: 12px; border-radius: 4px; }
   .legend .grad { width: 180px; height: 12px; border-radius: 6px; }
   .empty { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; text-align: center;
@@ -190,7 +190,7 @@
 
   <div class="grid">
     <div class="card" id="mapbox">
-      <svg id="map" viewBox="0 0 600 700" role="img" aria-label="시도별 주택통계 지도"></svg>
+      <svg id="map" viewBox="0 0 600 760" role="img" aria-label="시도별 주택통계 지도"></svg>
       <div class="legend" id="legend"></div>
       <div class="empty" id="empty">아직 수집된 데이터가 없습니다.<br>KOSIS 수집 설정이 끝나면 이 지도가 채워집니다.</div>
     </div>
@@ -335,12 +335,28 @@
   const svg = d3.select('#map');
   let paths, labels, projection, pathGen;
   function drawMap() {
-    projection = d3.geoMercator().fitExtent([[12, 12], [588, 688]], GEO);
+    // 울릉도·독도·작은 섬은 지도를 작게 만들 뿐이라 덜어낸다(제주는 유지).
+    GEO.features.forEach((f) => {
+      if (f.geometry.type === 'MultiPolygon')
+        f.geometry.coordinates = f.geometry.coordinates.filter((c) => d3.geoArea({ type: 'Polygon', coordinates: c }) > 2e-5);
+    });
+    // 남은 모양의 가로세로 비율에 맞춰 viewBox를 정해 상자를 꽉 채운다.
+    projection = d3.geoMercator().fitWidth(588, GEO);
+    const bb = d3.geoPath(projection).bounds(GEO);
+    projection.translate([projection.translate()[0] + 6 - bb[0][0], projection.translate()[1] + 6 - bb[0][1]]);
     pathGen = d3.geoPath(projection);
+    // 제주는 본토와 멀리 떨어져 빈 공간만 늘리므로 남해안 쪽으로 끌어올려 배치한다(위치는 그대로 읽히는 정도로만).
+    const jeju = GEO.features.find((f) => f.properties.code === '39');
+    const rest = GEO.features.filter((f) => f !== jeju);
+    const mainBottom = d3.max(rest, (f) => pathGen.bounds(f)[1][1]);
+    const jejuTop = pathGen.bounds(jeju)[0][1];
+    const JEJU_DY = Math.max(0, jejuTop - mainBottom - 26);
+    svg.attr('viewBox', '0 0 600 ' + Math.ceil(bb[1][1] - bb[0][1] + 34 - JEJU_DY));
     const g = svg.append('g');
     paths = g.selectAll('path').data(GEO.features).join('path')
       .attr('class', 'region').attr('d', pathGen)
       .attr('tabindex', 0)
+      .attr('transform', (f) => f.properties.code === '39' ? 'translate(0,' + (-JEJU_DY) + ')' : null)
       .on('mousemove', (e, f) => showTip(e, gcode(f)))
       .on('mouseenter', (e, f) => highlight(gcode(f), true))
       .on('mouseleave', (e, f) => { hideTip(); highlight(gcode(f), false); })
@@ -354,7 +370,7 @@
       .attr('transform', (f) => {
         const o = LABEL_AT[f.properties.code] || {};
         const c = o.lonlat ? projection(o.lonlat) : pathGen.centroid(f);
-        return `translate(${c[0] + (o.dx || 0)},${c[1] + (o.dy || 0)})`;
+        return `translate(${c[0] + (o.dx || 0)},${c[1] + (o.dy || 0) - (f.properties.code === '39' ? JEJU_DY : 0)})`;
       });
     labels.filter((f) => LABEL_AT[f.properties.code] && LABEL_AT[f.properties.code].dx != null)
       .append('line').attr('x1', 0).attr('y1', 4)
