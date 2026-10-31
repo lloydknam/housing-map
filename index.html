@@ -658,7 +658,11 @@
     if (mid === 'price') return d['00'] || {};
     const months = new Set(), out = {};
     CODES.forEach((c) => Object.keys(d[c] || {}).forEach((m) => months.add(m)));
-    months.forEach((m) => { let sum = 0, n = 0; CODES.forEach((c) => { const v = (d[c] || {})[m]; if (v != null) { sum += v; n++; } }); if (n >= CODES.length - 1) out[m] = sum; }); // 세종(2012~)처럼 늦게 시작한 지역은 그 이전엔 빠진 채 합산
+    months.forEach((m) => { // 모든 시도가 있는 달만 합산한다(세종은 2012년 7월부터 존재). 일부 지역이 빠진 달은 결측으로 둔다.
+      let sum = 0, n = 0; const need = m < '2012-07' ? CODES.length - 1 : CODES.length;
+      CODES.forEach((c) => { const v = (d[c] || {})[m]; if (v != null) { sum += v; n++; } });
+      if (n >= need) out[m] = sum;
+    });
     return out;
   }
   function roll12(sr) {
@@ -700,7 +704,7 @@
     document.querySelectorAll('#relMetrics .btn').forEach((b) => b.setAttribute('aria-pressed', b.dataset.id === relMetric));
     const R = relSeries(code);
     drawTs(R, name, def); drawLag(R, name, def); drawScatter(def);
-    $('relNote').textContent = '가격은 한국부동산원 아파트 매매 실거래가격지수(계약 기준)이며 공급 통계(국토부)와 집계 기준이 다릅니다. 상관관계는 인과관계가 아니므로, 금리·정책·수요 변화가 함께 작용한 결과일 수 있습니다. 전남광주의 2026년 6월 이전 가격은 광주·전남 지수를 평균해 이어 붙인 근사치입니다.';
+    $('relNote').textContent = '원자료에서 일부 시도가 빠진 달(2007~2012년 일부)은 합계를 내지 않아 공급 선이 끊겨 보입니다. 가격은 한국부동산원 아파트 매매 실거래가격지수(계약 기준)이며 공급 통계(국토부)와 집계 기준이 다릅니다. 상관관계는 인과관계가 아니므로, 금리·정책·수요 변화가 함께 작용한 결과일 수 있습니다. 전남광주의 2026년 6월 이전 가격은 광주·전남 지수를 평균해 이어 붙인 근사치입니다.';
   }
 
   function drawTs(R, name, def) {
@@ -713,8 +717,8 @@
     const idxOf = new Map(all.map((m, i) => [m, i]));
     // 위: 공급 12개월 누적
     const sTop = 34, sBot = 168;
-    const sv = months.map((m) => ({ i: idxOf.get(m), v: R.sup12[m], m }));
-    const yS = d3.scaleLinear([0, (d3.max(sv, (d) => d.v) || 1) * 1.08], [sBot, sTop]).nice(4);
+    const sv = all.map((m) => ({ i: idxOf.get(m), v: R.sup12[m] == null ? null : R.sup12[m], m })).filter((d, k, arr) => arr.slice(0, k + 1).some((e) => e.v != null));
+    const yS = d3.scaleLinear([0, (d3.max(sv, (d) => d.v == null ? 0 : d.v) || 1) * 1.08], [sBot, sTop]).nice(4);
     yS.ticks(4).forEach((t) => {
       svgT.append('line').attr('class', 'gl').attr('x1', L).attr('x2', W - Rr).attr('y1', yS(t)).attr('y2', yS(t));
       svgT.append('text').attr('class', 'ax axr').attr('x', L - 8).attr('y', yS(t) + 4).text(t === 0 ? '0' : fmtShort(t));
@@ -722,20 +726,20 @@
     svgT.append('text').attr('class', 'pn').attr('x', L).attr('y', 18).text(def.label + ' (12개월 누적, ' + def.unit + ')');
     const defs = svgT.append('defs'); const g = defs.append('linearGradient').attr('id', 'gSup').attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
     g.append('stop').attr('offset', '0%').attr('stop-color', 'var(--accent)').attr('stop-opacity', .45); g.append('stop').attr('offset', '100%').attr('stop-color', 'var(--accent)').attr('stop-opacity', .04);
-    svgT.append('path').attr('d', d3.area().x((d) => x(d.i)).y0(sBot).y1((d) => yS(d.v))(sv)).attr('fill', 'url(#gSup)');
-    svgT.append('path').attr('d', d3.line().x((d) => x(d.i)).y((d) => yS(d.v))(sv)).attr('fill', 'none').attr('stroke', 'var(--accent)').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+    svgT.append('path').attr('d', d3.area().defined((d) => d.v != null).x((d) => x(d.i)).y0(sBot).y1((d) => yS(d.v))(sv)).attr('fill', 'url(#gSup)');
+    svgT.append('path').attr('d', d3.line().defined((d) => d.v != null).x((d) => x(d.i)).y((d) => yS(d.v))(sv)).attr('fill', 'none').attr('stroke', 'var(--accent)').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
     // 아래: 가격 전년 동월 대비
     const pTop = 214, pBot = 316;
-    const pv = pm.map((m) => ({ i: idxOf.get(m), v: R.priceYoy[m], m }));
-    const ext = d3.extent(pv, (d) => d.v); const lim = Math.max(5, Math.abs(ext[0] || 0), Math.abs(ext[1] || 0));
+    const pv = all.map((m) => ({ i: idxOf.get(m), v: R.priceYoy[m] == null ? null : R.priceYoy[m], m })).filter((d, k, arr) => arr.slice(0, k + 1).some((e) => e.v != null));
+    const ext = d3.extent(pv.filter((d) => d.v != null), (d) => d.v); const lim = Math.max(5, Math.abs(ext[0] || 0), Math.abs(ext[1] || 0));
     const yP = d3.scaleLinear([-lim, lim], [pBot, pTop]).nice(3);
     svgT.append('text').attr('class', 'pn').attr('x', L).attr('y', 198).text('아파트 매매가격 · 전년 동월 대비(%)');
     yP.ticks(4).forEach((t) => {
       svgT.append('line').attr('class', t === 0 ? 'zl' : 'gl').attr('x1', L).attr('x2', W - Rr).attr('y1', yP(t)).attr('y2', yP(t));
       svgT.append('text').attr('class', 'ax axr').attr('x', L - 8).attr('y', yP(t) + 4).text((t > 0 ? '+' : '') + t + '%');
     });
-    svgT.append('path').attr('d', d3.area().x((d) => x(d.i)).y0(yP(0)).y1((d) => yP(d.v))(pv)).attr('fill', 'var(--price)').attr('opacity', .14);
-    svgT.append('path').attr('d', d3.line().x((d) => x(d.i)).y((d) => yP(d.v))(pv)).attr('fill', 'none').attr('stroke', 'var(--price)').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+    svgT.append('path').attr('d', d3.area().defined((d) => d.v != null).x((d) => x(d.i)).y0(yP(0)).y1((d) => yP(d.v))(pv)).attr('fill', 'var(--price)').attr('opacity', .14);
+    svgT.append('path').attr('d', d3.line().defined((d) => d.v != null).x((d) => x(d.i)).y((d) => yP(d.v))(pv)).attr('fill', 'none').attr('stroke', 'var(--price)').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
     // x축 연도
     all.forEach((m, i) => { if (m.slice(5) === '01' && parseInt(m.slice(0, 4), 10) % 2 === 0) svgT.append('text').attr('class', 'ax axc').attr('x', x(i)).attr('y', pBot + 18).text(m.slice(0, 4)); });
     // 현재 선택 시점
