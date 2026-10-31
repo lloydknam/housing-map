@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>주택공급 지도</title>
+<title>클사무관의 주택공급 지도</title>
 <meta name="description" content="국토교통부 월간 주택통계를 시도별 지도 위에 보여주는 인허가·착공·준공·미분양 대시보드. 최근 20년 연도별 추이 포함">
 <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
@@ -48,6 +48,9 @@
   }
   .wrap { max-width: 1160px; margin: 0 auto; padding: 44px 20px 48px; }
 
+  .brand { display: flex; align-items: center; gap: 18px; }
+  .brand img { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; flex: none; border: 4px solid var(--panel);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent), var(--shadow); }
   .hero { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 14px 24px; margin-bottom: 26px; }
   h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.12; margin: 0; font-weight: 800; letter-spacing: -0.035em; }
   h2 { font-size: 22px; margin: 0; letter-spacing: -0.025em; font-weight: 800; }
@@ -155,16 +158,19 @@
   .lockup img { display: block; height: 48px; width: auto; }
   .brand-note { font-size: 11px; color: var(--muted); margin-top: 6px; }
   footer a { color: inherit; }
-  @media (max-width: 560px) { .wrap { padding: 28px 14px 36px; } .card { padding: 16px; border-radius: 22px; } .month { min-width: 96px; font-size: 17px; } }
+  @media (max-width: 560px) { .brand img { width: 60px; height: 60px; } .brand { gap: 12px; } .wrap { padding: 28px 14px 36px; } .card { padding: 16px; border-radius: 22px; } .month { min-width: 96px; font-size: 17px; } }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="hero">
-    <div>
-      <h1>주택공급 지도</h1>
+    <div class="brand">
+      <img src="assets/clerk.jpg" alt="클사무관" width="88" height="88">
+      <div>
+      <h1>클사무관의 주택공급 지도</h1>
       <p class="sub">인허가부터 미분양까지, 시도별 주택 통계를 지도와 20년 추이로 한눈에 봅니다.</p>
+      </div>
     </div>
     <span class="source-pill"><i></i>국토교통부 월간 주택통계 · KOSIS</span>
   </header>
