@@ -112,9 +112,9 @@
   .lbl { font-size: 14.5px; font-weight: 700; pointer-events: none; text-anchor: middle; fill: var(--ink); paint-order: stroke;
     stroke: color-mix(in srgb, var(--panel) 85%, transparent); stroke-width: 4px; stroke-linejoin: round; }
   .bub { fill-opacity: .88; stroke: #fff; stroke-width: 2.5px; pointer-events: none; transition: r .45s ease; }
-  :root { --bubbase: #e4ecfb; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bubbase: #243a63; } }
-  :root[data-theme="dark"] { --bubbase: #243a63; }
+  :root { --bubbase: #e6e9ee; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bubbase: #323a49; } }
+  :root[data-theme="dark"] { --bubbase: #323a49; }
   .lbl.v { font-weight: 800; font-size: 16px; }
   @media (min-width: 861px) { .lbl { font-size: 25px; } .lbl.v { font-size: 28px; } .lbl.n { transform: translateY(-6px); } .lbl.v { transform: translateY(8px); } .lbl { stroke-width: 5px; } }
   .legend { position: absolute; right: 18px; bottom: 16px; max-width: calc(100% - 36px); justify-content: flex-end; background: color-mix(in srgb, var(--panel) 82%, transparent); padding: 6px 10px; border-radius: 12px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); font-weight: 500; }
@@ -411,10 +411,18 @@
   const svg = d3.select('#map');
   let paths, labels, projection, pathGen;
   function drawMap() {
-    // 울릉도·독도·작은 섬은 지도를 작게 만들 뿐이라 덜어낸다(제주는 유지).
+    // 작은 섬도 모두 그린다. 다만 울릉도·독도(동쪽)와 서해5도(서쪽)는 본토에서 너무 멀어 지도가 쪼그라들므로
+    // 경도를 본토 쪽으로 당겨 해안 가까이에 붙여 그린다(제주와 같은 방식의 배치).
     GEO.features.forEach((f) => {
-      if (f.geometry.type === 'MultiPolygon')
-        f.geometry.coordinates = f.geometry.coordinates.filter((c) => d3.geoArea({ type: 'Polygon', coordinates: c }) > 2e-5);
+      const shift = (ring, d) => ring.map((pt) => [pt[0] + d, pt[1]]);
+      const mv = (poly) => {
+        const lon = d3.geoCentroid({ type: 'Polygon', coordinates: poly })[0];
+        const xs = poly[0].map((q) => q[0]);
+        const d = lon > 130 ? 129.75 - Math.max.apply(null, xs) : (lon < 125.7 ? 126.0 - Math.min.apply(null, xs) : 0);
+        return d ? poly.map((r) => shift(r, d)) : poly;
+      };
+      if (f.geometry.type === 'MultiPolygon') f.geometry.coordinates = f.geometry.coordinates.map(mv);
+      else if (f.geometry.type === 'Polygon') f.geometry.coordinates = mv(f.geometry.coordinates);
     });
     // 남은 모양의 가로세로 비율에 맞춰 viewBox를 정해 상자를 꽉 채운다.
     projection = d3.geoMercator().fitWidth(588, GEO);
@@ -491,8 +499,15 @@
       renderPanel(null); renderTrend(); renderRel(); return;
     }
     const vals = CODES.map((c) => valueFor(c, p, state.mode)).filter((v) => v != null);
-    const sc = colorScale(vals, state.mode);
+    let sc = colorScale(vals, state.mode);
     const bubble = state.view === 'bubble';
+    // 버블 보기: 바탕 지도는 무채색, 버블은 따뜻한 한 가지 색(노랑→주황→적색)으로 크기와 색을 함께 읽게 한다.
+    if (bubble && sc.kind === 'seq') {
+      const pal = ['#ffd36b', '#ffb347', '#ff8a3d', '#f4562b', '#d92b1f'];
+      const wr = d3.scaleLinear().domain([0, 0.25, 0.5, 0.75, 1]).range(pal).interpolate(d3.interpolateRgb).clamp(true);
+      const t = (v) => sc.linear ? (sc.max === sc.min ? 1 : (v - sc.min) / (sc.max - sc.min)) : Math.sqrt(Math.max(0, v) / sc.max);
+      sc = Object.assign({}, sc, { pal, color: (v) => v == null ? null : wr(t(v)) });
+    }
     paths.attr('fill', (f) => bubble ? 'var(--bubbase)' : (sc.color(valueFor(gcode(f), p, state.mode)) || 'var(--empty)'));
     const mx = d3.max(vals, (v) => Math.abs(v)) || 1, RMAX = 86;
     labels.select('.bub').attr('r', (f) => { const v = valueFor(gcode(f), p, state.mode); return bubble && v != null ? Math.max(9, RMAX * Math.sqrt(Math.abs(v) / mx)) : 0; })
