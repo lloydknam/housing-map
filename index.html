@@ -729,7 +729,7 @@
     svgT.append('g').selectAll('rect').data(sv.filter((d) => d.v != null)).join('rect')
       .attr('x', (d) => x(d.i) - bw / 2).attr('width', bw)
       .attr('y', (d) => yS(d.v)).attr('height', (d) => Math.max(0, sBot - yS(d.v)))
-      .attr('rx', Math.min(2, bw / 2)).attr('fill', (d) => d.m === cmSel ? 'var(--bar-hi)' : 'var(--bar-hi2)').attr('opacity', (d) => d.m === cmSel ? 1 : 0.8);
+      .attr('rx', Math.min(2, bw / 2)).attr('fill', 'var(--accent)').attr('opacity', (d) => d.m === cmSel ? 1 : 0.62);
     // 아래: 가격 전년 동월 대비
     const pTop = 214, pBot = 316;
     const pv = all.map((m) => ({ i: idxOf.get(m), v: R.priceYoy[m] == null ? null : R.priceYoy[m], m })).filter((d, k, arr) => arr.slice(0, k + 1).some((e) => e.v != null));
@@ -811,21 +811,21 @@
       const R = relSeries(c); return { c, x: R.supYoy[cm], y: R.priceYoy[cm] };
     }).filter((d) => d.x != null && d.y != null);
     if (pts.length < 5) { $('relScInsight').textContent = '이 시점은 비교할 시도 자료가 부족합니다.'; return; }
-    const W = 420, H = 300, L = 44, Rr = 14, T = 14, B = 40;
+    const W = 420, H = 300, L = 62, Rr = 16, T = 14, B = 40;
     const XMIN = -100, XMAX = 200;
     const cx = (v) => Math.max(XMIN, Math.min(XMAX, v));
     const yl = Math.max(4, d3.max(pts, (d) => Math.abs(d.y)) * 1.15);
     const x = d3.scaleLinear([XMIN, XMAX], [L, W - Rr]), y = d3.scaleLinear([-yl, yl], [H - B, T]).nice();
     [-100, -50, 0, 50, 100, 150, 200].forEach((t) => {
       sv.append('line').attr('class', t === 0 ? 'zl' : 'gl').attr('x1', x(t)).attr('x2', x(t)).attr('y1', T).attr('y2', H - B);
-      sv.append('text').attr('class', 'ax axc').attr('x', x(t)).attr('y', H - B + 15).text((t > 0 ? '+' : '') + t + '%');
+      sv.append('text').attr('class', 'ax').attr('text-anchor', t === 200 ? 'end' : 'middle').attr('x', x(t) + (t === 200 ? 4 : 0)).attr('y', H - B + 15).text((t > 0 ? '+' : '') + t + '%');
     });
     y.ticks(5).forEach((t) => {
       sv.append('line').attr('class', t === 0 ? 'zl' : 'gl').attr('x1', L).attr('x2', W - Rr).attr('y1', y(t)).attr('y2', y(t));
       sv.append('text').attr('class', 'ax axr').attr('x', L - 6).attr('y', y(t) + 4).text((t > 0 ? '+' : '') + t + '%');
     });
     sv.append('text').attr('class', 'ax axc').attr('x', (L + W - Rr) / 2).attr('y', H - 6).text(def.label + ' 12개월 누적의 전년 대비');
-    sv.append('text').attr('class', 'ax').attr('transform', 'translate(12,' + (H - B) / 2 + ') rotate(-90)').attr('text-anchor', 'middle').text('매매가격 전년 동월 대비');
+    sv.append('text').attr('class', 'ax').attr('transform', 'translate(11,' + (H - B) / 2 + ') rotate(-90)').attr('text-anchor', 'middle').text('매매가격 전년 동월 대비');
     const r = pearson(pts.map((d) => d.x), pts.map((d) => d.y));
     // 회귀선(OLS)
     const mx = d3.mean(pts, (d) => d.x), my = d3.mean(pts, (d) => d.y);
