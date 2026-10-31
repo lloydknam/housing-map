@@ -1,11 +1,11 @@
 {
- "run": "2026-10-31T15:33:07+09:00",
+ "run": "2026-10-31T15:48:35+09:00",
  "metrics": {
   "permit": {
    "status": "ok",
    "regions": 16,
    "months": [
-    "2019-10",
+    "2016-10",
     "2026-08"
    ],
    "latest_sums": {
@@ -19,7 +19,7 @@
    "status": "ok",
    "regions": 16,
    "months": [
-    "2019-09",
+    "2016-09",
     "2026-08"
    ],
    "latest_sums": {
@@ -33,7 +33,7 @@
    "status": "ok",
    "regions": 16,
    "months": [
-    "2019-09",
+    "2016-09",
     "2026-08"
    ],
    "latest_sums": {
@@ -47,7 +47,7 @@
    "status": "ok",
    "regions": 16,
    "months": [
-    "2019-09",
+    "2016-09",
     "2026-08"
    ],
    "latest_sums": {
@@ -61,7 +61,7 @@
    "status": "ok",
    "regions": 16,
    "months": [
-    "2019-09",
+    "2016-09",
     "2026-08"
    ],
    "latest_sums": {
@@ -75,7 +75,7 @@
    "status": "ok",
    "regions": 16,
    "months": [
-    "2019-09",
+    "2016-09",
     "2026-08"
    ],
    "latest_sums": {
