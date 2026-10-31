@@ -37,6 +37,7 @@ def compact(rec, limit=70):
         keep = ("C1_NM", "C2_NM", "C3_NM", "C4_NM", "ITM_NM", "PRD_SE", "PRD_DE", "DT", "UNIT_NM")
         rec["count"] = len(res)
         rec["rows"] = [{k: r.get(k) for k in keep if k in r} for r in res[:limit]]
+        rec["raw_sample"] = res[:3]
         rec["all_keys"] = sorted(res[0].keys()) if res else []
         del rec["result"]
     return rec
@@ -52,15 +53,9 @@ def p(tbl, itm, objs, extra=None):
 
 
 PROBES = {
-    "start_5386": p("DT_MLTM_5386", "13103766971T1", ["13102766971A.0001", "13102766971B.0001", "ALL"]),
-    "complete_5372": p("DT_MLTM_5372", "13103766972T1", ["13102766972A.0001", "13102766972B.0001", "ALL"]),
-    "sale_5557": p("DT_MLTM_5557", "13103133605T1", ["ALL", "ALL", "13102133605C.0001"]),
-    "unsold_2082": p("DT_MLTM_2082", "13103871087T1", ["ALL", "13102871087B.0001"]),
-    "unsold_post_5328_B1": p("DT_MLTM_5328", "13103871088T1", ["ALL", "13102871088B.0001"]),
-    "unsold_post_5328_B2": p("DT_MLTM_5328", "13103871088T1", ["ALL", "13102871088B.0002"]),
-    "permit_666_o1": p("DT_MLTM_666", "ALL", ["ALL"]),
-    "permit_666_o2": p("DT_MLTM_666", "ALL", ["ALL", "ALL"]),
-    "permit_666_o3": p("DT_MLTM_666", "ALL", ["ALL", "ALL", "ALL"]),
+    "post_B1": p("DT_MLTM_5328", "13103871088T1", ["ALL", "13102871088B.0001", "13102871088C.0001", "13102871088D.0001"]),
+    "post_B2": p("DT_MLTM_5328", "13103871088T1", ["ALL", "13102871088B.0002", "13102871088C.0001", "13102871088D.0001"]),
+    "post_B1_all": p("DT_MLTM_5328", "13103871088T1", ["ALL", "13102871088B.0001", "ALL", "ALL"]),
 }
 
 
@@ -69,7 +64,7 @@ def main():
     if not KEY:
         out["error"] = "KOSIS_API_KEY 없음"
     else:
-        for tbl in ("DT_MLTM_666", "DT_MLTM_5386", "DT_MLTM_5557", "DT_MLTM_2082", "DT_MLTM_5328"):
+        for tbl in ("DT_MLTM_5328",):
             e = {}
             for typ in ("ITM", "OBJ", "PRD"):
                 e[typ] = call(META, {"method": "getMeta", "type": typ, "format": "json", "jsonVD": "Y",
