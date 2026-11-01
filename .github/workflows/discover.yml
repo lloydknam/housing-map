@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - scripts/discover_macro.py
+      - scripts/fetch_macro.py
       - scripts/probe_macro.py
       - .github/workflows/discover.yml
   workflow_dispatch:
@@ -19,11 +20,11 @@ jobs:
       - name: Search KOSIS tables
         env:
           KOSIS_API_KEY: ${{ secrets.KOSIS_API_KEY }}
-        run: python3 scripts/probe_macro.py
+        run: python3 scripts/fetch_macro.py
       - name: Commit result
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/_probe_macro.json
+          git add data/macro.json data/_macro_log.json
           git diff --cached --quiet || { git commit -m "data: kosis macro discovery" && git pull --rebase -q && git push; }
