@@ -1,0 +1,41 @@
+{
+ "mortgage_rate_new": [
+  "ok M n=249 first=['200601', '13102134553ACC_ITEM.BECBLA0302', None, None, '13103134553999', '5.64'] last=['202609', '13102134553ACC_ITEM.BECBLA0302', None, None, '13103134553999', '4.88']"
+ ],
+ "loan_rate_household_new": [
+  "ok M n=249 first=['200601', '13102134553ACC_ITEM.BECBLA03', None, None, '13103134553999', '5.69'] last=['202609', '13102134553ACC_ITEM.BECBLA03', None, None, '13103134553999', '4.96']"
+ ],
+ "m2": [
+  "ok M n=248 first=['200601', '13102844599ACC_ITEM.BBGA00', None, None, '13103844599999', '952538.938'] last=['202608', '13102844599ACC_ITEM.BBGA00', None, None, '13103844599999', '4234915.1733']"
+ ],
+ "cpi_seoul": [
+  "ok M n=249 first=['200601', 'T11', None, None, 'T', '74.487'] last=['202609', 'T11', None, None, 'T', '119.34']"
+ ],
+ "cpi_nat": [
+  "ok M n=249 first=['200601', 'T10', None, None, 'T', '75.231'] last=['202609', 'T10', None, None, 'T', '120.43']"
+ ],
+ "jeonse_idx_seoul": [
+  "M:{'err': '30', 'errMsg': '데이터가 존재하지 않습니다.'}",
+  "M:{'err': '30', 'errMsg': '데이터가 존재하지 않습니다.'}",
+  "Y:{'err': '30', 'errMsg': '데이터가 존재하지 않습니다.'}",
+  "Y:{'err': '30', 'errMsg': '데이터가 존재하지 않습니다.'}"
+ ],
+ "jeonse_idx_nat": [
+  "ok M n=152 first=['201401', '10', None, None, 'T1', '58.106251727'] last=['202608', '10', None, None, 'T1', '100.6091433']"
+ ],
+ "apt_trade_seoul_sale": [
+  "ok M n=248 first=['200601', '13102114437A.0002', '13102114437B.00010001', None, '13103114437T1', '2496'] last=['202608', '13102114437A.0002', '13102114437B.00010001', None, '13103114437T1', '4589']"
+ ],
+ "policy_rate_kr": [
+  "M:{'err': '30', 'errMsg': '데이터가 존재하지 않습니다'}",
+  "M:{'err': '30', 'errMsg': '데이터가 존재하지 않습니다'}",
+  "ok Y n=18 first=['2009', '1005', None, None, 'T1', '2'] last=['2026', '1005', None, None, 'T1', '2.625']"
+ ],
+ "kospi": [
+  "M:{'err': '20', 'errMsg': '필수요청변수값이 누락되었습니다. (objL)'}",
+  "ok M n=3984 first=['200601', '13102792814A.02', None, None, '13103792814T1', '1399.83'] last=['202609', '13102792814A.070203', None, None, '13103792814T1', '03']"
+ ],
+ "households_seoul": [
+  "ok M n=189 first=['201101', '11', None, None, 'T1', '4223301'] last=['202609', '11', None, None, 'T1', '4524905']"
+ ]
+}
