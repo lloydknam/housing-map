@@ -1,0 +1,1813 @@
+{
+ "시장금리": [
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y010",
+   "TBL_NM": "예금은행 고정 및 변동금리대출 비중(신규취급액 기준)",
+   "STRT_PRD_DE": "2001",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y011",
+   "TBL_NM": "예금은행 고정 및 변동금리대출 비중(잔액 기준)",
+   "STRT_PRD_DE": "2009",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_XNS0117",
+   "TBL_NM": "주요 국제금리 - 남부·동남아시아",
+   "STRT_PRD_DE": "1966",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_XNN0117",
+   "TBL_NM": "주요 국제금리 - 동북·중앙아시아",
+   "STRT_PRD_DE": "1992",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_2KAA716",
+   "TBL_NM": "주요 국제금리",
+   "STRT_PRD_DE": "1950",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "343",
+   "ORG_NM": "한국거래소",
+   "TBL_ID": "DT_343_2010_S0094",
+   "TBL_NM": "채권금리상품 총괄",
+   "STRT_PRD_DE": "2004",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "343",
+   "ORG_NM": "한국거래소",
+   "TBL_ID": "DT_343_2010_S0192",
+   "TBL_NM": "30년국채선물 투자자별 거래실적",
+   "STRT_PRD_DE": "2024",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "343",
+   "ORG_NM": "한국거래소",
+   "TBL_ID": "DT_343_2010_S0191",
+   "TBL_NM": "30년국채선물 거래실적",
+   "STRT_PRD_DE": "2024",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "343",
+   "ORG_NM": "한국거래소",
+   "TBL_ID": "DT_343_2010_S0183",
+   "TBL_NM": "3년국채선물 거래실적",
+   "STRT_PRD_DE": "1999",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "343",
+   "ORG_NM": "한국거래소",
+   "TBL_ID": "DT_343_2010_S0158",
+   "TBL_NM": "10년국채선물 투자자별 거래실적",
+   "STRT_PRD_DE": "2008",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "343",
+   "ORG_NM": "한국거래소",
+   "TBL_ID": "DT_343_2010_S0157",
+   "TBL_NM": "10년국채선물 거래실적",
+   "STRT_PRD_DE": "2008",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "343",
+   "ORG_NM": "한국거래소",
+   "TBL_ID": "DT_343_2010_S0156",
+   "TBL_NM": "5년국채선물 투자자별 거래실적",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "343",
+   "ORG_NM": "한국거래소",
+   "TBL_ID": "DT_343_2010_S0155",
+   "TBL_NM": "5년국채선물 거래실적",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "343",
+   "ORG_NM": "한국거래소",
+   "TBL_ID": "DT_343_2010_S0101",
+   "TBL_NM": "3년국채선물 투자자별 거래실적",
+   "STRT_PRD_DE": "2004",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_2OEEO033",
+   "TBL_NM": "단기 이자율",
+   "STRT_PRD_DE": "1960",
+   "END_PRD_DE": "2027",
+   "PRD_SE": null
+  }
+ ],
+ "주택담보대출 금리": [
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y011",
+   "TBL_NM": "예금은행 고정 및 변동금리대출 비중(잔액 기준)",
+   "STRT_PRD_DE": "2009",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y010",
+   "TBL_NM": "예금은행 고정 및 변동금리대출 비중(신규취급액 기준)",
+   "STRT_PRD_DE": "2001",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y006",
+   "TBL_NM": "예금은행 대출금리(신규취급액 기준)",
+   "STRT_PRD_DE": "1996",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y015",
+   "TBL_NM": "예금은행 대출금리(잔액 기준)",
+   "STRT_PRD_DE": "1996",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y007",
+   "TBL_NM": "비은행금융기관 대출금리(신규취급액 기준)",
+   "STRT_PRD_DE": "1992",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "321",
+   "ORG_NM": "한국주택금융공사",
+   "TBL_ID": "DT_32103N_041",
+   "TBL_NM": "주택담보대출 선호 금리유형",
+   "STRT_PRD_DE": "2009",
+   "END_PRD_DE": "2009",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "321",
+   "ORG_NM": "한국주택금융공사",
+   "TBL_ID": "TX_32103_A018",
+   "TBL_NM": "공사 모기지론 이용의향 이유",
+   "STRT_PRD_DE": "2007",
+   "END_PRD_DE": "2007",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "321",
+   "ORG_NM": "한국주택금융공사",
+   "TBL_ID": "DT_32103N_019",
+   "TBL_NM": "보금자리론 이용 고려 이유",
+   "STRT_PRD_DE": "2008",
+   "END_PRD_DE": "2008",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "321",
+   "ORG_NM": "한국주택금융공사",
+   "TBL_ID": "TX_32103_A057",
+   "TBL_NM": "보금자리론 이용이유",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2006",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "321",
+   "ORG_NM": "한국주택금융공사",
+   "TBL_ID": "TX_32103_A079",
+   "TBL_NM": "보금자리론 선택이유 (1순위)",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2006",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "321",
+   "ORG_NM": "한국주택금융공사",
+   "TBL_ID": "TX_32103_A080",
+   "TBL_NM": "보금자리론 선택배경 (1+2+3순위)",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2006",
+   "PRD_SE": null
+  }
+ ],
+ "예금은행 대출금리": [
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y006",
+   "TBL_NM": "예금은행 대출금리(신규취급액 기준)",
+   "STRT_PRD_DE": "1996",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y015",
+   "TBL_NM": "예금은행 대출금리(잔액 기준)",
+   "STRT_PRD_DE": "1996",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y010",
+   "TBL_NM": "예금은행 고정 및 변동금리대출 비중(신규취급액 기준)",
+   "STRT_PRD_DE": "2001",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y011",
+   "TBL_NM": "예금은행 고정 및 변동금리대출 비중(잔액 기준)",
+   "STRT_PRD_DE": "2009",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_XNS0117",
+   "TBL_NM": "주요 국제금리 - 남부·동남아시아",
+   "STRT_PRD_DE": "1966",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_2KAA716",
+   "TBL_NM": "주요 국제금리",
+   "STRT_PRD_DE": "1950",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_XNN0117",
+   "TBL_NM": "주요 국제금리 - 동북·중앙아시아",
+   "STRT_PRD_DE": "1992",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y008",
+   "TBL_NM": "예금은행 금리수준별 여수신 비중(신규취급액 기준)",
+   "STRT_PRD_DE": "1990",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_2AQ555",
+   "TBL_NM": "금융기관 이용, 안정성 및 효율성",
+   "STRT_PRD_DE": "1960",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "376",
+   "ORG_NM": "금융감독원",
+   "TBL_ID": "DT_376_100_SDMZ021V_1",
+   "TBL_NM": "[주요경제지표] 1. 국내 주요경제지표(Ⅰ)",
+   "STRT_PRD_DE": "2005",
+   "END_PRD_DE": "2016",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "999",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_999N_119042",
+   "TBL_NM": "보통은행 평균금리",
+   "STRT_PRD_DE": "1917",
+   "END_PRD_DE": "1943",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "999",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_999N_116042",
+   "TBL_NM": "조선은행 평균금리(1917~1943)",
+   "STRT_PRD_DE": "1917",
+   "END_PRD_DE": "1943",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "999",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_999N_117042",
+   "TBL_NM": "조선식산은행 평균금리",
+   "STRT_PRD_DE": "1918",
+   "END_PRD_DE": "1943",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "999",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "CS118001942",
+   "TBL_NM": "조선저축은행 평균금리",
+   "STRT_PRD_DE": "1933",
+   "END_PRD_DE": "1943",
+   "PRD_SE": null
+  }
+ ],
+ "광의통화 M2": [
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_161Y011",
+   "TBL_NM": "M2 경제주체별 보유현황(말잔, 계절조정계열)",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_161Y009",
+   "TBL_NM": "M2 경제주체별 보유현황(평잔, 계절조정계열)",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_161Y006",
+   "TBL_NM": "M2 상품별 구성내역(평잔, 원계열)",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_161Y007",
+   "TBL_NM": "M2 상품별 구성내역(말잔, 계절조정계열)",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_161Y017",
+   "TBL_NM": "기타예금취급기관 개관표(말잔)",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_161Y015",
+   "TBL_NM": "예금취급기관 개관표(말잔)",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_161Y008",
+   "TBL_NM": "M2 상품별 구성내역(말잔, 원계열)",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_161Y005",
+   "TBL_NM": "M2 상품별 구성내역(평잔, 계절조정계열)",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_161Y012",
+   "TBL_NM": "M2 경제주체별 보유현황(말잔, 원계열)",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_161Y014",
+   "TBL_NM": "M2 기관별 구성내역(말잔)",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_161Y013",
+   "TBL_NM": "M2 기관별 구성내역(평잔)",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_161Y010",
+   "TBL_NM": "M2 경제주체별 보유현황(평잔, 원계열)",
+   "STRT_PRD_DE": "2003",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_2KAA701",
+   "TBL_NM": "통화지표(M1, M3)",
+   "STRT_PRD_DE": "1955",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_101Y005",
+   "TBL_NM": "M2 경제주체별 보유현황(말잔, 계절조정계열)",
+   "STRT_PRD_DE": "2001",
+   "END_PRD_DE": "2004",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_101Y006",
+   "TBL_NM": "M2 경제주체별 보유현황(평잔, 계절조정계열)",
+   "STRT_PRD_DE": "2001",
+   "END_PRD_DE": "2004",
+   "PRD_SE": null
+  }
+ ],
+ "소비자물가지수": [
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_2IFS002",
+   "TBL_NM": "소비자물가지수",
+   "STRT_PRD_DE": "1960",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1J22001",
+   "TBL_NM": "지출목적별 소비자물가지수(품목포함, 2020=100)",
+   "STRT_PRD_DE": "1965",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1J22003",
+   "TBL_NM": "소비자물가지수(2020=100)",
+   "STRT_PRD_DE": "1965",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1J22112",
+   "TBL_NM": "품목별 소비자물가지수(품목성질별: 2020=100)",
+   "STRT_PRD_DE": "1975",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1J22006",
+   "TBL_NM": "자가주거비포함 소비자물가지수(2020=100)",
+   "STRT_PRD_DE": "1995",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "INH_1J22003",
+   "TBL_NM": "소비자물가지수(시도)",
+   "STRT_PRD_DE": "1965",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1J22002",
+   "TBL_NM": "품목성질별 소비자물가지수(2020=100)",
+   "STRT_PRD_DE": "1985",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1J22010",
+   "TBL_NM": "특수분류 소비자물가지수(2020=100)",
+   "STRT_PRD_DE": "2015",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1J22136",
+   "TBL_NM": "연도별 품목성질별 소비자물가지수(9개도, 40개시: 2020=100)",
+   "STRT_PRD_DE": "1985",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1J22135",
+   "TBL_NM": "연도별 지출목적별 소비자물가지수(9개도, 40개시: 2020=100)",
+   "STRT_PRD_DE": "1975",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_2OEEO0121",
+   "TBL_NM": "소비자물가지수",
+   "STRT_PRD_DE": "1960",
+   "END_PRD_DE": "2027",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1J22009",
+   "TBL_NM": "식료품 및 에너지제외지수(2020=100)",
+   "STRT_PRD_DE": "1990",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_XNS0103",
+   "TBL_NM": "소비자 물가지수 - 남부·동남아시아",
+   "STRT_PRD_DE": "1989",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_2KAA601_02",
+   "TBL_NM": "소비자물가지수",
+   "STRT_PRD_DE": "1989",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_XNN0103",
+   "TBL_NM": "소비자 물가지수 - 동북·중앙아시아",
+   "STRT_PRD_DE": "1989",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  }
+ ],
+ "가계대출 주택담보대출 잔액": [
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y011",
+   "TBL_NM": "예금은행 고정 및 변동금리대출 비중(잔액 기준)",
+   "STRT_PRD_DE": "2009",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y015",
+   "TBL_NM": "예금은행 대출금리(잔액 기준)",
+   "STRT_PRD_DE": "1996",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_181Y002",
+   "TBL_NM": "차주당 가계대출 잔액",
+   "STRT_PRD_DE": "2013",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_181Y016",
+   "TBL_NM": "가계대출 잔액 비중",
+   "STRT_PRD_DE": "2013",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_181Y013",
+   "TBL_NM": "가계대출 신규취급액 비중",
+   "STRT_PRD_DE": "2013",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_181Y001",
+   "TBL_NM": "차주당 가계대출 신규취급액",
+   "STRT_PRD_DE": "2013",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "202",
+   "ORG_NM": "부산광역시",
+   "TBL_ID": "DT_202021_B251",
+   "TBL_NM": "연도별 개인 가계대출",
+   "STRT_PRD_DE": "2019",
+   "END_PRD_DE": "2023",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "202",
+   "ORG_NM": "부산광역시",
+   "TBL_ID": "DT_202021_B25",
+   "TBL_NM": "연도별 개인 가계대출",
+   "STRT_PRD_DE": "2019",
+   "END_PRD_DE": "2021",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "202",
+   "ORG_NM": "부산광역시",
+   "TBL_ID": "DT_202021_B261",
+   "TBL_NM": "개인 가계대출",
+   "STRT_PRD_DE": "2023",
+   "END_PRD_DE": "2023",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "202",
+   "ORG_NM": "부산광역시",
+   "TBL_ID": "DT_202021_B26",
+   "TBL_NM": "개인 가계대출",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2021",
+   "PRD_SE": null
+  }
+ ],
+ "종합주가지수 코스피": {
+  "err": "30",
+  "errMsg": "데이터가 존재하지 않습니다."
+ },
+ "원달러 환율": [
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_XNS0166",
+   "TBL_NM": "세계 관광 수입 및 관광 지출 - 남부·동남아시아",
+   "STRT_PRD_DE": "1999",
+   "END_PRD_DE": "2024",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "113",
+   "ORG_NM": "문화체육관광부",
+   "TBL_ID": "DT_113_STBL_1017919",
+   "TBL_NM": "광고산업 : 매체별 수출입액 현황",
+   "STRT_PRD_DE": "2004",
+   "END_PRD_DE": "2012",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "145",
+   "ORG_NM": "식품의약품안전처",
+   "TBL_ID": "TX_14503_A045",
+   "TBL_NM": "농림부 허가품목-전체",
+   "STRT_PRD_DE": "1999",
+   "END_PRD_DE": "2009",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_036Y003",
+   "TBL_NM": "원화의 대미달러, 대엔 환율",
+   "STRT_PRD_DE": "1990",
+   "END_PRD_DE": "2014",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_036Y004",
+   "TBL_NM": "주요국통화의 대원화 환율 통계자료",
+   "STRT_PRD_DE": "1964",
+   "END_PRD_DE": "2014",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "",
+   "TBL_ID": "DT_036Y001_REC",
+   "TBL_NM": "주요국통화의 대원화 환율",
+   "STRT_PRD_DE": "1964",
+   "END_PRD_DE": "2014",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_036Y006",
+   "TBL_NM": "원화의 대미달러, 대엔 환율 통계자료",
+   "STRT_PRD_DE": "1990",
+   "END_PRD_DE": "2014",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "376",
+   "ORG_NM": "금융감독원",
+   "TBL_ID": "DT_376_100_SDMZ022V_1",
+   "TBL_NM": "[주요경제지표] 2. 국내 주요경제지표(Ⅱ)",
+   "STRT_PRD_DE": "2001",
+   "END_PRD_DE": "2016",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_036Y002",
+   "TBL_NM": "주요국통화의 대미달러 환율",
+   "STRT_PRD_DE": "1964",
+   "END_PRD_DE": "2014",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_036Y005",
+   "TBL_NM": "주요국통화의 대미달러 환율 통계자료",
+   "STRT_PRD_DE": "1964",
+   "END_PRD_DE": "2014",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "376",
+   "ORG_NM": "금융감독원",
+   "TBL_ID": "DT_376_100_SDMZ025V_1",
+   "TBL_NM": "[주요경제지표] 5. 해외 주요경제지표(Ⅱ)",
+   "STRT_PRD_DE": "2000",
+   "END_PRD_DE": "2016",
+   "PRD_SE": null
+  }
+ ],
+ "전세가격지수 서울": [
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_08002_11_011A",
+   "TBL_NM": "가격지수 상대표준오차",
+   "STRT_PRD_DE": "2020",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_304004_WEEK_010_A",
+   "TBL_NM": "주간 연령별 아파트 매매가격지수",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_304004_WEEK_011_A",
+   "TBL_NM": "주간 연령별 아파트 전세가격지수 변동률",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_304004_WEEK_004_C",
+   "TBL_NM": "주간 아파트 전세가격지수",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_304004_WEEK_012_C",
+   "TBL_NM": "주간 연령별 아파트 전세가격지수",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_1YL13602E",
+   "TBL_NM": "주택전세가격지수(시도/시/군/구)",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_08002_02_002A",
+   "TBL_NM": "전세가격지수",
+   "STRT_PRD_DE": "2020",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_304004_WEEK_008",
+   "TBL_NM": "주간 규모별 아파트 전세가격지수",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_304004_WEEK_011_C",
+   "TBL_NM": "주간 연령별 아파트 전세가격지수 변동률",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_304004_WEEK_010_C",
+   "TBL_NM": "주간 연령별 아파트 매매가격지수",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_304004_WEEK_008_C",
+   "TBL_NM": "주간 규모별 아파트 전세가격지수",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_304004_WEEK_007_C",
+   "TBL_NM": "주간 규모별 아파트 전세가격지수 변동률",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_304004_WEEK_010_B",
+   "TBL_NM": "주간 연령별 아파트 매매가격지수",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_304004_WEEK_011_B",
+   "TBL_NM": "주간 연령별 아파트 전세가격지수 변동률",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_304004_WEEK_012_A",
+   "TBL_NM": "주간 연령별 아파트 전세가격지수",
+   "STRT_PRD_DE": "2021",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  }
+ ],
+ "아파트 전세 실거래가격지수": [
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_KAB_11672_S23",
+   "TBL_NM": "아파트 전세 실거래가격지수",
+   "STRT_PRD_DE": "2014",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_KAB_11672_S30",
+   "TBL_NM": "계절조정 아파트 전세 실거래 가격지수",
+   "STRT_PRD_DE": "2014",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_KAB_11672_S24",
+   "TBL_NM": "아파트 규모별 전세 실거래가격지수",
+   "STRT_PRD_DE": "2014",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_KAB_11672_S26",
+   "TBL_NM": "아파트 전세 실거래 중위가격",
+   "STRT_PRD_DE": "2014",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_KAB_11672_S31",
+   "TBL_NM": "아파트 규모별 전세 실거래 평균가격",
+   "STRT_PRD_DE": "2014",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_KAB_11672_S32",
+   "TBL_NM": "아파트 규모별 전세 실거래 중위가격",
+   "STRT_PRD_DE": "2014",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_KAB_11672_S25",
+   "TBL_NM": "아파트 전세 실거래 평균가격",
+   "STRT_PRD_DE": "2014",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "552",
+   "ORG_NM": "대구광역시 동구",
+   "TBL_ID": "DT_55201_I001008",
+   "TBL_NM": "주택가격지수",
+   "STRT_PRD_DE": "2012",
+   "END_PRD_DE": "2023",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "680",
+   "ORG_NM": "충청북도 음성군",
+   "TBL_ID": "DT_68001_I000027",
+   "TBL_NM": "주택가격지수",
+   "STRT_PRD_DE": "2013",
+   "END_PRD_DE": "2023",
+   "PRD_SE": null
+  }
+ ],
+ "주택 매매거래량 서울": [
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0039",
+   "TBL_NM": "주택거래현황_년도별 세부항목",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0002",
+   "TBL_NM": "년도별 세부항목 토지거래현황",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0027",
+   "TBL_NM": "년도별 세부항목 건축물거래현황",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0044",
+   "TBL_NM": "거래원인별 주택거래현황",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0053",
+   "TBL_NM": "거래원인별 아파트거래현황",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0034",
+   "TBL_NM": "거래원인별 건축물거래현황",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0048",
+   "TBL_NM": "년도별 세부항목 아파트거래현황",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0069",
+   "TBL_NM": "토지매매거래현황_년도별 세부항목",
+   "STRT_PRD_DE": "2019",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0015",
+   "TBL_NM": "년도별 세부항목 순수토지거래현황",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0061",
+   "TBL_NM": "주택유형별 주택매매거래현황",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0056",
+   "TBL_NM": "주택매매거래현황_년도별 세부항목",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0058",
+   "TBL_NM": "매입자거주지별 주택매매거래현황",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0059",
+   "TBL_NM": "거래주체별 주택매매거래현황",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0060",
+   "TBL_NM": "거래규모별 주택매매거래현황",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "408",
+   "ORG_NM": "한국부동산원",
+   "TBL_ID": "DT_408_2006_S0067",
+   "TBL_NM": "거래규모별 아파트매매거래현황",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  }
+ ],
+ "기준금리": [
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y010",
+   "TBL_NM": "예금은행 고정 및 변동금리대출 비중(신규취급액 기준)",
+   "STRT_PRD_DE": "2001",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y011",
+   "TBL_NM": "예금은행 고정 및 변동금리대출 비중(잔액 기준)",
+   "STRT_PRD_DE": "2009",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_2OEEO032",
+   "TBL_NM": "중앙은행 기준금리",
+   "STRT_PRD_DE": "1970",
+   "END_PRD_DE": "2027",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y002",
+   "TBL_NM": "예금은행 수신금리(신규취급액 기준)",
+   "STRT_PRD_DE": "1996",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y007",
+   "TBL_NM": "비은행금융기관 대출금리(신규취급액 기준)",
+   "STRT_PRD_DE": "1992",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_XNN0117",
+   "TBL_NM": "주요 국제금리 - 동북·중앙아시아",
+   "STRT_PRD_DE": "1992",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_XNS0117",
+   "TBL_NM": "주요 국제금리 - 남부·동남아시아",
+   "STRT_PRD_DE": "1966",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_2KAA716",
+   "TBL_NM": "주요 국제금리",
+   "STRT_PRD_DE": "1950",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y013",
+   "TBL_NM": "예금은행 수신금리(잔액 기준)",
+   "STRT_PRD_DE": "1996",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_2FAKA",
+   "TBL_NM": "금리 및 주가",
+   "STRT_PRD_DE": "1960",
+   "END_PRD_DE": "2024",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y006",
+   "TBL_NM": "예금은행 대출금리(신규취급액 기준)",
+   "STRT_PRD_DE": "1996",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y015",
+   "TBL_NM": "예금은행 대출금리(잔액 기준)",
+   "STRT_PRD_DE": "1996",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y004",
+   "TBL_NM": "비은행금융기관 수신금리(신규취급액 기준)",
+   "STRT_PRD_DE": "1996",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_121Y008",
+   "TBL_NM": "예금은행 금리수준별 여수신 비중(신규취급액 기준)",
+   "STRT_PRD_DE": "1990",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "301",
+   "ORG_NM": "한국은행",
+   "TBL_ID": "DT_641Y001",
+   "TBL_NM": "한국은행 원화대출금",
+   "STRT_PRD_DE": "1971",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  }
+ ],
+ "서울 인구 이동 전입": [
+  {
+   "ORG_ID": "110",
+   "ORG_NM": "행정안전부",
+   "TBL_ID": "DT_110001_A004",
+   "TBL_NM": "인구이동",
+   "STRT_PRD_DE": "2023",
+   "END_PRD_DE": "2023",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1B26006",
+   "TBL_NM": "시군구/성/연령(5세)별 이동률",
+   "STRT_PRD_DE": "1970",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1B26003_A01",
+   "TBL_NM": "전출지/전입지(시도)별 이동자수",
+   "STRT_PRD_DE": "1970",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1B26001",
+   "TBL_NM": "시군구/성/연령(5세)별 이동자수",
+   "STRT_PRD_DE": "1970",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1B26001_A03",
+   "TBL_NM": "시군구/연령(5세)별 이동자수",
+   "STRT_PRD_DE": "1970",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1B26001_A01",
+   "TBL_NM": "시군구별 이동자수",
+   "STRT_PRD_DE": "1970",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1B26001_A02",
+   "TBL_NM": "시군구/성별 이동자수",
+   "STRT_PRD_DE": "1970",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1B26007",
+   "TBL_NM": "시군구별 이동건수",
+   "STRT_PRD_DE": "2001",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1B26003",
+   "TBL_NM": "전출지/전입지(시도)/성/연령(5세, 청년층 포함)별 이동자수",
+   "STRT_PRD_DE": "1970",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1B26001_A04",
+   "TBL_NM": "시도/성/연령(5세)별 이동자수",
+   "STRT_PRD_DE": "1970",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1B26006_A01",
+   "TBL_NM": "인구이동률(월, 분기, 년)",
+   "STRT_PRD_DE": "2000",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1B26008",
+   "TBL_NM": "전출지/전입지(시도)/이동규모별 이동건수",
+   "STRT_PRD_DE": "2001",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "INH_1B26001_A022",
+   "TBL_NM": "전입인구(시도/시/군/구)",
+   "STRT_PRD_DE": "1970",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1B26A01",
+   "TBL_NM": "시군구/성/연령(5세)별 1인 이동건수",
+   "STRT_PRD_DE": "2001",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "INH_1B26001_A021",
+   "TBL_NM": "순이동인구(시도/시/군/구)",
+   "STRT_PRD_DE": "1970",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  }
+ ],
+ "가구수 서울 추계": [
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "INH_1ES3A02S_04",
+   "TBL_NM": "취업자수(시/군/구)",
+   "STRT_PRD_DE": "2013",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "INH_1DA7030S",
+   "TBL_NM": "취업자수(시도)",
+   "STRT_PRD_DE": "1989",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1YL20541",
+   "TBL_NM": "취업자증감(시도)",
+   "STRT_PRD_DE": "2000",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1DA7E33S_NEW",
+   "TBL_NM": "행정구역(시도)/산업별 취업자",
+   "STRT_PRD_DE": "2013",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1DA7E33S",
+   "TBL_NM": "행정구역(시도)/산업별 취업자",
+   "STRT_PRD_DE": "2013",
+   "END_PRD_DE": "2024",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1ES3B05S",
+   "TBL_NM": "시도/산업별 취업자",
+   "STRT_PRD_DE": "2013",
+   "END_PRD_DE": "2024",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1C93",
+   "TBL_NM": "시도별 지역내총생산에 대한 지출",
+   "STRT_PRD_DE": "1995",
+   "END_PRD_DE": "2024",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1001000514",
+   "TBL_NM": "시/도별 모집단 현황",
+   "STRT_PRD_DE": "2016",
+   "END_PRD_DE": "2016",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1ES2B05S",
+   "TBL_NM": "시도/산업별 취업자",
+   "STRT_PRD_DE": "2010",
+   "END_PRD_DE": "2012",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1INOOSB",
+   "TBL_NM": "행정구역(구시군)/성씨·본관별 가구 및 인구",
+   "STRT_PRD_DE": "2000",
+   "END_PRD_DE": "2000",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1INOOSC",
+   "TBL_NM": "행정구역(시도)/성씨·본관별 가구 및 인구",
+   "STRT_PRD_DE": "2000",
+   "END_PRD_DE": "2000",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1IN85SB",
+   "TBL_NM": "행정구역(구시군)/성씨·본관별 가구 및 인구",
+   "STRT_PRD_DE": "1985",
+   "END_PRD_DE": "1985",
+   "PRD_SE": null
+  }
+ ],
+ "경제활동 임금 소득 월평균 서울": [
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1SSHE070R",
+   "TBL_NM": "유병률, 유병일수 및 입원하거나 누워 지낸 기간 (2주간, 0세 이상 인구)",
+   "STRT_PRD_DE": "2008",
+   "END_PRD_DE": "2024",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1SSIC010R",
+   "TBL_NM": "주관적 소득수준 (19세 이상 가구주)",
+   "STRT_PRD_DE": "2011",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "203",
+   "ORG_NM": "대구광역시",
+   "TBL_ID": "DT_20308_19_08_05_1",
+   "TBL_NM": "향후 5년이내 이주희망지역",
+   "STRT_PRD_DE": "2019",
+   "END_PRD_DE": "2019",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "203",
+   "ORG_NM": "대구광역시",
+   "TBL_ID": "DT_20308_17_09_05",
+   "TBL_NM": "향후 5년이내 이주하고 싶은 지역",
+   "STRT_PRD_DE": "2017",
+   "END_PRD_DE": "2017",
+   "PRD_SE": null
+  }
+ ],
+ "주택가격 소득 PIR": [
+  {
+   "ORG_ID": "321",
+   "ORG_NM": "한국주택금융공사",
+   "TBL_ID": "TX_32103_A008",
+   "TBL_NM": "주택금융관련 주요지표-PIR",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2007",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "321",
+   "ORG_NM": "한국주택금융공사",
+   "TBL_ID": "TX_32103_A120",
+   "TBL_NM": "주택가격대비 연소득 비율(PIR)-최근 3년내 주택금융 이용 현황",
+   "STRT_PRD_DE": "2005",
+   "END_PRD_DE": "2005",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "321",
+   "ORG_NM": "한국주택금융공사",
+   "TBL_ID": "TX_32103_A151",
+   "TBL_NM": "연소득 대비 주택가격(PIR)",
+   "STRT_PRD_DE": "2005",
+   "END_PRD_DE": "2005",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "321",
+   "ORG_NM": "한국주택금융공사",
+   "TBL_ID": "TX_32103_A138",
+   "TBL_NM": "향후 예상 PIR 지표",
+   "STRT_PRD_DE": "2005",
+   "END_PRD_DE": "2005",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "321",
+   "ORG_NM": "한국주택금융공사",
+   "TBL_ID": "TX_32103_A058",
+   "TBL_NM": "PIR",
+   "STRT_PRD_DE": "2006",
+   "END_PRD_DE": "2006",
+   "PRD_SE": null
+  }
+ ],
+ "건설공사비지수": [
+  {
+   "ORG_ID": "397",
+   "ORG_NM": "한국건설기술연구원",
+   "TBL_ID": "DT_39701_A003",
+   "TBL_NM": "건설공사비지수(2020년기준)",
+   "STRT_PRD_DE": "2000",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_15000001005",
+   "TBL_NM": "가족친화지수 영역별 결과",
+   "STRT_PRD_DE": "2015",
+   "END_PRD_DE": "2025",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_2FAIA",
+   "TBL_NM": "물가",
+   "STRT_PRD_DE": "1960",
+   "END_PRD_DE": "2023",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1500000115",
+   "TBL_NM": "탄력적 근무제도 체감지수",
+   "STRT_PRD_DE": "2010",
+   "END_PRD_DE": "2010",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1500000118",
+   "TBL_NM": "근로자 지원제도 체감지수",
+   "STRT_PRD_DE": "2010",
+   "END_PRD_DE": "2010",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1500000117",
+   "TBL_NM": "부양가족 지원제도 체감지수",
+   "STRT_PRD_DE": "2010",
+   "END_PRD_DE": "2010",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1500000114",
+   "TBL_NM": "전체 가족친화 체감지수",
+   "STRT_PRD_DE": "2010",
+   "END_PRD_DE": "2010",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1500000116",
+   "TBL_NM": "자녀 출산 양육 및 교육지원제도 체감지수",
+   "STRT_PRD_DE": "2010",
+   "END_PRD_DE": "2010",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1500000021",
+   "TBL_NM": "가족친화 문화조성 프로그램 체감지수(2010)",
+   "STRT_PRD_DE": "2010",
+   "END_PRD_DE": "2010",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1500000230",
+   "TBL_NM": "근로자 지원제도 체감지수(2012)",
+   "STRT_PRD_DE": "2012",
+   "END_PRD_DE": "2012",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1500000231",
+   "TBL_NM": "가족친화 문화조성 체감지수(2012)",
+   "STRT_PRD_DE": "2012",
+   "END_PRD_DE": "2012",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1500000229",
+   "TBL_NM": "부양가족 지원제도 체감지수(2012)",
+   "STRT_PRD_DE": "2012",
+   "END_PRD_DE": "2012",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1500000039",
+   "TBL_NM": "조사대상별 가족친화지수 분포현황(2010)",
+   "STRT_PRD_DE": "2010",
+   "END_PRD_DE": "2010",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1500000179",
+   "TBL_NM": "세부 기관별 단계별 가족친화지수 수준(2012)",
+   "STRT_PRD_DE": "2012",
+   "END_PRD_DE": "2012",
+   "PRD_SE": null
+  },
+  {
+   "ORG_ID": "154",
+   "ORG_NM": "성평등가족부",
+   "TBL_ID": "DT_MOGE_1500000228",
+   "TBL_NM": "자녀 출산.양육 및 교육지원제도 체감지수(2012)",
+   "STRT_PRD_DE": "2012",
+   "END_PRD_DE": "2012",
+   "PRD_SE": null
+  }
+ ],
+ "주택 전월세 거래량": [
+  {
+   "ORG_ID": "101",
+   "ORG_NM": "국가데이터처",
+   "TBL_ID": "DT_1J22005",
+   "TBL_NM": "생활물가지수(2020=100)",
+   "STRT_PRD_DE": "1995",
+   "END_PRD_DE": "2026",
+   "PRD_SE": null
+  }
+ ]
+}
